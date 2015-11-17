@@ -1,0 +1,148 @@
+<div class="bloque" style="font-family:arial;font-size:1.25em;text-align:justify;border:1.5mm solid #508050;margin:0.25em;padding:1em;">
+
+<div class="titulo titulo1" style="margin:5mm;font-size:2.0em;font-weight:bold">Proyecto en Grupo</div>
+<div class="titulo titulo2" style="margin:5mm;font-size:1.5em;font-weight:bold">Requisitos Iniciales.</div>
+
+<br/>
+&nbsp;&nbsp;&nbsp;Se desea diseñar una aplicación web para la publicación y gestión de <strong>Recetas Cocina y Ofertas de Tiendas</strong>.
+<br/>
+<br/>
+&nbsp;&nbsp;&nbsp;La aplicación será un portal web que principalmente se podrán buscar y consultar recetas de cocina que estén dadas de alta en el sistema. Las búsquedas se podrán realizar mediante un sistema de clasificación de recetas, donde se mostrará la lista de recetas que coincidan con las clasificaciones seleccionadas. Se podrá elegir una receta para visualizar su ficha en detalle, con su denominación, descripción, características, comensales, tiempo de elaboración, pasos para su elaboración, fotografías de la receta en cada paso, ingredientes necesarios, etc.
+<br/>
+<br/>
+
+<hr/>
+<div class="titulo titulo3" style="margin:5mm;font-size:1.0em;font-weight:bold">Requerimientos para el Público en general:</div>
+<div style="text-align:justify;margin:0em">
+<ul>
+  <li>Portada: La página inicial mostrará el logotipo del portal, con un menú de selección de clasificación de recetas a la izquierda, unas &quot;fichas resumen&quot; de las N recetas recomendadas (del mes, de la semana, más votadas o similar) en la parte central, y una serie de anuncios de ofertas de las tiendas en la parte derecha. La lista de N recetas saldrá paginado en caso necesario permitiendo movernos entre las posibles páginas resultantes.
+  </li>
+  <li>Si se activan o desactivan los filtros de clasificación se podrá pulsar un botón de &quot;Filtrar&quot; para que cambie el contenido central acorde con el filtro, el cual deberá salir paginado con unas 20 &quot;fichas resumen&quot; de recetas por página.
+  </li>
+  <li>Ver Recetas: Si se selecciona una de las &quot;fichas resumen&quot; se accederá a la ficha detalle de la receta, y se debe poder volver hacia atrás a la selección que está activada en ese momento, para lo cual se debe recordar dicha selección (por ejemplo en sesión) para volver a aplicarla al mostrar la página principal.
+  </li>
+  <li>Forma de Busqueda mas detallada / Ver Recetas mas votadas, mas recomendadas, favoritas, mas rapidas de hacer, por número de comensales, ...: Debería ser posible disponer de un filtrado más elaborado de recetas, para poder elegir no solo las clasificaciones, sino otros parámetros que contienen las recetas y poder aplicarlos como filtro o condiciones de búsqueda.
+  </li>
+  <li>Recetas con Ofertas del Dia: Es una sección adicional en la que se pueden mostrar las recetas que tengan algún ingrediente que esté en oferta en alguna tienda. Otra posibilidad es que al ver la ficha completa de una receta, se marque el ingrediente que está en oferta con un color diferente, o un icono de aviso para poder ir a la tienda a verla y/o comprarlo.
+  </li>
+  <li>Variaciones de la misma receta: Si fuera posible relacionar recetas que son similares pero con variaciones en su desarrollo, ingredientes, o alternativas, se debería poder gestionar, pero no es un requisito clave.
+  </li>
+  <li>Agrupaciones por Categorias: Aunque se ha indicado que existirán unos filtros de clasificación, se puede disponer de alguna sección que mostrara las recetas según el arbol de clasificación de las categorias, para poder centrarse en un tipo de receta solo, como por ejemplo: <strong>Recetas de &quot;carne&quot; &rarr; &quot;ternera&quot; &rarr; &quot;guisada&quot;</strong>
+  </li>
+  <li>Menús planificados de recetas (Planning Recetas Semanal, etc): Estaría bien que se pudiera disponer de una sección en la que se tuvieran las recetas planificadas en menús para hacer durante un periodo de tiempo como una semana, 15 días, temporadas concretas de navidad, carnaval, semana santa, etc.
+  </li>
+  <li>Ofertas de Tiendas / Productos / Ingredientes: Poder gestionar y mostrar diferentes anuncios de Productos/Ingredientes que ofertan las tiendas. Así como poder gestionar las diferentes tiendas como entidad y usuario.
+  </li>
+  <li>Registro y Acceso de Usuarios: Para que un usuario pueda colaborar en la web proporcionando recetas o planificar menús, deberá estar registrado y haber accedido a la aplicación como tal. Para ello se dispondrá de una gestión de usuarios y de un registro de cara al público para que puedan introducir sus datos de acceso y crearse como usuarios del sistema, pero no podrán acceder hasta que no hayan confirmado su registro mediante una validación del correo electrónico y/o un administrador así lo considere.
+  </li>
+</ul>
+</div>
+
+<hr/>
+<div class="titulo titulo3" style="margin:5mm;font-size:1.0em;font-weight:bold">Requerimientos para las partes privadas (Usuarios Colaboradores, Usuarios Administradores, Usuarios Tienda):</div>
+<div style="text-align:justify;margin:0em">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*** Funciones basicas de Alta, Modificación, Baja, Consulta, Búsquedas/Filtrado.
+<ul>
+  <li><strong>Mantenimiento de Usuarios: </strong>Crear usuarios y/o aceptar los que se han registrado nuevos.
+  </li>
+  <li><strong>Mantenimiento de Recetas: </strong>Gestión de recetas y Revisión de las creadas por los colaboradores.
+    <ul>
+      <li><strong>Mantenimiento de Pasos: </strong>Gestión y Revisión de los pasos para elaborar la receta.
+        <ul>
+          <li><strong>Mantenimiento de Imagenes: </strong>Gestión, Revisión, Subida y Descarga de imágenes asociadas con un paso de la receta.
+          </li>
+        </ul>
+      </li>
+      <li><strong>Mantenimiento de Ingredientes: </strong>Establecer los ingredientes y cantidades de la receta.
+      </li>
+      <li><strong>Mantenimiento de Categorias: </strong>Asignar/Desasignar categorías a la receta.
+      </li>
+      <li><strong>Mantenimiento de Comentarios: </strong>Gestión y Revisión de los posibles comentarios de los colaboradores.
+      </li>
+    </ul>
+  </li>
+  <li><strong>Mantenimiento de Categorias: </strong>Gestión del arbol de categorias.
+  </li>
+  <li><strong>Mantenimiento de Ingredientes: </strong>Gestión de ingredientes a usar en las recetas.
+  </li>
+  <li><strong>Mantenimiento de Menús: </strong>Gestión y Revisión de menús que combinan varios platos y recetas en el mismo.
+    <ul>
+      <li><strong>Mantenimiento de Platos en Menú: </strong>Gestión y Revisión de platos dentro de un menú, con la receta asociada al plato.
+      </li>
+    </ul>
+  </li>
+  <li><strong>Mantenimiento de Planificaciones de Menús: </strong>Gestión y Revisión de las planificaciones de menús de recetas creadas por los colaboradores.
+    <ul>
+      <li><strong>Mantenimiento de Menús en la Planificación: </strong>Gestión y Revisión del menú planificado.
+      </li>
+    </ul>
+  </li>
+  <li><strong>Mantenimiento de Tiendas: </strong>Gestión de tiendas que pueden poner anuncios de ofertas de productos / ingredientes en el portal.
+  </li>
+  <li><strong>Mantenimiento de Ofertas de Tiendas: </strong>Gestión de las ofertas de una tienda o de las tiendas, asociando el producto o ingrediente ofertado en la misma.
+  </li>
+  <li><strong>Utilidades: </strong>
+    <ul>
+      <li>Configuración de parametros del sistema
+      </li>
+      <li>Copias de Seguridad y Restauración de los datos y archivos de imágenes de la aplicación.
+      </li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<hr/>
+<div class="titulo titulo3" style="margin:5mm;font-size:1.0em;font-weight:bold">Requisitos de Información / Datos:</div>
+<div style="text-align:justify;margin:0em">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*** Información y Datos que debe almacenar y manejar el sistema para proporcionar las funcionalidades indicadas en los requisitos.
+<ul>
+  <li>
+  <strong>Receta: </strong>Nombre, Descripción, Tipo Plato (E=Entrantes, 1=Primeros, 2=Segundos, P=Postres), Ingredientes, Dificultad recomendada (1=Muy Facil, ..., 5=Muy Dificil), Dificultad por votacion, Comensales, Tiempo Elaboración, Pasos, Imagenes, Comentarios, Categoria/as., Valoración (1=Peor, ..., 5=Mejor), Usuario, Aceptada
+  </li>
+  <li>
+  <strong>Receta-Paso: </strong>Receta, Paso, Descripcion, Imagenes
+  </li>
+  <li>
+  <strong>Receta-Paso-Imagen: </strong>Receta, Paso, Orden, Imagen
+  </li>
+  <li>
+  <strong>Receta-Comentario: </strong>Receta, Usuario, Fecha/Hora, Texto
+  </li>
+  <li>
+  <strong>Receta-Categoria: </strong>Receta, Categoria
+  </li>
+  <li>
+  <strong>Receta-Ingrediente: </strong>Receta, Ingrediente, Cantidad, Medida, Notas
+  </li>
+  <li>
+  <strong>Categoria: </strong>Nombre, Descripcion, CategoriaPadre
+  </li>
+  <li>
+  <strong>Ingrediente: </strong>Nombre, Información-Nutricional
+  </li>
+  <li>
+  <strong>Usuario: </strong>email, password, nombre, rol (C=Colaborador, A=Administrador, T=Tienda), aceptado
+  </li>
+  <li>
+  <strong>Menu: </strong>Titulo, Descripción, Platos, Usuario
+  </li>
+  <li>
+  <strong>Menu-Plato: </strong>Menu, Receta
+  </li>
+  <li>
+  <strong>Planificacion: </strong>Periodo, Usuario, Notas, ...
+  </li>
+  <li>
+  <strong>Planificacion-Menu: </strong>Planificacion, Menu, Dia
+  </li>
+  <li>
+  <strong>Oferta: </strong>Tienda, Producto, Ingrediente, Envase, Cantidad, Medida, Notas
+  </li>
+  <li>
+  <strong>Tienda: </strong>Nombre Comercial, Domicilio, Poblacion, Provincia, Usuario, Bloqueada, Visible
+  </li>
+</ul>
+</div>
+  
+</div>

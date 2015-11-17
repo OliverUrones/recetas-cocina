@@ -1,0 +1,75 @@
+-----------------------------------------------------------------------------
+Recetas Cocina + Ofertas Tiendas
+-----------------------------------------------------------------------------
+
+Requisitos Funcionales
+  -Parte Publica
+      -Ver Recetas
+      -Ver Recetas mas votadas, mas recomendadas, favoritas, mas rapidas de hacer,
+      -Recetas con Ofertas del Dia.
+      -Variaciones de la misma receta.
+      -Menús planificados de recetas (Planning Recetas Semanal, etc).
+      -Agrupaciones por Categorias.
+      -Forma de Busqueda mas detallada.
+      
+      -Ofertas de Tiendas / Productos / Ingredientes.
+      
+      -Acceso de Usuarios
+      -Registro de Usuarios
+  
+  -Parte Privada (C=Colaboradores, A=Administradores, T=Tiendas)
+  *** Funciones basicas de Alta, Modificación, Baja, Consulta, Búsquedas/Filtrado
+      -Mantenimiento de Usuarios
+      -Mantenimiento de Recetas
+          -Mantenimiento de Pasos
+              -Mantenimiento de Imagenes
+          -Mantenimiento de Ingredientes
+          -Mantenimiento de Categorias
+          -Mantenimiento de Comentarios
+        
+      -Mantenimiento de Categorias
+      -Mantenimiento de Ingredientes
+      -Mantenimiento de Menús
+          -Mantenimiento de Platos en Menú
+      -Mantenimiento de Planificaciones de Menús
+          -Mantenimiento de Menús en la Planificación
+      -Mantenimiento de Tiendas
+      -Mantenimiento de Ofertas de Tiendas
+
+Requisitos de Información / Datos
+  -Receta: Nombre, Descripción, Tipo Plato (1=Entrantes, 2=Primeros, 3=Segundos, 4=Postres), Ingredientes, Dificultad recomendada (1=Muy Facil,2,3,4,5=Muy Dificil), Dificultad por votacion, Comensales, Tiempo Elaboración, Pasos, Imagenes, Comentarios, Categoria/as., Valoración (1=Peor, 5=Mejor), Usuario
+  
+  -Receta-Paso: Receta, Paso, Descripcion, Imagenes
+
+  -Receta-Paso-Imagen: Receta, Paso, Orden, Imagen
+  
+  -Receta-Comentario: Receta, Usuario, Fecha/Hora, Texto
+  
+  -Receta-Categoria: Receta, Categoria
+  
+  -Receta-Ingrediente: Receta, Ingrediente, Cantidad, Medida, Notas
+  
+  -Categoria: Nombre, Descripcion, CategoriaPadre
+  
+  -Ingrediente: Nombre, Información-Nutricional
+  
+  -Usuario: email, password, nombre, rol (C=Colaborador, A=Administrador, T=Tienda)
+  
+  -Menu: Titulo, Descripción, Platos, Usuario
+  
+  -Menu-Plato: Menu, Receta
+  
+  -Planificacion: Periodo, Usuario, Notas, ...
+  
+  -Planificacion-Menu: Planificacion, Menu, Dia
+  
+  -Oferta: Tienda, Producto, Ingrediente, Envase, Cantidad, Medida, Notas
+  
+  -Tienda: Nombre Comercial, Domicilio, Poblacion, Provincia, Usuario, Bloqueada, Visible
+  
+  
+  
+  
+  
+  
+  
