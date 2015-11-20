@@ -1,0 +1,19 @@
+2015-11-20 18:38:22 Error: [Cake\Database\Exception] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*' at line 1
+Stack Trace:
+#0 D:\Almacen_Trabajo\DTR-Sistemas\daw_php\daw2\2015_Recetas_Cocina\cake\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', '*', Array, Object(Cake\Database\Schema\Table))
+#1 D:\Almacen_Trabajo\DTR-Sistemas\daw_php\daw2\2015_Recetas_Cocina\cake\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('*', Array)
+#2 D:\Almacen_Trabajo\DTR-Sistemas\daw_php\daw2\2015_Recetas_Cocina\cake\vendor\cakephp\cakephp\src\ORM\Table.php(423): Cake\Database\Schema\CachedCollection->describe('*')
+#3 D:\Almacen_Trabajo\DTR-Sistemas\daw_php\daw2\2015_Recetas_Cocina\cake\vendor\cakephp\cakephp\src\ORM\Table.php(499): Cake\ORM\Table->schema()
+#4 D:\Almacen_Trabajo\DTR-Sistemas\daw_php\daw2\2015_Recetas_Cocina\cake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(194): Cake\ORM\Table->primaryKey()
+#5 D:\Almacen_Trabajo\DTR-Sistemas\daw_php\daw2\2015_Recetas_Cocina\cake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(110): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 D:\Almacen_Trabajo\DTR-Sistemas\daw_php\daw2\2015_Recetas_Cocina\cake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('*')
+#7 [internal function]: Bake\Shell\Task\ModelTask->main('*')
+#8 D:\Almacen_Trabajo\DTR-Sistemas\daw_php\daw2\2015_Recetas_Cocina\cake\vendor\cakephp\cakephp\src\Console\Shell.php(447): call_user_func_array(Array, Array)
+#9 D:\Almacen_Trabajo\DTR-Sistemas\daw_php\daw2\2015_Recetas_Cocina\cake\vendor\cakephp\cakephp\src\Console\Shell.php(442): Cake\Console\Shell->runCommand(Array, false)
+#10 D:\Almacen_Trabajo\DTR-Sistemas\daw_php\daw2\2015_Recetas_Cocina\cake\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(212): Cake\Console\Shell->runCommand(Array, true, Array)
+#11 D:\Almacen_Trabajo\DTR-Sistemas\daw_php\daw2\2015_Recetas_Cocina\cake\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(179): Cake\Console\ShellDispatcher->_dispatch(Array)
+#12 D:\Almacen_Trabajo\DTR-Sistemas\daw_php\daw2\2015_Recetas_Cocina\cake\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(126): Cake\Console\ShellDispatcher->dispatch(Array)
+#13 D:\Almacen_Trabajo\DTR-Sistemas\daw_php\daw2\2015_Recetas_Cocina\cake\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#14 {main}
+
+
