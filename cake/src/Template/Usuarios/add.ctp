@@ -15,7 +15,7 @@
             echo $this->Form->input('nombre');
             $opciones = [
                 'Elija un rol' => [
-                    'A' => 'Administardor',
+                    'A' => 'Administrador',
                     'C' => 'Colaborador',
                     'T' => 'Tienda'
                 ],
@@ -28,7 +28,9 @@
                 ],
             ];
             echo $this->Form->select('aceptado', $opciones);
-            echo $this->Form->input('Fecha', ['type' => 'date hour', 'value' => date('Y-m-d H:i:s'), 'readonly' => 'readonly']);
+            //DTR: Modificado nombre del input de "Fecha" a "creado", sino no valida al guardar.
+            //DTR: Modificado tipo de campo de "date hour" a "datetime" porque no convierte bien la fecha/hora.
+            echo $this->Form->input('creado', ['type' => 'datetime', 'value' => date('Y-m-d H:i:s'), 'readonly' => 'readonly']);
         ?>
         <?= $this->Form->button(__('Crear')) ?>
         <?= $this->Form->end() ?>

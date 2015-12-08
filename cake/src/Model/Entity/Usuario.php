@@ -2,6 +2,7 @@
 namespace App\Model\Entity;
 
 use Cake\ORM\Entity;
+use Cake\Auth\DefaultPasswordHasher;
 
 /**
  * Usuario Entity.
@@ -32,7 +33,21 @@ class Usuario extends Entity
      * @var array
      */
     protected $_accessible = [
-        '*' => false,
+        '*' => true,
         'id' => false,
     ];
+    
+    /**
+     * DTR: Metodo para codificar la contraseña del usuario a la hora de 
+     * establecerse en el modelo desde parametros de formulario, como en
+     * el formulario de "login", o el de añadir "add" o el de editar "edit".
+     */
+    protected function _setPassword($password)
+    {
+        $res= null;
+        if (strlen($password) > 0) {
+            $res= (new DefaultPasswordHasher)->hash($password);
+        }
+        return $res;
+    }
 }

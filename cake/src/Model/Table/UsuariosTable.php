@@ -105,4 +105,15 @@ class UsuariosTable extends Table
         $rules->add($rules->isUnique(['email']));
         return $rules;
     }
+    
+    /**
+     * DTR: Metodo para modificar la consulta que busca un usuario durante
+     * la autenticacion en el metodo "login" del controlador de usuarios, y
+     * asi filtrar por usuarios que estan aceptados.
+     */
+    public function findAuth(\Cake\ORM\Query $query, array $options)
+    {
+        $query->where( ['Usuarios.aceptado' => 1]);
+        return $query;
+    }
 }

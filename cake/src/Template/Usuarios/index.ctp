@@ -25,7 +25,7 @@
             <tr>
                 <td><?= h($usuario->id) ?></td>
                 <td><?= h($usuario->email) ?></td>
-                <td><?= h($usuario->password) ?></td>
+                <td><?= h(substr($usuario->password,0,10).'...') ?></td>
                 <td><?= h($usuario->nombre) ?></td>
                 <td>
                     <?php   if(h($usuario->rol) === 'A')

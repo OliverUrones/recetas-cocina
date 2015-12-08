@@ -42,12 +42,25 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         </ul>
         <section class="top-bar-section">
             <ul class="right">
+                <?php //DTR: Incluir si hay usuario conectado o no...
+                $usuario= $this->request->session()->read('Auth.User');
+//\Cake\Log\Log::write( 'debug', __METHOD__.'['.__LINE__.']'.' usuario= '.var_export( $usuario, true));
+//\Cake\Log\Log::write( 'debug', __METHOD__.'['.__LINE__.']'.' _SESSION= '.var_export( $this->request->session(), true));
+                echo '<li>';
+                if ($usuario !== null) {
+                  echo $this->Html->link( 'Cerrar Sesion ['.$usuario['nombre'].']', ['controller'=>'usuarios', 'action'=>'logout']);
+                } else {
+                  echo 'Invitado';
+                }
+                echo '</li>';
+                ?>
                 <li><a target="_blank" href="http://book.cakephp.org/3.0/">Documentation</a></li>
                 <li><a target="_blank" href="http://api.cakephp.org/3.0/">API</a></li>
             </ul>
         </section>
     </nav>
     <?= $this->Flash->render() ?>
+    <?= $this->Flash->render('auth') ?>
     <section class="container clearfix">
         <?= $this->fetch('content') ?>
     </section>

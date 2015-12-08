@@ -19,7 +19,7 @@
         
         <tr>
             <th><?= __('Contraseña') ?></th>
-            <td><?= h(md5($usuario->password)) ?></td>
+            <td><?= h($usuario->password) //DTR: Quitar llamada a funcion "md5" no tiene sentido si la clave ya es un hash.?></td>
         </tr>
         
         <tr>
