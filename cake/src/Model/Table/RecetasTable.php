@@ -78,7 +78,7 @@ class RecetasTable extends Table
             ->notEmpty('tipo_plato');
 
         $validator
-            ->add('dificultad', 'valid', ['rule' => 'boolean'])
+            ->add('dificultad', 'valid', ['rule' => 'numeric'])
             ->requirePresence('dificultad', 'create')
             ->notEmpty('dificultad');
 
@@ -93,7 +93,7 @@ class RecetasTable extends Table
             ->notEmpty('tiempo_elaboracion');
 
         $validator
-            ->add('valoracion', 'valid', ['rule' => 'boolean'])
+            ->add('valoracion', 'valid', ['rule' => 'numeric'])
             ->requirePresence('valoracion', 'create')
             ->notEmpty('valoracion');
 
