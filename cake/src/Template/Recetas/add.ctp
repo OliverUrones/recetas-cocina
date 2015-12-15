@@ -19,15 +19,15 @@
 <div class="recetas form large-9 medium-8 columns content">
     <?= $this->Form->create($receta) ?>
     <fieldset>
-        <legend><?= __('Add Receta') ?></legend>
+        <legend><?= __('Crear Receta') ?></legend>
         <?php
             echo $this->Form->input('nombre');
             echo $this->Form->input('descripcion');
-            echo $this->Form->input('tipo_plato');
-            echo $this->Form->input('dificultad' , ['type' => 'number']);
+            echo $this->Form->input('tipo_plato', ['type' => 'select', 'options'=>\App\model\Entity\Receta::tipo_plato(),'empty'=>'Seleccionar']);
+            echo $this->Form->input('dificultad' , ['type' => 'select', 'options'=>\App\model\Entity\Receta::dificultad(),'empty'=>'Seleccionar']);
             echo $this->Form->input('comensales');
             echo $this->Form->input('tiempo_elaboracion');
-            echo $this->Form->input('valoracion');
+            echo $this->Form->input('valoracion', ['type' => 'select', 'options'=>\App\model\Entity\Receta::valoracion(),'empty'=>'Seleccionar']);
             echo $this->Form->input('usuario_id', ['options' => $usuarios, 'empty' => true]);
             echo $this->Form->input('aceptada');
         ?>

@@ -22,3 +22,61 @@
 2015-12-15 07:59:22 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::add, res= true
 2015-12-15 07:59:30 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::index, res= true
 2015-12-15 07:59:52 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::index, res= true
+2015-12-15 17:33:36 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::index, res= true
+2015-12-15 17:33:40 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2015-12-15 17:44:55 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2015-12-15 18:07:32 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2015-12-15 18:14:22 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2015-12-15 18:18:21 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2015-12-15 18:18:21 Notice: Notice (8): Use of undefined constant E - assumed 'E' in [E:\apache\htdocs\recetas\cake\src\Model\Entity\Receta.php, line 58]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Receta::tipo_plato() - APP/Model\Entity\Receta.php, line 58
+include - APP/Template\Recetas\add.ctp, line 26
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-12-15 18:18:21 Notice: Notice (8): Use of undefined constant P - assumed 'P' in [E:\apache\htdocs\recetas\cake\src\Model\Entity\Receta.php, line 61]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Model\Entity\Receta::tipo_plato() - APP/Model\Entity\Receta.php, line 61
+include - APP/Template\Recetas\add.ctp, line 26
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-12-15 18:19:21 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2015-12-15 18:19:55 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2015-12-15 18:20:17 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2015-12-15 18:20:27 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2015-12-15 18:20:27 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::index, res= true
+2015-12-15 18:20:42 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2015-12-15 18:24:12 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaComentarios::index, res= true
+2015-12-15 18:24:21 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::index, res= true
+2015-12-15 18:24:23 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2015-12-15 18:28:56 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2015-12-15 18:29:33 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2015-12-15 18:32:37 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2015-12-15 18:33:25 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2015-12-15 18:33:40 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2015-12-15 18:35:54 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2015-12-15 18:36:00 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::add, res= true
+2015-12-15 18:36:04 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2015-12-15 18:39:39 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2015-12-15 18:41:04 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2015-12-15 18:42:46 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2015-12-15 18:43:15 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2015-12-15 18:43:21 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true

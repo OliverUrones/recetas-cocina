@@ -25,6 +25,63 @@ use Cake\ORM\Entity;
  */
 class Receta extends Entity
 {
+	
+	
+	/*
+	
+	Nombre, Descripción, Tipo Plato (E=Entrantes, 1=Primeros, 2=Segundos, P=Postres),
+	Ingredientes, Dificultad recomendada (1=Muy Facil, ..., 5=Muy Dificil), 
+	Dificultad por votacion, Comensales, Tiempo Elaboración, Pasos, Imagenes, Comentarios, Categoria/as.,
+	Valoración (1=Peor, ..., 5=Mejor), Usuario, Aceptada 
+	*/
+
+   public static function dificultad()
+   {
+	 
+	   $lista= [
+			1=>'1 - Muy fácil',
+			2=>'2 - Fácil',
+			3=>'3 - Media',
+			4=>'4 - Difícil',
+			5=>'5 - Muy Difícil',
+
+	   ];
+		return $lista;
+   }
+
+   
+   
+   public static function tipo_plato()
+   {
+	 
+	   $lista= [
+			'E'=>'Entrantes',
+			1=>'Primeros',
+			2=>'Segundos',
+			'P'=>'Postres',
+			'O'=>'Otros',
+
+	   ];
+		return $lista;
+   }
+   
+   
+      public static function valoracion()
+   {
+	 
+	   $lista= [
+			1=>' *',
+			2=>' **',
+			3=>' ***',
+			4=>' ****',
+			5=>' *****',
+
+	   ];
+		return $lista;
+   }
+
+   
+
 
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
