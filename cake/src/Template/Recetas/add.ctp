@@ -24,7 +24,7 @@
             echo $this->Form->input('nombre');
             echo $this->Form->input('descripcion');
             echo $this->Form->input('tipo_plato');
-            echo $this->Form->input('dificultad');
+            echo $this->Form->input('dificultad' , ['type' => 'number']);
             echo $this->Form->input('comensales');
             echo $this->Form->input('tiempo_elaboracion');
             echo $this->Form->input('valoracion');
