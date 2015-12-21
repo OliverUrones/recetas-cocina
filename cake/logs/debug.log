@@ -80,3 +80,12 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 2015-12-15 18:42:46 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
 2015-12-15 18:43:15 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
 2015-12-15 18:43:21 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2015-12-21 12:30:05 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Tiendaofertas::index, res= true
+2015-12-21 12:30:13 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Tiendaofertas::index, res= true
+2015-12-21 12:30:22 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Tiendaofertas::index, res= true
+2015-12-21 12:30:49 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Tiendaofertas::add, res= true
+2015-12-21 12:33:54 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Tiendaofertas::index, res= true
+2015-12-21 12:33:58 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Tiendaofertas::add, res= true
+2015-12-21 12:34:58 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Tiendaofertas::add, res= true
+2015-12-21 12:35:37 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Tiendaofertas::add, res= true
+2015-12-21 12:35:38 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Tiendaofertas::index, res= true

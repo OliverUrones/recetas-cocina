@@ -67,3 +67,42 @@ Stack Trace:
 #1 {main}
 
 
+2015-12-21 12:30:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Tiendas could not be found.
+Exception Attributes: array (
+  'class' => 'Tiendas',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /DAW2/cake/tiendas
+Stack Trace:
+#0 C:\xampp\htdocs\DAW2\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-12-21 12:31:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Tienda could not be found.
+Exception Attributes: array (
+  'class' => 'Tienda',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /DAW2/cake/tienda
+Stack Trace:
+#0 C:\xampp\htdocs\DAW2\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-12-21 12:31:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Tiendas could not be found.
+Exception Attributes: array (
+  'class' => 'Tiendas',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /DAW2/cake/tiendas
+Stack Trace:
+#0 C:\xampp\htdocs\DAW2\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
