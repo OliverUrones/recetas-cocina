@@ -9,7 +9,7 @@
     </ul>
 </nav>
 <div class="tiendaofertas form large-9 medium-8 columns content">
-    <?= $this->Form->create($tiendaoferta) ?>
+    <?= $this->Form->create($tiendaOferta) ?>
     <fieldset>
         <legend><?= __('Add Tiendaoferta') ?></legend>
         <?php
