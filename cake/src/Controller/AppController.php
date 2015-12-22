@@ -76,7 +76,7 @@ class AppController extends Controller
             //DTR: Y especificar el algoritmo concreto para la funcion de hash
             //.... que genera claves de 60 caracteres de largo para el campo en la BD.
             'passwordHasher' => ['class'=>'Default','hashType'=>PASSWORD_BCRYPT],
-            'authorize' => 'controller',//DTR: Autorizacion mediante metodo "isAuthorized()" de los controladores.
+            'authorize' => 'Controller',//DTR: Autorizacion mediante metodo "isAuthorized()" de los controladores. C mayúscula para que funcione en linux
             'storage' => 'Session'
         ]);
         //DTR: Si el metodo "display" existe en todos los controladores esta 

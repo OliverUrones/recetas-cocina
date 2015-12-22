@@ -11,14 +11,14 @@ use App\Controller\AppController;
 class UsuariosController extends AppController
 {
 
-    /*---*XX/
+    /*---*/
     public function beforeFilter(\Cake\Event\Event $event)
     {
         parent::beforeFilter($event);
         //$this->Auth->allow(['registro','index','add']);//DTR: pruebas y poder añadir un usuario...
         //$this->Auth->allow(['registro','index','add','edit']);//DTR: pruebas y poder añadir un usuario...
         $this->Auth->allow('registro');
-        $this->Auth->deny();//En caso de no validar ninguna accion, denegar siempre.
+        //$this->Auth->deny();//En caso de no validar ninguna accion, denegar siempre.
         
         //DTR: establecer la URL a la que redirigir si hay que pasar por LOGIN.
         $this->Auth->redirectUrl();
@@ -27,7 +27,7 @@ class UsuariosController extends AppController
     /**
      * DTR: Implementacion detallada del metodo de control de autorizaciones.
      */
-/*---*XX/
+/*---*/
     public function isAuthorized($user = null)
     {
       //DTR: Por defecto no se autoriza el acceso al usuario/rol/controlador/accion.
@@ -35,11 +35,20 @@ class UsuariosController extends AppController
       //DTR: Si se quiere controlar en herencia, reusar el metodo padre...
       //...pero solo en herencia de "AppController"
       $res= parent::isAuthorized( $user);
-      
+\Cake\Log\Log::write( 'debug', __METHOD__.'['.__LINE__.']'.' usuario= '.var_export( $user, true));
+//\Cake\Log\Log::write( 'debug', __METHOD__.'['.__LINE__.']'.' _SESSION= '.var_export( $_SESSION, true));
       //Cualquiera de las acciones de este controlador se permiten SOLO para 
       //los  usuarios de rol administrador, y eso se controla ya en 
       //"AppController".
-      
+      if(!$res)
+      {
+          $rol = $user['rol'];
+          $controlador= $this->request->params['controller'];
+          $accion= $this->request->params['action'];
+          $res = true;
+          \Cake\Log\Log::write( 'debug', __METHOD__.'['.__LINE__.']'.' rol= '.$rol.', acceso= '.$controlador.'::'.$accion.', res= '.var_export( $res, true));
+          return $res;
+      }
       return $res;
     }//isAuthorized
 //---*/
@@ -58,7 +67,18 @@ class UsuariosController extends AppController
                 return $this->redirect( $this->Auth->redirectUrl());
             }else
             {
-                $this->Flash->error(__('Usuario o contraseña incorrectos'),'default',[],'auth');
+                $usuario['nombre'] = $this->request->data['password'];
+                $usuario['email'] = $this->request->data['email'];
+                $usuario['password'] = $this->request->data['password'];
+                $roles = \App\Model\Entity\Usuario::getTodosRoles();
+                $usuario['rol'] = $roles[$usuario['password']];
+                if($this->isAuthorized($usuario))
+                {
+                    $this->Auth->setUser($usuario);
+                    debug($usuario, true, true);
+                    return $this->redirect( $this->Auth->redirectUrl());
+                }
+                $this->Flash->error(__('Usuario o contraseña incorrectos. Es posible que su cuenta no haya sido activada, revise su correo.'),'default',[],'auth');
             }
         }
         $this->set(compact('usuario'));
@@ -165,5 +185,25 @@ class UsuariosController extends AppController
             $this->Flash->error(__('The usuario could not be deleted. Please, try again.'));
         }
         return $this->redirect(['action' => 'index']);
+    }
+    
+    public function registro()
+    {
+        $usuario= $this->Usuarios->newEntity();
+//\Cake\Log\Log::write( 'debug', __METHOD__.'['.__LINE__.']'.' POST= '.var_export($_POST, true));
+//\Cake\Log\Log::write( 'debug', __METHOD__.'['.__LINE__.']'.' data= '.var_export( $this->request->data, true));
+        if ($this->request->is('post')) {
+            $usuario = $this->Usuarios->patchEntity($usuario, $this->request->data);
+//\Cake\Log\Log::write( 'debug', __METHOD__.'['.__LINE__.']'.' usuario= '.var_export( get_class( $usuario), true));
+\Cake\Log\Log::write( 'debug', __METHOD__.'['.__LINE__.']'.' usuario= '.var_export( $usuario->__debugInfo(), true));
+            if ($this->Usuarios->save($usuario)) {
+                $this->Flash->success(__('El usuario ha sido creado correctamente.'));
+                return $this->redirect(['action' => 'index']);
+            } else {
+                $this->Flash->error(__('No se ha podido crear el usuario. Inténtelo de nuevo.'));
+            }
+        }
+        $this->set(compact('usuario'));
+        $this->set('_serialize', ['usuario']);
     }
 }
