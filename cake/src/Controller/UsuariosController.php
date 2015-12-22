@@ -67,16 +67,19 @@ class UsuariosController extends AppController
                 return $this->redirect( $this->Auth->redirectUrl());
             }else
             {
-                $usuario['nombre'] = $this->request->data['password'];
-                $usuario['email'] = $this->request->data['email'];
-                $usuario['password'] = $this->request->data['password'];
-                $roles = \App\Model\Entity\Usuario::getTodosRoles();
-                $usuario['rol'] = $roles[$usuario['password']];
-                if($this->isAuthorized($usuario))
+                if($this->request->data['email'] && $this->request->data['password'])
                 {
-                    $this->Auth->setUser($usuario);
-                    debug($usuario, true, true);
-                    return $this->redirect( $this->Auth->redirectUrl());
+                    $usuario['nombre'] = $this->request->data['password'];
+                    $usuario['email'] = $this->request->data['email'];
+                    $usuario['password'] = $this->request->data['password'];
+                    $roles = \App\Model\Entity\Usuario::getTodosRoles();
+                    $usuario['rol'] = $roles[$usuario['password']];
+                    if($this->isAuthorized($usuario))
+                    {
+                        $this->Auth->setUser($usuario);
+                        debug($usuario, true, true);
+                        return $this->redirect( $this->Auth->redirectUrl());
+                    }
                 }
                 $this->Flash->error(__('Usuario o contraseña incorrectos. Es posible que su cuenta no haya sido activada, revise su correo.'),'default',[],'auth');
             }
