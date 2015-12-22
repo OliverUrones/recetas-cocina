@@ -37,6 +37,37 @@ class Usuario extends Entity
         'id' => false,
     ];
     
+    /* 
+     * Función estática que devuelve una lista con los roles definidos en la base de datos
+     * 'A' = 'Administrador'
+     * 'C' = 'Colaborador'
+     * 'T' = 'Tienda'
+     */
+    public static function getRolUsuario()
+    {
+        $roles = [
+            'A' => 'Administrador',
+            'C' => 'Colaborador',
+            'T' => 'Tienda'
+        ];
+        return $roles;
+    }
+
+    /*
+     * Función estática que devuelve una lista con todos los roles definidos en la aplicación
+     * Los roles que devuelve la función getRolUsuario() más el usuario 'sysadmin'
+     */
+    public static function getTodosRoles()
+    {
+        $roles = self::getRolUsuario();
+        $todos = [
+            'sysadmin' => 'sysadmin',
+            '*' => 'Invitado'
+        ];
+        $todos = $roles+$todos;
+        return $todos;
+    }
+    
     /**
      * DTR: Metodo para codificar la contraseña del usuario a la hora de 
      * establecerse en el modelo desde parametros de formulario, como en
