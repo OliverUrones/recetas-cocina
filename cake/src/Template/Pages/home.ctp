@@ -39,12 +39,49 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->css('cake.css') ?>
 </head>
 <body class="home">
-    <header>
-        <div class="header-image">
-            <?= $this->Html->image('http://cakephp.org/img/cake-logo.png') ?>
-            <h1>Get the Ovens Ready</h1>
-        </div>
-    </header>
+<!--    <header>-->
+        <nav class="top-bar expanded" data-topbar role="navigation">
+        <section class="top-bar-section">
+            <ul class="right">
+                <?php //DTR: Incluir si hay usuario conectado o no...
+                $usuario= $this->request->session()->read('Auth.User');
+//\Cake\Log\Log::write( 'debug', __METHOD__.'['.__LINE__.']'.' usuario= '.var_export( $usuario, true));
+//\Cake\Log\Log::write( 'debug', __METHOD__.'['.__LINE__.']'.' _SESSION= '.var_export( $this->request->session(), true));
+                echo '<li>';
+                if ($usuario !== null) {
+                  echo $this->Html->link( 'Cerrar Sesion ['.$usuario['nombre'].'-'.$usuario['rol'].']', ['controller'=>'usuarios', 'action'=>'logout']);
+                  if($usuario['nombre'] === 'sysadmin')
+                  {
+                      $opciones = \App\Model\Entity\Usuario::getTodosRoles();
+                      //echo '<li>';
+                      //echo $this->Form->select('Cambiar Rol', $opciones);
+                      foreach ($opciones as $key => $value)
+                      {
+                          echo '<li>';
+                          echo $this->Html->link($value, ['controller' => 'usuarios', 'action' => 'cambiarRol', $key]);
+                          //echo $this->Form->postLink($value, ['controller' => 'usuarios', 'action' => 'cambiarRol', $key]);
+                          echo '</li>';
+                      }
+                      //echo '</li>';
+                      //echo $this->Form->postButton(__('Cambiar Rol'), ['controller' => 'usuarios', 'action' => 'cambiarRol']);
+                  }
+                } else {
+                    echo '<li>';
+                    echo $this->Html->link('Invitado', ['controller' => 'Pages', 'action' => 'display']);
+                    echo '</li>';
+                    echo '<li>';
+                    echo $this->Html->link('Acceder', ['controller' => 'Usuarios', 'action' => 'login']);
+                    echo '</li>';
+                    echo '<li>';
+                    echo $this->Html->link('Registrarse', ['controller' => 'Usuarios', 'action' => 'registro']);
+                    echo '</li>';
+                }
+                echo '</li>';
+                ?>
+            </ul>
+        </section>
+    </nav>
+<!--    </header>-->
     <div id="content">
         <div class="row">
             <?php Debugger::checkSecurityKeys(); ?>

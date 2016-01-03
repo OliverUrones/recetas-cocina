@@ -28,6 +28,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
     <?= $this->Html->css('base.css') ?>
     <?= $this->Html->css('cake.css') ?>
+    <?= $this->Html->css('admin.css') ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
@@ -48,7 +49,22 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 //\Cake\Log\Log::write( 'debug', __METHOD__.'['.__LINE__.']'.' _SESSION= '.var_export( $this->request->session(), true));
                 echo '<li>';
                 if ($usuario !== null) {
-                  echo $this->Html->link( 'Cerrar Sesion ['.$usuario['nombre'].']', ['controller'=>'usuarios', 'action'=>'logout']);
+                  echo $this->Html->link( 'Cerrar Sesion ['.$usuario['nombre'].'-'.$usuario['rol'].']', ['controller'=>'usuarios', 'action'=>'logout']);
+                  if($usuario['nombre'] === 'sysadmin')
+                  {
+                      $opciones = \App\Model\Entity\Usuario::getTodosRoles();
+                      //echo '<li>';
+                      //echo $this->Form->select('Cambiar Rol', $opciones);
+                      foreach ($opciones as $key => $value)
+                      {
+                          echo '<li class="cambio-rol">';
+                          echo $this->Html->link($value, ['controller' => 'usuarios', 'action' => 'cambiarRol', $key]);
+                          //echo $this->Form->postLink($value, ['controller' => 'usuarios', 'action' => 'cambiarRol', $key]);
+                          echo '</li>';
+                      }
+                      //echo '</li>';
+                      //echo $this->Form->postButton(__('Cambiar Rol'), ['controller' => 'usuarios', 'action' => 'cambiarRol']);
+                  }
                 } else {
                   echo 'Invitado';
                 }

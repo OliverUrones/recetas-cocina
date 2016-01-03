@@ -7,6 +7,7 @@
             echo $this->Form->input('email');
             echo $this->Form->input('password');
         ?>
+        <?= $this->Html->link(__('¿Olvidó su contraseña?'), ['controller' => 'Usuarios', 'action' => 'recuperarPass']); ?>
         <?= $this->Form->button(__('Acceder')) ?>
         <?= $this->Form->end() ?>
     </fieldset>
