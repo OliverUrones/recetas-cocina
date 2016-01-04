@@ -1,0 +1,5 @@
+/*cambio a la base de datos de categorias para que el codigo autogenerado por cakephp en cakebake funcione adecuadamente
+Con la anterior base de datos Cakephp creia que existia una tabla llamada categiora_padre relacionada con categoria, en lugar de la relacion reflexiva
+*/
+
+ALTER TABLE `categorias` CHANGE `categoria_padre_id` `categoria_id` INT(12) UNSIGNED NOT NULL DEFAULT '0' COMMENT 'Identificador de la categoria padre en caso de estar ordenados por jerarquías.';
