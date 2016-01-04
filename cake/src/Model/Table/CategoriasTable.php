@@ -10,7 +10,8 @@ use Cake\Validation\Validator;
 /**
  * Categorias Model
  *
- * @property \Cake\ORM\Association\BelongsTo $CategoriaPadres
+ * @property \Cake\ORM\Association\BelongsTo $Categorias
+ * @property \Cake\ORM\Association\HasMany $Categorias
  */
 class CategoriasTable extends Table
 {
@@ -29,12 +30,20 @@ class CategoriasTable extends Table
         $this->displayField('id');
         $this->primaryKey('id');
 
-        $this->belongsTo('CategoriaPadres', [
-            'foreignKey' => 'categoria_padre_id',
+        $this->belongsTo('Categorias', [
+            'foreignKey' => 'categoria_id',
             'joinType' => 'INNER'
         ]);
+        $this->hasMany('Categorias', [
+            'foreignKey' => 'categoria_id'
+        ]);
     }
-
+public function findHijos(Query $query, array $options)
+{
+return $this->find()->matching('Categorias', function ($q) use ($options) {
+		return $q->where(['Categorioas.categoria_id ='.$options['padre']]);
+	});
+}
     /**
      * Default validation rules.
      *
@@ -65,7 +74,7 @@ class CategoriasTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['categoria_padre_id'], 'CategoriaPadres'));
+        $rules->add($rules->existsIn(['categoria_id'], 'Categorias'));
         return $rules;
     }
 }

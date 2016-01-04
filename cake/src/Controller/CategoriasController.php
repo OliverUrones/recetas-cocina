@@ -18,9 +18,6 @@ class CategoriasController extends AppController
      */
     public function index()
     {
-        $this->paginate = [
-            'contain' => ['CategoriaPadres']
-        ];
         $this->set('categorias', $this->paginate($this->Categorias));
         $this->set('_serialize', ['categorias']);
     }
@@ -34,10 +31,16 @@ class CategoriasController extends AppController
      */
     public function view($id = null)
     {
-        $categoria = $this->Categorias->get($id, [
-            'contain' => ['CategoriaPadres']
-        ]);
-        $this->set('categoria', $categoria);
+        $categoria = $this->Categorias->get($id);
+		$nombre_padre="";
+		if($categoria->categoria_id!=0){
+		 $padre = $this->Categorias->get($categoria->categoria_id);
+		 $nombre_padre=$padre->nombre;
+		}
+		
+	$hijos = $this->Categorias->find('hijos', ['padre' => $id]);
+	//$categoria->categorias=$hijos;
+        $this->set(compact('categoria','nombre_padre'));
         $this->set('_serialize', ['categoria']);
     }
 
@@ -49,6 +52,7 @@ class CategoriasController extends AppController
     public function add()
     {
         $categoria = $this->Categorias->newEntity();
+		$categoria_padres = $this->Categorias->find('list', ['limit' => 200]);
         if ($this->request->is('post')) {
             $categoria = $this->Categorias->patchEntity($categoria, $this->request->data);
             if ($this->Categorias->save($categoria)) {
@@ -58,8 +62,8 @@ class CategoriasController extends AppController
                 $this->Flash->error(__('The categoria could not be saved. Please, try again.'));
             }
         }
-        $categoriaPadres = $this->Categorias->CategoriaPadres->find('list', ['limit' => 200]);
-        $this->set(compact('categoria', 'categoriaPadres'));
+		
+        $this->set(compact('categoria','categoria_padres'));
         $this->set('_serialize', ['categoria']);
     }
 
@@ -84,8 +88,7 @@ class CategoriasController extends AppController
                 $this->Flash->error(__('The categoria could not be saved. Please, try again.'));
             }
         }
-        $categoriaPadres = $this->Categorias->CategoriaPadres->find('list', ['limit' => 200]);
-        $this->set(compact('categoria', 'categoriaPadres'));
+        $this->set(compact('categoria'));
         $this->set('_serialize', ['categoria']);
     }
 

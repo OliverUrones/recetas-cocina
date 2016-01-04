@@ -9,8 +9,8 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property string $nombre
  * @property string $descripcion
- * @property int $categoria_padre_id
- * @property \App\Model\Entity\CategoriaPadre $categoria_padre
+ * @property int $categoria_id
+ * @property \App\Model\Entity\Categoria[] $categorias
  */
 class Categoria extends Entity
 {

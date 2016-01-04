@@ -4,11 +4,11 @@ namespace App\Controller;
 use App\Controller\AppController;
 
 /**
- * TiendaOfertas Controller
+ * Tiendaofertas Controller
  *
- * @property \App\Model\Table\TiendaOfertasTable $TiendaOfertas
+ * @property \App\Model\Table\TiendaofertasTable $Tiendaofertas
  */
-class TiendaOfertasController extends AppController
+class TiendaofertasController extends AppController
 {
 
     /**
@@ -21,24 +21,24 @@ class TiendaOfertasController extends AppController
         $this->paginate = [
             'contain' => ['Tiendas', 'Ingredientes']
         ];
-        $this->set('tiendaOfertas', $this->paginate($this->TiendaOfertas));
-        $this->set('_serialize', ['tiendaOfertas']);
+        $this->set('tiendaofertas', $this->paginate($this->Tiendaofertas));
+        $this->set('_serialize', ['tiendaofertas']);
     }
 
     /**
      * View method
      *
-     * @param string|null $id Tienda Oferta id.
+     * @param string|null $id Tiendaoferta id.
      * @return void
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
     public function view($id = null)
     {
-        $tiendaOferta = $this->TiendaOfertas->get($id, [
+        $tiendaoferta = $this->Tiendaofertas->get($id, [
             'contain' => ['Tiendas', 'Ingredientes']
         ]);
-        $this->set('tiendaOferta', $tiendaOferta);
-        $this->set('_serialize', ['tiendaOferta']);
+        $this->set('tiendaoferta', $tiendaoferta);
+        $this->set('_serialize', ['tiendaoferta']);
     }
 
     /**
@@ -48,64 +48,64 @@ class TiendaOfertasController extends AppController
      */
     public function add()
     {
-        $tiendaOferta = $this->TiendaOfertas->newEntity();
+        $tiendaoferta = $this->Tiendaofertas->newEntity();
         if ($this->request->is('post')) {
-            $tiendaOferta = $this->TiendaOfertas->patchEntity($tiendaOferta, $this->request->data);
-            if ($this->TiendaOfertas->save($tiendaOferta)) {
-                $this->Flash->success(__('The tienda oferta has been saved.'));
+            $tiendaoferta = $this->Tiendaofertas->patchEntity($tiendaoferta, $this->request->data);
+            if ($this->Tiendaofertas->save($tiendaoferta)) {
+                $this->Flash->success(__('The tiendaoferta has been saved.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The tienda oferta could not be saved. Please, try again.'));
+                $this->Flash->error(__('The tiendaoferta could not be saved. Please, try again.'));
             }
         }
-        $tiendas = $this->TiendaOfertas->Tiendas->find('list', ['limit' => 200]);
-        $ingredientes = $this->TiendaOfertas->Ingredientes->find('list', ['limit' => 200]);
-        $this->set(compact('tiendaOferta', 'tiendas', 'ingredientes'));
-        $this->set('_serialize', ['tiendaOferta']);
+        $tiendas = $this->Tiendaofertas->Tiendas->find('list', ['limit' => 200]);
+        $ingredientes = $this->Tiendaofertas->Ingredientes->find('list', ['limit' => 200]);
+        $this->set(compact('tiendaoferta', 'tiendas', 'ingredientes'));
+        $this->set('_serialize', ['tiendaoferta']);
     }
 
     /**
      * Edit method
      *
-     * @param string|null $id Tienda Oferta id.
+     * @param string|null $id Tiendaoferta id.
      * @return void Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
     public function edit($id = null)
     {
-        $tiendaOferta = $this->TiendaOfertas->get($id, [
+        $tiendaoferta = $this->Tiendaofertas->get($id, [
             'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
-            $tiendaOferta = $this->TiendaOfertas->patchEntity($tiendaOferta, $this->request->data);
-            if ($this->TiendaOfertas->save($tiendaOferta)) {
-                $this->Flash->success(__('The tienda oferta has been saved.'));
+            $tiendaoferta = $this->Tiendaofertas->patchEntity($tiendaoferta, $this->request->data);
+            if ($this->Tiendaofertas->save($tiendaoferta)) {
+                $this->Flash->success(__('The tiendaoferta has been saved.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The tienda oferta could not be saved. Please, try again.'));
+                $this->Flash->error(__('The tiendaoferta could not be saved. Please, try again.'));
             }
         }
-        $tiendas = $this->TiendaOfertas->Tiendas->find('list', ['limit' => 200]);
-        $ingredientes = $this->TiendaOfertas->Ingredientes->find('list', ['limit' => 200]);
-        $this->set(compact('tiendaOferta', 'tiendas', 'ingredientes'));
-        $this->set('_serialize', ['tiendaOferta']);
+        $tiendas = $this->Tiendaofertas->Tiendas->find('list', ['limit' => 200]);
+        $ingredientes = $this->Tiendaofertas->Ingredientes->find('list', ['limit' => 200]);
+        $this->set(compact('tiendaoferta', 'tiendas', 'ingredientes'));
+        $this->set('_serialize', ['tiendaoferta']);
     }
 
     /**
      * Delete method
      *
-     * @param string|null $id Tienda Oferta id.
+     * @param string|null $id Tiendaoferta id.
      * @return void Redirects to index.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
     public function delete($id = null)
     {
         $this->request->allowMethod(['post', 'delete']);
-        $tiendaOferta = $this->TiendaOfertas->get($id);
-        if ($this->TiendaOfertas->delete($tiendaOferta)) {
-            $this->Flash->success(__('The tienda oferta has been deleted.'));
+        $tiendaoferta = $this->Tiendaofertas->get($id);
+        if ($this->Tiendaofertas->delete($tiendaoferta)) {
+            $this->Flash->success(__('The tiendaoferta has been deleted.'));
         } else {
-            $this->Flash->error(__('The tienda oferta could not be deleted. Please, try again.'));
+            $this->Flash->error(__('The tiendaoferta could not be deleted. Please, try again.'));
         }
         return $this->redirect(['action' => 'index']);
     }
