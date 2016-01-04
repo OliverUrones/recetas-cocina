@@ -112,7 +112,7 @@ class AppController extends Controller
       if (($usuario !== null) && !empty($rol)) {
         
         //DTR: Por defecto los usuarios registrados de "rol" administrador 
-        //pueden acceder a cualquier accion.
+        //pueden acceder a cualquier accion excepto a cambiarRol.
         if (!$res && (strcasecmp( $rol, 'A') == 0) && $accion != 'cambiarRol') {
           $res= true;
         }
