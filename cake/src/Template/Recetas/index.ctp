@@ -1,6 +1,6 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
+        <li class="heading"><?= __('Actionses') ?></li>
         <li><?= $this->Html->link(__('New Receta'), ['action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Usuarios'), ['controller' => 'Usuarios', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Usuario'), ['controller' => 'Usuarios', 'action' => 'add']) ?></li>
@@ -21,7 +21,7 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th><?= $this->Paginator->sort('id') ?></th>
+                <!-- th><?= $this->Paginator->sort('id') ?></th -->
                 <th><?= $this->Paginator->sort('tipo_plato') ?></th>
                 <th><?= $this->Paginator->sort('dificultad') ?></th>
                 <th><?= $this->Paginator->sort('comensales') ?></th>
