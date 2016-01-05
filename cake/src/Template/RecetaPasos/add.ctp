@@ -13,7 +13,7 @@
     <fieldset>
         <legend><?= __('Add Receta Paso') ?></legend>
         <?php
-            echo $this->Form->input('receta_id', ['options' => $recetas]);
+           
             echo $this->Form->input('orden');
             echo $this->Form->input('descripcion');
         ?>

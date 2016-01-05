@@ -34,7 +34,6 @@
             echo $this->Form->input('comensales');
             echo $this->Form->input('tiempo_elaboracion');
             echo $this->Form->input('valoracion');
-            echo $this->Form->input('usuario_id', ['options' => $usuarios, 'empty' => true]);
             echo $this->Form->input('aceptada');
         ?>
     </fieldset>

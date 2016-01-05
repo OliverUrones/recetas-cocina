@@ -1,8 +1,8 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actiones') ?></li>
-        <li><?= $this->Html->link(__('Listar Recetas'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('Listar Usuarios'), ['controller' => 'Usuarios', 'action' => 'index']) ?></li>
+        <li class="heading"><?= __('Actions') ?></li>
+        <li><?= $this->Html->link(__('List Recetas'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('List Usuarios'), ['controller' => 'Usuarios', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Usuario'), ['controller' => 'Usuarios', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Menu Platos'), ['controller' => 'MenuPlatos', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Menu Plato'), ['controller' => 'MenuPlatos', 'action' => 'add']) ?></li>
@@ -25,10 +25,9 @@
             echo $this->Form->input('descripcion');
             echo $this->Form->input('tipo_plato', ['type' => 'select', 'options'=>\App\model\Entity\Receta::tipo_plato(),'empty'=>'Seleccionar']);
             echo $this->Form->input('dificultad' , ['type' => 'select', 'options'=>\App\model\Entity\Receta::dificultad(),'empty'=>'Seleccionar']);
-            echo $this->Form->input('comensales');
+             echo $this->Form->input('comensales', ['options' => [1,2,4,6,8], 'empty' => false]);
             echo $this->Form->input('tiempo_elaboracion');
             echo $this->Form->input('valoracion', ['type' => 'select', 'options'=>\App\model\Entity\Receta::valoracion(),'empty'=>'Seleccionar']);
-            echo $this->Form->input('usuario_id', ['options' => $usuarios, 'empty' => true]);
             echo $this->Form->input('aceptada');
         ?>
     </fieldset>

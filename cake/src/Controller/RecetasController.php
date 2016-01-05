@@ -35,7 +35,7 @@ class RecetasController extends AppController
     public function view($id = null)
     {
         $receta = $this->Recetas->get($id, [
-            'contain' => ['Usuarios', 'MenuPlatos', 'RecetaCategorias', 'RecetaComentarios', 'RecetaIngredientes', 'RecetaPasos']
+            'contain' => [ /*'MenuPlatos', 'RecetaCategorias', */'RecetaComentarios', 'RecetaIngredientes', 'RecetaPasos']
         ]);
         $this->set('receta', $receta);
         $this->set('_serialize', ['receta']);
@@ -49,17 +49,20 @@ class RecetasController extends AppController
     public function add()
     {
         $receta = $this->Recetas->newEntity();
+		
         if ($this->request->is('post')) {
             $receta = $this->Recetas->patchEntity($receta, $this->request->data);
+			$usuario= $this->request->session()->read('Auth.User');
+			$receta->usuario_id = $usuario['id'];
             if ($this->Recetas->save($receta)) {
-                $this->Flash->success(__('The receta has been saved.'));
+                $this->Flash->success(__('La receta ha sido guardada.'));
                 return $this->redirect(['action' => 'index']);
             } else {
                 $this->Flash->error(__('The receta could not be saved. Please, try again.'));
             }
         }
-        $usuarios = $this->Recetas->Usuarios->find('list', ['limit' => 200]);
-        $this->set(compact('receta', 'usuarios'));
+        //$usuarios = $this->Recetas->Usuarios->find('list', ['limit' => 200]);
+        $this->set(compact('receta', '$usuario'));
         $this->set('_serialize', ['receta']);
     }
 
@@ -78,7 +81,7 @@ class RecetasController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $receta = $this->Recetas->patchEntity($receta, $this->request->data);
             if ($this->Recetas->save($receta)) {
-                $this->Flash->success(__('La receta ha sido guardada.'));
+                $this->Flash->success(__('The receta has been saved.'));
                 return $this->redirect(['action' => 'index']);
             } else {
                 $this->Flash->error(__('The receta could not be saved. Please, try again.'));
@@ -101,7 +104,7 @@ class RecetasController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $receta = $this->Recetas->get($id);
         if ($this->Recetas->delete($receta)) {
-            $this->Flash->success(__('La receta ha sido eliminada.'));
+            $this->Flash->success(__('The receta has been deleted.'));
         } else {
             $this->Flash->error(__('The receta could not be deleted. Please, try again.'));
         }

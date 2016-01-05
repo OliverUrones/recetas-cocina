@@ -16,12 +16,13 @@ class RecetaPasosController extends AppController
      *
      * @return void
      */
-    public function index()
+    public function index($receta_id = null)
     {
         $this->paginate = [
             'contain' => ['Recetas']
         ];
-        $this->set('recetaPasos', $this->paginate($this->RecetaPasos));
+		$recetaPasos=$this->paginate($this->RecetaPasos);
+        $this->set(compact('recetaPasos', 'receta_id'));
         $this->set('_serialize', ['recetaPasos']);
     }
 
@@ -46,14 +47,17 @@ class RecetaPasosController extends AppController
      *
      * @return void Redirects on successful add, renders view otherwise.
      */
-    public function add()
+    public function add($receta_id)
     {
         $recetaPaso = $this->RecetaPasos->newEntity();
         if ($this->request->is('post')) {
             $recetaPaso = $this->RecetaPasos->patchEntity($recetaPaso, $this->request->data);
+			
+        $receta = $this->RecetaPasos->Recetas->get($receta_id);
+			$recetaPaso->receta=$receta;
             if ($this->RecetaPasos->save($recetaPaso)) {
                 $this->Flash->success(__('The receta paso has been saved.'));
-                return $this->redirect(['action' => 'index']);
+                return $this->redirect(['action' => 'index',$receta_id]);
             } else {
                 $this->Flash->error(__('The receta paso could not be saved. Please, try again.'));
             }
