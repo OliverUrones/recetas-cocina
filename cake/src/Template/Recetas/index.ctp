@@ -42,10 +42,10 @@
                 <td><?= h($receta->valoracion) ?></td>
                 <!-- td><?= $receta->has('usuario') ? $this->Html->link($receta->usuario->id, ['controller' => 'Usuarios', 'action' => 'view', $receta->usuario->id]) : '' ?></td -->
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $receta->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $receta->id]) ?>
-					<?= $this->Html->link(__('Pasos'), ['controller'=>'RecetaPasos','action' => 'index', $receta->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $receta->id], ['confirm' => __('Are you sure you want to delete # {0}?', $receta->id)]) ?>
+                    <?= $this->Html->link(__('Ver'), ['action' => 'view', $receta->id]) ?>
+                    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $receta->id]) ?>
+                    <?= $this->Html->link(__('Pasos'), ['controller'=>'RecetaPasos','action' => 'index', $receta->id]) ?>
+                    <?= $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $receta->id], ['confirm' => __('Are you sure you want to delete # {0}?', $receta->id)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>

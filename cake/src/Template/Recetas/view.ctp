@@ -1,12 +1,12 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Receta'), ['action' => 'edit', $receta->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Receta'), ['action' => 'delete', $receta->id], ['confirm' => __('Are you sure you want to delete # {0}?', $receta->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Recetas'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Receta'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Usuarios'), ['controller' => 'Usuarios', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Usuario'), ['controller' => 'Usuarios', 'action' => 'add']) ?> </li>
+        <li class="heading"><?= __('Acciones') ?></li>
+        <li><?= $this->Html->link(__('Editar Receta'), ['action' => 'edit', $receta->id]) ?> </li>
+        <li><?= $this->Form->postLink(__('Eliminar Receta'), ['action' => 'delete', $receta->id], ['confirm' => __('Are you sure you want to delete # {0}?', $receta->id)]) ?> </li>
+        <li><?= $this->Html->link(__('Listar Recetas'), ['action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Nueva Receta'), ['action' => 'add']) ?> </li>
+        <!-- li><?= $this->Html->link(__('List Usuarios'), ['controller' => 'Usuarios', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New Usuario'), ['controller' => 'Usuarios', 'action' => 'add']) ?> </li -->
         <li><?= $this->Html->link(__('List Menu Platos'), ['controller' => 'MenuPlatos', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Menu Plato'), ['controller' => 'MenuPlatos', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Receta Categorias'), ['controller' => 'RecetaCategorias', 'action' => 'index']) ?> </li>
