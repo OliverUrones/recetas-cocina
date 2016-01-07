@@ -58,7 +58,7 @@ class RecetasController extends AppController
                 $this->Flash->success(__('La receta ha sido guardada.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The receta could not be saved. Please, try again.'));
+                $this->Flash->error(__('La receta no se ha guardado. Por favor,intentelo de nuevo.'));
             }
         }
         //$usuarios = $this->Recetas->Usuarios->find('list', ['limit' => 200]);
@@ -81,10 +81,10 @@ class RecetasController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $receta = $this->Recetas->patchEntity($receta, $this->request->data);
             if ($this->Recetas->save($receta)) {
-                $this->Flash->success(__('The receta has been saved.'));
+                $this->Flash->success(__('La receta ha sido guardada.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The receta could not be saved. Please, try again.'));
+                $this->Flash->error(__('La receta no se ha guardado. Por favor,intentelo de nuevo.'));
             }
         }
         $usuarios = $this->Recetas->Usuarios->find('list', ['limit' => 200]);
@@ -104,9 +104,9 @@ class RecetasController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $receta = $this->Recetas->get($id);
         if ($this->Recetas->delete($receta)) {
-            $this->Flash->success(__('The receta has been deleted.'));
+            $this->Flash->success(__('La receta ha sido eliminada.'));
         } else {
-            $this->Flash->error(__('The receta could not be deleted. Please, try again.'));
+            $this->Flash->error(__('La receta no se ha eliminado. Por favor,intentelo de nuevo.'));
         }
         return $this->redirect(['action' => 'index']);
     }

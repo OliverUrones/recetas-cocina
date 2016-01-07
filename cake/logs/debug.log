@@ -520,3 +520,12 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 2016-01-04 13:10:07 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
 2016-01-04 13:11:59 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
 2016-01-04 13:12:03 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::view, res= true
+2016-01-07 07:34:23 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::index, res= true
+2016-01-07 07:36:33 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::index, res= true
+2016-01-07 07:37:19 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::index, res= true
+2016-01-07 07:37:47 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::index, res= true
+2016-01-07 07:38:00 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2016-01-07 07:38:40 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2016-01-07 07:38:56 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2016-01-07 07:39:11 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
+2016-01-07 07:39:46 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true

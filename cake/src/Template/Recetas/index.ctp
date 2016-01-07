@@ -1,9 +1,9 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Receta'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Usuarios'), ['controller' => 'Usuarios', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Usuario'), ['controller' => 'Usuarios', 'action' => 'add']) ?></li>
+        <li class="heading"><?= __('Acciones') ?></li>
+        <li><?= $this->Html->link(__('Nueva Receta'), ['action' => 'add']) ?></li>
+        <!-- li><?= $this->Html->link(__('List Usuarios'), ['controller' => 'Usuarios', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Usuario'), ['controller' => 'Usuarios', 'action' => 'add']) ?></li -->
         <li><?= $this->Html->link(__('List Menu Platos'), ['controller' => 'MenuPlatos', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Menu Plato'), ['controller' => 'MenuPlatos', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Receta Categorias'), ['controller' => 'RecetaCategorias', 'action' => 'index']) ?></li>
@@ -21,26 +21,26 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th><?= $this->Paginator->sort('id') ?></th>
+                <!--th><?= $this->Paginator->sort('id') ?></th-->
                 <th><?= $this->Paginator->sort('tipo_plato') ?></th>
                 <th><?= $this->Paginator->sort('dificultad') ?></th>
                 <th><?= $this->Paginator->sort('comensales') ?></th>
                 <th><?= $this->Paginator->sort('tiempo_elaboracion') ?></th>
                 <th><?= $this->Paginator->sort('valoracion') ?></th>
-                <th><?= $this->Paginator->sort('usuario_id') ?></th>
-                <th class="actions"><?= __('Actions') ?></th>
+                <!-- th><?= $this->Paginator->sort('usuario_id') ?></th -->
+                <th class="actions"><?= __('Acciones') ?></th>
             </tr>
         </thead>
         <tbody>
             <?php foreach ($recetas as $receta): ?>
             <tr>
-                <td><?= $this->Number->format($receta->id) ?></td>
+                <!-- td><?= $this->Number->format($receta->id) ?></td -->
                 <td><?= h($receta->tipo_plato) ?></td>
                 <td><?= h($receta->dificultad) ?></td>
                 <td><?= h($receta->comensales) ?></td>
                 <td><?= $this->Number->format($receta->tiempo_elaboracion) ?></td>
                 <td><?= h($receta->valoracion) ?></td>
-                <td><?= $receta->has('usuario') ? $this->Html->link($receta->usuario->id, ['controller' => 'Usuarios', 'action' => 'view', $receta->usuario->id]) : '' ?></td>
+                <!-- td><?= $receta->has('usuario') ? $this->Html->link($receta->usuario->id, ['controller' => 'Usuarios', 'action' => 'view', $receta->usuario->id]) : '' ?></td -->
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $receta->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $receta->id]) ?>
@@ -53,9 +53,9 @@
     </table>
     <div class="paginator">
         <ul class="pagination">
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
+            <?= $this->Paginator->prev('< ' . __('anterior')) ?>
             <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
+            <?= $this->Paginator->next(__('siguiente') . ' >') ?>
         </ul>
         <p><?= $this->Paginator->counter() ?></p>
     </div>
