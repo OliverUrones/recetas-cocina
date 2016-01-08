@@ -374,3 +374,137 @@ Stack Trace:
 #1 {main}
 
 
+2016-01-08 16:42:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Daw2 could not be found.
+Exception Attributes: array (
+  'class' => 'Daw2',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /DAW2/cake/daw2/cake/
+Stack Trace:
+#0 C:\xampp\htdocs\DAW2\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-08 16:45:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Daw2 could not be found.
+Exception Attributes: array (
+  'class' => 'Daw2',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /DAW2/cake/daw2/cake/src/controller/MenuPlatosController
+Stack Trace:
+#0 C:\xampp\htdocs\DAW2\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-08 16:45:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Daw2 could not be found.
+Exception Attributes: array (
+  'class' => 'Daw2',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /DAW2/cake/daw2/cake/
+Stack Trace:
+#0 C:\xampp\htdocs\DAW2\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-08 16:50:05 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Daw2 could not be found.
+Exception Attributes: array (
+  'class' => 'Daw2',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /DAW2/cake/daw2/cake/
+Stack Trace:
+#0 C:\xampp\htdocs\DAW2\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-08 16:55:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Daw2 could not be found.
+Exception Attributes: array (
+  'class' => 'Daw2',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /DAW2/cake/daw2/cake/
+Stack Trace:
+#0 C:\xampp\htdocs\DAW2\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-08 16:57:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Daw2 could not be found.
+Exception Attributes: array (
+  'class' => 'Daw2',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /DAW2/cake/daw2/cake/
+Stack Trace:
+#0 C:\xampp\htdocs\DAW2\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-08 17:02:32 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\home.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\home.ctp',
+)
+Request URL: /recetas/cake/
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(575): Cake\View\View->_getViewFileName('home')
+#1 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render('home', NULL)
+#2 C:\xampp\htdocs\recetas\cake\src\Controller\PagesController.php(57): Cake\Controller\Controller->render('home')
+#3 [internal function]: App\Controller\PagesController->display('home')
+#4 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#6 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PagesController))
+#7 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2016-01-08 17:07:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-08 17:17:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-08 17:18:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
