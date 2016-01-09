@@ -2,7 +2,8 @@
 
 </nav>
 <div class="tiendaOfertas index large-9 medium-8 columns content">
-    <h3><?= __('Tienda Ofertas') ?></h3>
+    <h3><?= __('¡OFERTAS ACTIVAS!') ?></h3>
+    <h5><i><?= __('"Anímese y eche un vistazo a nuestra sección de Ofertas"') ?></i></h5>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>

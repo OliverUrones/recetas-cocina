@@ -113,7 +113,7 @@ class AppController extends Controller
         
         //DTR: Por defecto los usuarios registrados de "rol" administrador 
         //pueden acceder a cualquier accion.
-        if (!$res && (strcasecmp( $rol, 'A') == 0) && $accion != 'cambiarRol' && $accion != 'hacerBackup' /*Para el caso de que sólo el sysadmin pueda hacer copias de seguridad*/) {
+        if (!$res && (strcasecmp( $rol, 'A') == 0)) {
           $res= true;
         }
         //DTR: Por ejemplo, si se quiere comprobar una accion en concreto en
