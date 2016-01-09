@@ -8,8 +8,8 @@
             )
         ?></li>
         <li><?= $this->Html->link(__('Ver Ingredientes'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Tienda Ofertas'), ['controller' => 'TiendaOfertas', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Tienda Oferta'), ['controller' => 'TiendaOfertas', 'action' => 'add']) ?></li>
+        <!--	<li><?//= $this->Html->link(__('List Tienda Ofertas'), ['controller' => 'TiendaOfertas', 'action' => 'index']) ?></li> -->
+        <!--	<li><?//= $this->Html->link(__('New Tienda Oferta'), ['controller' => 'TiendaOfertas', 'action' => 'add']) ?></li> -->
     </ul>
 </nav>
 <div class="ingredientes form large-9 medium-8 columns content">

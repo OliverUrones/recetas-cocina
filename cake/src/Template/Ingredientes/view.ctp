@@ -5,8 +5,8 @@
         <li><?= $this->Form->postLink(__('Borrar Ingrediente'), ['action' => 'delete', $ingrediente->id], ['confirm' => __('Are you sure you want to delete # {0}?', $ingrediente->id)]) ?> </li>
         <li><?= $this->Html->link(__('Listar Ingredientes'), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('Crear Ingrediente'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Tienda Ofertas'), ['controller' => 'TiendaOfertas', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Tienda Oferta'), ['controller' => 'TiendaOfertas', 'action' => 'add']) ?> </li>
+        <!--	<li><?//= $this->Html->link(__('List Tienda Ofertas'), ['controller' => 'TiendaOfertas', 'action' => 'index']) ?> </li>		-->
+        <!--	<li><?//= $this->Html->link(__('New Tienda Oferta'), ['controller' => 'TiendaOfertas', 'action' => 'add']) ?> </li>		-->
     </ul>
 </nav>
 <div class="ingredientes view large-9 medium-8 columns content">
