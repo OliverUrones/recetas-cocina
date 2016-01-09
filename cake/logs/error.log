@@ -1738,3 +1738,68 @@ Stack Trace:
 #1 {main}
 
 
+2016-01-09 18:02:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2/Practica2/daw2-2015-recetas-cocina.git/trunk/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp portable\htdocs\daw2\Practica2\daw2-2015-recetas-cocina.git\trunk\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-09 18:03:02 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2/Practica2/daw2-2015-recetas-cocina.git/trunk/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp portable\htdocs\daw2\Practica2\daw2-2015-recetas-cocina.git\trunk\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-09 18:03:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2/Practica2/daw2-2015-recetas-cocina.git/trunk/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp portable\htdocs\daw2\Practica2\daw2-2015-recetas-cocina.git\trunk\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-09 18:05:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2/Practica2/daw2-2015-recetas-cocina.git/trunk/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp portable\htdocs\daw2\Practica2\daw2-2015-recetas-cocina.git\trunk\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-09 18:05:35 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2/Practica2/daw2-2015-recetas-cocina.git/trunk/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp portable\htdocs\daw2\Practica2\daw2-2015-recetas-cocina.git\trunk\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
