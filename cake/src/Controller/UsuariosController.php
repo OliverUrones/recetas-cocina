@@ -18,6 +18,7 @@ class UsuariosController extends AppController
         parent::beforeFilter($event);
         //$this->Auth->allow(['registro','index','add']);//DTR: pruebas y poder añadir un usuario...
         //$this->Auth->allow(['registro','index','add','edit']);//DTR: pruebas y poder añadir un usuario...
+        
         $this->Auth->allow('registro');
         $this->Auth->allow('activarCuenta');
         $this->Auth->allow('recuperarPass');
