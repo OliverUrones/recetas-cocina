@@ -1,10 +1,10 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Ingrediente'), ['action' => 'edit', $ingrediente->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Ingrediente'), ['action' => 'delete', $ingrediente->id], ['confirm' => __('Are you sure you want to delete # {0}?', $ingrediente->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Ingredientes'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Ingrediente'), ['action' => 'add']) ?> </li>
+        <li class="heading"><?= __('Acciones') ?></li>
+        <li><?= $this->Html->link(__('Editar Ingrediente'), ['action' => 'edit', $ingrediente->id]) ?> </li>
+        <li><?= $this->Form->postLink(__('Borrar Ingrediente'), ['action' => 'delete', $ingrediente->id], ['confirm' => __('Are you sure you want to delete # {0}?', $ingrediente->id)]) ?> </li>
+        <li><?= $this->Html->link(__('Listar Ingredientes'), ['action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Crear Ingrediente'), ['action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Tienda Ofertas'), ['controller' => 'TiendaOfertas', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Tienda Oferta'), ['controller' => 'TiendaOfertas', 'action' => 'add']) ?> </li>
     </ul>
