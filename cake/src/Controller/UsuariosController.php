@@ -3,6 +3,8 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 use Cake\Mailer\Email;
+use Cake\Filesystem\File;
+use Cake\ORM\TableRegistry;
 
 /**
  * Usuarios Controller
@@ -325,6 +327,60 @@ class UsuariosController extends AppController
             {
                 $this->Flash->error(__('Hay campos vacíos o las contraseñas no coinciden.'));
             }
+        }
+    }
+    
+    /* 
+     * Método para realizar una copia de seguridad de las tablas de la bese de datos
+     */
+    public function hacerBackup()
+    {
+        if($this->request->is('post'))
+        {
+            $nombre = date('d-m-Y H:i:s').'_backup.php';
+            $archivo = new File($nombre, true, 0777);
+            $tablas = array();
+            foreach ($this->request->data as $nombreTabla => $value)
+            {
+                if($value == 1)
+                {
+                    $tabla = TableRegistry::get($nombreTabla);
+                    $registros = $tabla->find('all');
+                    //debug($tabla, true, true);
+                    //debug($registros, true, true);
+                    $tablas[$nombreTabla] = array();
+                    foreach ($registros as $clave => $valor)
+                    {
+                        $tablas[$nombreTabla][$clave] = $valor;
+                    }
+                }
+            }
+            
+            //Para exportar los datos al archivo en forma de array
+            file_put_contents($archivo->info['basename'], var_export($tablas, true));
+            //debug('Tamaño: '.$archivo->size(), true, true);
+            if($archivo->size() > 9)
+            {
+                //Para descargar el archivo creado
+                $this->response->file($archivo->path, ['download' => true]);
+            }else
+            {
+                $this->Flash->error(__('Debe seleccionar al menos una tabla.'));
+            }
+        }
+    }
+    
+    public function restaurarBackup()
+    {
+        //debug($this->request->data, true, true);
+        //debug($this->request->data['archivo']['tmp_name'], true, true);
+        $nombre = explode('_', $this->request->data['archivo']['name']);
+        if($this->request->data['archivo']['type'] === 'application/x-php' && $nombre[1] === 'backup.php' && $this->request->data['archivo']['size'] > 0)
+        {
+            $archivo = new File($this->request->data['archivo']['tmp_name']);
+            $datos = file_get_contents($archivo->path);
+            debug($datos, true, true);
+            //debug(var_dump($datos), true, true);
         }
     }
 }
