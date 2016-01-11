@@ -6,7 +6,7 @@
         <li><?= $this->Html->link(__('Listar Recetas'), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('Nueva Receta'), ['action' => 'add']) ?> </li>
         <!-- li><?= $this->Html->link(__('List Usuarios'), ['controller' => 'Usuarios', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Usuario'), ['controller' => 'Usuarios', 'action' => 'add']) ?> </li -->
+        <li><?= $this->Html->link(__('New Usuario'), ['controller' => 'Usuarios', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Menu Platos'), ['controller' => 'MenuPlatos', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Menu Plato'), ['controller' => 'MenuPlatos', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Receta Categorias'), ['controller' => 'RecetaCategorias', 'action' => 'index']) ?> </li>
@@ -16,7 +16,7 @@
         <li><?= $this->Html->link(__('List Receta Ingredientes'), ['controller' => 'RecetaIngredientes', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Receta Ingrediente'), ['controller' => 'RecetaIngredientes', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Receta Pasos'), ['controller' => 'RecetaPasos', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Receta Paso'), ['controller' => 'RecetaPasos', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('New Receta Paso'), ['controller' => 'RecetaPasos', 'action' => 'add']) ?> </li -->
     </ul>
 </nav>
 <div class="recetas view large-9 medium-8 columns content">
@@ -24,7 +24,7 @@
     <table class="vertical-table">
         <tr>
             <th><?= __('Tipo Plato') ?></th>
-            <td><?= h($receta->tipo_plato) ?></td>
+            <td><?= $receta->mostrarTipo_plato($receta->tipo_plato)?></td>
         </tr>
         <tr>
             <th><?= __('Usuario') ?></th>
@@ -40,15 +40,15 @@
         </tr>
         <tr>
             <th><?= __('Dificultad') ?></th>
-            <td><?= $receta->dificultad ? __('Yes') : __('No'); ?></td>
+            <td><?=  $receta->mostrarDificultad($this->Number->format($receta->dificultad)) ?></td>
          </tr>
         <tr>
             <th><?= __('Comensales') ?></th>
-            <td><?= $receta->comensales ? __('Yes') : __('No'); ?></td>
+            <td><?=  $this->Number->format($receta->comensales) ?></td>
          </tr>
         <tr>
             <th><?= __('Valoracion') ?></th>
-            <td><?= $receta->valoracion ? __('Yes') : __('No'); ?></td>
+            <td><?=  $receta->mostrarValoracion($this->Number->format($receta->valoracion)) ?></td>
          </tr>
         <tr>
             <th><?= __('Aceptada') ?></th>

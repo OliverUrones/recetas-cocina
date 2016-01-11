@@ -1,7 +1,7 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('List Receta Pasos'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('List Receta Pasos'), ['action' => 'index',$receta_id]) ?></li>
         <li><?= $this->Html->link(__('List Recetas'), ['controller' => 'Recetas', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Receta'), ['controller' => 'Recetas', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Receta Paso Imagenes'), ['controller' => 'RecetaPasoImagenes', 'action' => 'index']) ?></li>

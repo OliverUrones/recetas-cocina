@@ -3,13 +3,8 @@
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('Edit Receta Paso'), ['action' => 'edit', $recetaPaso->id]) ?> </li>
         <li><?= $this->Form->postLink(__('Delete Receta Paso'), ['action' => 'delete', $recetaPaso->id], ['confirm' => __('Are you sure you want to delete # {0}?', $recetaPaso->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Receta Pasos'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Receta Paso'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Recetas'), ['controller' => 'Recetas', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Receta'), ['controller' => 'Recetas', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Receta Paso Imagenes'), ['controller' => 'RecetaPasoImagenes', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Receta Paso Imagene'), ['controller' => 'RecetaPasoImagenes', 'action' => 'add']) ?> </li>
-    </ul>
+        <li><?= $this->Html->link(__('List Receta Pasos'), ['action' => 'index',$recetaPaso->receta->id]) ?> </li>
+      </ul>
 </nav>
 <div class="recetaPasos view large-9 medium-8 columns content">
     <h3><?= h($recetaPaso->id) ?></h3>

@@ -21,7 +21,7 @@ class RecetaPasosController extends AppController
         $this->paginate = [
             'contain' => ['Recetas']
         ];
-		$recetaPasos=$this->paginate($this->RecetaPasos);
+	$recetaPasos=$this->paginate($this->RecetaPasos);
         $this->set(compact('recetaPasos', 'receta_id'));
         $this->set('_serialize', ['recetaPasos']);
     }
@@ -63,7 +63,7 @@ class RecetaPasosController extends AppController
             }
         }
         $recetas = $this->RecetaPasos->Recetas->find('list', ['limit' => 200]);
-        $this->set(compact('recetaPaso', 'recetas'));
+        $this->set(compact('recetaPaso', 'receta_id'));
         $this->set('_serialize', ['recetaPaso']);
     }
 
@@ -83,7 +83,7 @@ class RecetaPasosController extends AppController
             $recetaPaso = $this->RecetaPasos->patchEntity($recetaPaso, $this->request->data);
             if ($this->RecetaPasos->save($recetaPaso)) {
                 $this->Flash->success(__('The receta paso has been saved.'));
-                return $this->redirect(['action' => 'index']);
+                return $this->redirect(['action' => 'index',$recetaPaso->receta->id]);
             } else {
                 $this->Flash->error(__('The receta paso could not be saved. Please, try again.'));
             }
@@ -109,6 +109,6 @@ class RecetaPasosController extends AppController
         } else {
             $this->Flash->error(__('The receta paso could not be deleted. Please, try again.'));
         }
-        return $this->redirect(['action' => 'index']);
+        return $this->redirect(['action' => 'index',$recetaPaso->receta->id]);
     }
 }

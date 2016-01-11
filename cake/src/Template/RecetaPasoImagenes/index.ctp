@@ -1,7 +1,7 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Receta Paso Imagene'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('New Receta Paso Imagene,$recetaPaso_id'), ['action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Receta Pasos'), ['controller' => 'RecetaPasos', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Receta Paso'), ['controller' => 'RecetaPasos', 'action' => 'add']) ?></li>
     </ul>
@@ -19,6 +19,7 @@
         </thead>
         <tbody>
             <?php foreach ($recetaPasoImagenes as $recetaPasoImagene): ?>
+            <?php if($recetaPasoImagene->receta_paso->id == $recetaPaso_id){ ?>
             <tr>
                 <td><?= $this->Number->format($recetaPasoImagene->id) ?></td>
                 <td><?= $recetaPasoImagene->has('receta_paso') ? $this->Html->link($recetaPasoImagene->receta_paso->id, ['controller' => 'RecetaPasos', 'action' => 'view', $recetaPasoImagene->receta_paso->id]) : '' ?></td>
@@ -29,6 +30,7 @@
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $recetaPasoImagene->id], ['confirm' => __('Are you sure you want to delete # {0}?', $recetaPasoImagene->id)]) ?>
                 </td>
             </tr>
+            <?php } ?>
             <?php endforeach; ?>
         </tbody>
     </table>

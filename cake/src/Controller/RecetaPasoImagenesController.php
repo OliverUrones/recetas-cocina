@@ -16,12 +16,13 @@ class RecetaPasoImagenesController extends AppController
      *
      * @return void
      */
-    public function index()
+    public function index($recetaPaso_id)
     {
         $this->paginate = [
             'contain' => ['RecetaPasos']
         ];
-        $this->set('recetaPasoImagenes', $this->paginate($this->RecetaPasoImagenes));
+        $recetaPasoImagenes= $this->paginate($this->RecetaPasoImagenes);
+        $this->set(compact('recetaPasoImagenes','recetaPaso_id'));
         $this->set('_serialize', ['recetaPasoImagenes']);
     }
 

@@ -49,6 +49,20 @@ class Receta extends Entity
 		return $lista;
    }
 
+    public  function mostrarDificultad($dificultad)
+   {
+	 
+	   $lista= [
+			1=>'1 - Muy fácil',
+			2=>'2 - Fácil',
+			3=>'3 - Media',
+			4=>'4 - Difícil',
+			5=>'5 - Muy Difícil',
+
+	   ];
+           
+		return $lista[$dificultad];
+   }
    
    
    public static function tipo_plato()
@@ -65,6 +79,19 @@ class Receta extends Entity
 		return $lista;
    }
    
+   public  function mostrarTipo_plato($plato)
+   {
+	 
+	   $lista= [
+			'E'=>'Entrantes',
+			1=>'Primeros',
+			2=>'Segundos',
+			'P'=>'Postres',
+			'O'=>'Otros',
+
+	   ];
+		return $lista[$plato];
+   }
    
       public static function valoracion()
    {
@@ -80,7 +107,19 @@ class Receta extends Entity
 		return $lista;
    }
 
-   
+   public  function mostrarValoracion($valoracion)
+   {
+	 
+	   $lista= [
+			1=>' *',
+			2=>' **',
+			3=>' ***',
+			4=>' ****',
+			5=>' *****',
+
+	   ];
+		return $lista[$valoracion];
+   }
 
 
     /**
