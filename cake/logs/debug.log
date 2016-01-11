@@ -24,3 +24,7 @@
 2016-01-09 18:03:09 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::add, res= true
 2016-01-09 18:03:36 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Usuarios::logout, res= true
 2016-01-09 18:05:33 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Ingredientes::index, res= true
+2016-01-11 11:19:33 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::index, res= true
+2016-01-11 11:19:56 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-11 11:20:43 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::index, res= true
+2016-01-11 11:20:46 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
