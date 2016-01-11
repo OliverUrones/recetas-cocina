@@ -1,9 +1,9 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Receta Paso'), ['action' => 'edit', $recetaPaso->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Receta Paso'), ['action' => 'delete', $recetaPaso->id], ['confirm' => __('Are you sure you want to delete # {0}?', $recetaPaso->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Receta Pasos'), ['action' => 'index',$recetaPaso->receta->id]) ?> </li>
+        <li class="heading"><?= __('Acciones') ?></li>
+        <li><?= $this->Html->link(__('Editar Paso de Receta'), ['action' => 'edit', $recetaPaso->id]) ?> </li>
+        <li><?= $this->Form->postLink(__('Eliminar paso de receta'), ['action' => 'delete', $recetaPaso->id], ['confirm' => __('Esta seguro que la desea eliminar # {0}?', $recetaPaso->id)]) ?> </li>
+        <li><?= $this->Html->link(__('Pasos de Receta'), ['action' => 'index',$recetaPaso->receta->id]) ?> </li>
       </ul>
 </nav>
 <div class="recetaPasos view large-9 medium-8 columns content">
@@ -35,7 +35,7 @@
                 <th><?= __('Receta Paso Id') ?></th>
                 <th><?= __('Orden') ?></th>
                 <th><?= __('Imagen') ?></th>
-                <th class="actions"><?= __('Actions') ?></th>
+                <th class="actions"><?= __('Acciones') ?></th>
             </tr>
             <?php foreach ($recetaPaso->receta_paso_imagenes as $recetaPasoImagenes): ?>
             <tr>
@@ -44,11 +44,11 @@
                 <td><?= h($recetaPasoImagenes->orden) ?></td>
                 <td><?= h($recetaPasoImagenes->imagen) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'RecetaPasoImagenes', 'action' => 'view', $recetaPasoImagenes->id]) ?>
+                    <?= $this->Html->link(__('Ver'), ['controller' => 'RecetaPasoImagenes', 'action' => 'view', $recetaPasoImagenes->id]) ?>
 
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'RecetaPasoImagenes', 'action' => 'edit', $recetaPasoImagenes->id]) ?>
+                    <?= $this->Html->link(__('Editar'), ['controller' => 'RecetaPasoImagenes', 'action' => 'edit', $recetaPasoImagenes->id]) ?>
 
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'RecetaPasoImagenes', 'action' => 'delete', $recetaPasoImagenes->id], ['confirm' => __('Are you sure you want to delete # {0}?', $recetaPasoImagenes->id)]) ?>
+                    <?= $this->Form->postLink(__('Eliminar'), ['controller' => 'RecetaPasoImagenes', 'action' => 'delete', $recetaPasoImagenes->id], ['confirm' => __('Esta seguro que la desea eliminar # {0}?', $recetaPasoImagenes->id)]) ?>
 
                 </td>
             </tr>

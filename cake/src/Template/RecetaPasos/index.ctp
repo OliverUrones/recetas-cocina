@@ -1,12 +1,12 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Receta Paso'), ['action' => 'add',$receta_id]) ?></li>
-        <li><?= $this->Html->link(__('List Recetas'), ['controller' => 'Recetas', 'action' => 'index']) ?></li>
+        <li class="heading"><?= __('Acciones') ?></li>
+        <li><?= $this->Html->link(__('Nuevo paso de receta'), ['action' => 'add',$receta_id]) ?></li>
+        <li><?= $this->Html->link(__('Recetas'), ['controller' => 'Recetas', 'action' => 'index']) ?></li>
         </ul>
 </nav>
 <div class="recetaPasos index large-9 medium-8 columns content">
-    <h3><?= __('Receta Pasos') ?></h3>
+    <h3><?= __('Pasos de Receta') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
@@ -14,7 +14,7 @@
                <th><?= $this->Paginator->sort('id') ?></th>
                 <th><?= $this->Paginator->sort('receta_id') ?></th>
                 
-                <th class="actions"><?= __('Actions') ?></th>
+                <th class="actions"><?= __('Acciones') ?></th>
             </tr>
         </thead>
         <tbody>
@@ -26,9 +26,9 @@
                 <td><?= $recetaPaso->has('receta') ? $this->Html->link($recetaPaso->receta->nombre, ['controller' => 'Recetas', 'action' => 'view', $recetaPaso->receta->id]) : '' ?></td>
                
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $recetaPaso->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $recetaPaso->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $recetaPaso->id], ['confirm' => __('Are you sure you want to delete # {0}?', $recetaPaso->id)]) ?>
+                    <?= $this->Html->link(__('Ver'), ['action' => 'view', $recetaPaso->id]) ?>
+                    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $recetaPaso->id]) ?>
+                    <?= $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $recetaPaso->id], ['confirm' => __('Esta seguro que la desea eliminar # {0}?', $recetaPaso->id)]) ?>
                     <?= $this->Html->link(__('Imágenes'), ['controller'=>'RecetaPasoImagenes','action' => 'index', $recetaPaso->id]) ?>
                 </td>
             </tr>
@@ -40,9 +40,9 @@
     </table>
     <div class="paginator">
         <ul class="pagination">
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
+            <?= $this->Paginator->prev('< ' . __('anterior')) ?>
             <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
+            <?= $this->Paginator->next(__('siguiente') . ' >') ?>
         </ul>
         <p><?= $this->Paginator->counter() ?></p>
     </div>

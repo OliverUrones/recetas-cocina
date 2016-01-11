@@ -1,12 +1,12 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Receta Paso Imagene'), ['action' => 'edit', $recetaPasoImagene->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Receta Paso Imagene'), ['action' => 'delete', $recetaPasoImagene->id], ['confirm' => __('Are you sure you want to delete # {0}?', $recetaPasoImagene->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Receta Paso Imagenes'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Receta Paso Imagene'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Receta Pasos'), ['controller' => 'RecetaPasos', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Receta Paso'), ['controller' => 'RecetaPasos', 'action' => 'add']) ?> </li>
+        <li class="heading"><?= __('Acciones') ?></li>
+        <li><?= $this->Html->link(__('Editar Imagen de Paso'), ['action' => 'edit', $recetaPasoImagene->id]) ?> </li>
+        <li><?= $this->Form->postLink(__('Eliminar Imagen de paso'), ['action' => 'delete', $recetaPasoImagene->id], ['confirm' => __('Esta seguro que la desea eliminar # {0}?', $recetaPasoImagene->id)]) ?> </li>
+        <li><?= $this->Html->link(__('Imagenes de pasos'), ['action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Nueva imagen de paso'), ['action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Pasos de receta'), ['controller' => 'RecetaPasos', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Nuevo paso de receta'), ['controller' => 'RecetaPasos', 'action' => 'add']) ?> </li>
     </ul>
 </nav>
 <div class="recetaPasoImagenes view large-9 medium-8 columns content">
