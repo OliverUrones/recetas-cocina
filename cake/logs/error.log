@@ -6608,3 +6608,811 @@ Stack Trace:
 #1 {main}
 
 
+2016-01-13 16:25:02 Error: [Cake\View\Exception\MissingElementException] .Element\.\TiendaOfertas\_lateral.ctp
+Request URL: /recetas/cake/
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\src\Template\Pages\home.ctp(5): Cake\View\View->element('../TiendaOferta...')
+#1 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(970): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(930): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(578): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render('home', NULL)
+#5 C:\xampp\htdocs\recetas\cake\src\Controller\PagesController.php(57): Cake\Controller\Controller->render('home')
+#6 [internal function]: App\Controller\PagesController->display('home')
+#7 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PagesController))
+#10 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2016-01-13 16:26:02 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 16:26:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Home.cpt could not be found.
+Exception Attributes: array (
+  'class' => 'Home.cpt',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/home.cpt
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 16:26:17 Error: [Cake\View\Exception\MissingElementException] .Element\.\TiendaOfertas\_lateral.ctp
+Request URL: /recetas/cake/
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\src\Template\Pages\home.ctp(5): Cake\View\View->element('../TiendaOferta...')
+#1 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(970): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(930): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(578): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render('home', NULL)
+#5 C:\xampp\htdocs\recetas\cake\src\Controller\PagesController.php(57): Cake\Controller\Controller->render('home')
+#6 [internal function]: App\Controller\PagesController->display('home')
+#7 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PagesController))
+#10 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2016-01-13 16:27:02 Error: [Cake\View\Exception\MissingElementException] .Element\.\TiendaOfertas\_lateral.ctp
+Request URL: /recetas/cake/
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\src\Template\Pages\home.ctp(5): Cake\View\View->element('../TiendaOferta...')
+#1 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(970): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(930): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(578): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render('home', NULL)
+#5 C:\xampp\htdocs\recetas\cake\src\Controller\PagesController.php(57): Cake\Controller\Controller->render('home')
+#6 [internal function]: App\Controller\PagesController->display('home')
+#7 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PagesController))
+#10 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2016-01-13 16:33:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 16:33:26 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\recetas\cake\src\Template\Tiendaofertas\portada.ctp, line 18]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Tiendaofertas\portada.ctp, line 18
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1310
+Cake\View\View::element() - CORE\src\View\View.php, line 484
+include - APP/Template\Pages\home.ctp, line 5
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 16:33:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 16:35:35 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\recetas\cake\src\Template\Tiendaofertas\portada.ctp, line 18]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Tiendaofertas\portada.ctp, line 18
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1310
+Cake\View\View::element() - CORE\src\View\View.php, line 484
+include - APP/Template\Pages\home.ctp, line 5
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 16:35:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 16:36:44 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\recetas\cake\src\Template\Tiendaofertas\portada.ctp, line 18]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Tiendaofertas\portada.ctp, line 18
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1310
+Cake\View\View::element() - CORE\src\View\View.php, line 484
+include - APP/Template\Pages\home.ctp, line 5
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 16:36:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 16:41:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 16:42:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 16:43:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 16:43:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 16:45:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 16:46:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 16:46:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 16:46:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 16:47:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 16:47:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 16:47:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 16:48:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 16:49:48 Error: Fatal Error (1): Call to a member function has() on a non-object in [C:\xampp\htdocs\recetas\cake\src\Template\Tiendaofertas\portada.ctp, line 8]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2016-01-13 16:49:49 Error: [Cake\Error\FatalErrorException] Call to a member function has() on a non-object
+Request URL: /recetas/cake/
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 8)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-01-13 16:50:02 Error: Fatal Error (1): Call to a member function has() on a non-object in [C:\xampp\htdocs\recetas\cake\src\Template\Tiendaofertas\portada.ctp, line 8]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2016-01-13 16:50:02 Error: [Cake\Error\FatalErrorException] Call to a member function has() on a non-object
+Request URL: /recetas/cake/
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 8)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-01-13 16:50:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 16:50:48 Error: Fatal Error (1): Call to undefined method App\Model\Entity\TiendaOferta::hasMany() in [C:\xampp\htdocs\recetas\cake\src\Template\Tiendaofertas\portada.ctp, line 27]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2016-01-13 16:50:49 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Model\Entity\TiendaOferta::hasMany()
+Request URL: /recetas/cake/
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-01-13 16:51:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 16:53:16 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 16:54:12 Error: [RuntimeException] Table "App\Model\Table\TiendaOfertasTable" is not associated with "tienda_id"
+Request URL: /recetas/cake/
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\src\Template\Tiendaofertas\portada.ctp(8): Cake\ORM\Table->__get('tienda_id')
+#1 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(970): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(930): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(1310): Cake\View\View->_render('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(484): Cake\View\View->_renderElement('C:\\xampp\\htdocs...', Array, Array)
+#5 C:\xampp\htdocs\recetas\cake\src\Template\Pages\home.ctp(5): Cake\View\View->element('../TiendaOferta...')
+#6 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(970): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(930): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#8 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(578): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render('home', NULL)
+#10 C:\xampp\htdocs\recetas\cake\src\Controller\PagesController.php(57): Cake\Controller\Controller->render('home')
+#11 [internal function]: App\Controller\PagesController->display('home')
+#12 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#14 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PagesController))
+#15 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2016-01-13 16:55:12 Error: [RuntimeException] Table "App\Model\Table\TiendaOfertasTable" is not associated with "tienda_id"
+Request URL: /recetas/cake/
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\src\Template\Tiendaofertas\portada.ctp(9): Cake\ORM\Table->__get('tienda_id')
+#1 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(970): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(930): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(1310): Cake\View\View->_render('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(484): Cake\View\View->_renderElement('C:\\xampp\\htdocs...', Array, Array)
+#5 C:\xampp\htdocs\recetas\cake\src\Template\Pages\home.ctp(5): Cake\View\View->element('../TiendaOferta...')
+#6 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(970): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(930): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#8 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(578): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render('home', NULL)
+#10 C:\xampp\htdocs\recetas\cake\src\Controller\PagesController.php(57): Cake\Controller\Controller->render('home')
+#11 [internal function]: App\Controller\PagesController->display('home')
+#12 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#14 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PagesController))
+#15 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2016-01-13 16:56:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 17:04:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 17:09:02 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\view\1.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\view\\1.ctp',
+)
+Request URL: /recetas/cake/pages/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(575): Cake\View\View->_getViewFileName('view/1')
+#1 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render('view/1', NULL)
+#2 C:\xampp\htdocs\recetas\cake\src\Controller\PagesController.php(57): Cake\Controller\Controller->render('view/1')
+#3 [internal function]: App\Controller\PagesController->display('view', '1')
+#4 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#6 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PagesController))
+#7 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2016-01-13 17:09:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 21:45:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 21:46:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 21:46:16 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 21:46:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 21:49:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 21:51:35 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\view\1.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\view\\1.ctp',
+)
+Request URL: /recetas/cake/pages/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(575): Cake\View\View->_getViewFileName('view/1')
+#1 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render('view/1', NULL)
+#2 C:\xampp\htdocs\recetas\cake\src\Controller\PagesController.php(57): Cake\Controller\Controller->render('view/1')
+#3 [internal function]: App\Controller\PagesController->display('view', '1')
+#4 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#6 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PagesController))
+#7 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2016-01-13 21:52:02 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 21:53:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 21:54:50 Error: [InvalidArgumentException] TiendaOfertas is not associated with Tienda
+Request URL: /recetas/cake/
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(250): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\TiendaOfertasTable), 'Tienda', Array, Array)
+#1 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(358): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\TiendaOfertasTable))
+#2 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(337): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\TiendaOfertasTable))
+#3 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\ORM\Query.php(897): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\TiendaOfertasTable), true)
+#4 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\ORM\Query.php(853): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(121): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Database\Connection.php(216): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Database\Connection.php(268): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Database\Query.php(174): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\ORM\Query.php(872): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(272): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\ORM\Query.php(823): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(288): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\recetas\cake\src\Template\Tiendaofertas\portada.ctp(9): Cake\ORM\Query->toArray()
+#14 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(970): include('C:\\xampp\\htdocs...')
+#15 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(930): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#16 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(1310): Cake\View\View->_render('C:\\xampp\\htdocs...', Array)
+#17 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(484): Cake\View\View->_renderElement('C:\\xampp\\htdocs...', Array, Array)
+#18 C:\xampp\htdocs\recetas\cake\src\Template\Pages\home.ctp(5): Cake\View\View->element('../TiendaOferta...')
+#19 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(970): include('C:\\xampp\\htdocs...')
+#20 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(930): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#21 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\View\View.php(578): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#22 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render('home', NULL)
+#23 C:\xampp\htdocs\recetas\cake\src\Controller\PagesController.php(57): Cake\Controller\Controller->render('home')
+#24 [internal function]: App\Controller\PagesController->display('home')
+#25 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#26 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#27 C:\xampp\htdocs\recetas\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PagesController))
+#28 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#29 {main}
+
+
+2016-01-13 21:55:16 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 21:56:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 21:57:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 21:57:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 21:57:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 21:58:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 21:58:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 21:59:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 21:59:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 22:00:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /recetas/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\recetas\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+

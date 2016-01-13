@@ -4,9 +4,9 @@ use App\Model\TiendaOfertasTable;
 
     if(!isset($tiendaOfertas) )
     {
-        $tiendaOfertas = TableRegistry::get('tiendaOfertas');
+        $tiendaOfertas = TableRegistry::get('TiendaOfertas')->find();
+        $tiendaOfertas = TableRegistry::get('TiendaOfertas')->find('all')->contain(['Tiendas','Ingredientes']);
         $tiendaOfertas = $tiendaOfertas->find('all')->toArray();
-        debug($tiendaOfertas, true, true);
     }
 ?>
 <div class="tiendaOfertas right index large-4">
