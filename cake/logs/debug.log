@@ -681,3 +681,4 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 2016-01-13 10:39:07 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
 2016-01-13 10:49:42 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaCategorias::index, res= true
 2016-01-13 10:49:56 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaCategorias::add, res= true
+2016-01-13 11:03:11 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaCategorias::index, res= true
