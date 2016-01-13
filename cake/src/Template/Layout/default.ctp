@@ -53,16 +53,20 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                   if($usuario['nombre'] === 'sysadmin')
                   {
                       $opciones = \App\Model\Entity\Usuario::getTodosRoles();
-                      //echo '<li>';
-                      //echo $this->Form->select('Cambiar Rol', $opciones);
-                      foreach ($opciones as $key => $value)
+                      echo '<ul class="xxx">';
+                      echo $this->Form->select('Cambiar Rol', $opciones, [
+                        'val'=>$usuario['rol'], 
+                        'hiddenField'=>false, 
+                        'onchange'=>'var u=\''.$this->Url->build(['controller'=>'usuarios','action'=>'cambiarRol','XX']).'\';document.location=u.replace(\'XX\',this.value);',
+                    ]);
+                      /*foreach ($opciones as $key => $value)
                       {
                           echo '<li class="cambio-rol">';
                           echo $this->Html->link($value, ['controller' => 'usuarios', 'action' => 'cambiarRol', $key]);
                           //echo $this->Form->postLink($value, ['controller' => 'usuarios', 'action' => 'cambiarRol', $key]);
                           echo '</li>';
-                      }
-                      //echo '</li>';
+                      }*/
+                      echo '</ul>';
                       //echo $this->Form->postButton(__('Cambiar Rol'), ['controller' => 'usuarios', 'action' => 'cambiarRol']);
                   }
                 } else {
