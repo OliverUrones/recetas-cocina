@@ -1,0 +1,4 @@
+modificaciones a la bbdd nuevas
+
+ALTER TABLE `categorias` CHANGE `categoria_id` `parent_id` INT(12) UNSIGNED NOT NULL DEFAULT '0' COMMENT 'Identificador de la categoria padre en caso de estar ordenados por jerarquías.';
+ALTER TABLE `receta_categorias` ADD `id` INT(12) NULL AUTO_INCREMENT PRIMARY KEY FIRST;
