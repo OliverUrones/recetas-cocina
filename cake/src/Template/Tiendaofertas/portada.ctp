@@ -1,7 +1,15 @@
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
+<?php
+use Cake\ORM\TableRegistry;
+use App\Model\TiendaOfertasTable;
 
-</nav>
-<div class="tiendaOfertas index large-9 medium-8 columns content">
+    if(!isset($tiendaOfertas) )
+    {
+        $tiendaOfertas = TableRegistry::get('tiendaOfertas');
+        $tiendaOfertas = $tiendaOfertas->find('all')->toArray();
+        debug($tiendaOfertas, true, true);
+    }
+?>
+<div class="tiendaOfertas right index large-4">
     <h3><?= __('¡OFERTAS ACTIVAS!') ?></h3>
     <h5><i><?= __('"Anímese y eche un vistazo a nuestra sección de Ofertas"') ?></i></h5>
     <table cellpadding="0" cellspacing="0">
@@ -28,12 +36,4 @@
             <?php endforeach; ?>
         </tbody>
     </table>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
-        </ul>
-        <p><?= $this->Paginator->counter() ?></p>
-    </div>
 </div>
