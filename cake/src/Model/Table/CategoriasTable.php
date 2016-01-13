@@ -10,9 +10,7 @@ use Cake\Validation\Validator;
 /**
  * Categorias Model
  *
- * @property \Cake\ORM\Association\BelongsTo $Categorias
- * @property \Cake\ORM\Association\HasMany $Categorias
- */
+ * @property \Cake\ORM\Association\BelongsTo $ParentCategorias * @property \Cake\ORM\Association\HasMany $ChildCategorias */
 class CategoriasTable extends Table
 {
 
@@ -30,20 +28,16 @@ class CategoriasTable extends Table
         $this->displayField('id');
         $this->primaryKey('id');
 
-        $this->belongsTo('Categorias', [
-            'foreignKey' => 'categoria_id',
-            'joinType' => 'INNER'
+        $this->belongsTo('ParentCategorias', [
+            'className' => 'Categorias',
+            'foreignKey' => 'parent_id'
         ]);
-        $this->hasMany('Categorias', [
-            'foreignKey' => 'categoria_id'
+        $this->hasMany('ChildCategorias', [
+            'className' => 'Categorias',
+            'foreignKey' => 'parent_id'
         ]);
     }
-public function findHijos(Query $query, array $options)
-{
-return $this->find()->matching('Categorias', function ($q) use ($options) {
-		return $q->where(['Categorioas.categoria_id ='.$options['padre']]);
-	});
-}
+
     /**
      * Default validation rules.
      *
@@ -53,15 +47,11 @@ return $this->find()->matching('Categorias', function ($q) use ($options) {
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->add('id', 'valid', ['rule' => 'numeric'])
-            ->allowEmpty('id', 'create');
-
+            ->add('id', 'valid', ['rule' => 'numeric'])            ->allowEmpty('id', 'create');
         $validator
             ->allowEmpty('nombre');
-
         $validator
             ->allowEmpty('descripcion');
-
         return $validator;
     }
 
@@ -74,7 +64,7 @@ return $this->find()->matching('Categorias', function ($q) use ($options) {
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['categoria_id'], 'Categorias'));
+        $rules->add($rules->existsIn(['parent_id'], 'ParentCategorias'));
         return $rules;
     }
 }

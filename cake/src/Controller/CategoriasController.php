@@ -6,8 +6,7 @@ use App\Controller\AppController;
 /**
  * Categorias Controller
  *
- * @property \App\Model\Table\CategoriasTable $Categorias
- */
+ * @property \App\Model\Table\CategoriasTable $Categorias */
 class CategoriasController extends AppController
 {
 
@@ -18,7 +17,20 @@ class CategoriasController extends AppController
      */
     public function index()
     {
-        $this->set('categorias', $this->paginate($this->Categorias));
+        $this->paginate = [
+            'contain' => ['ParentCategorias']
+        ];
+		$categorias=$this->paginate($this->Categorias);
+		$arbol=array();
+		$padres=array();
+		foreach($categorias as $categoria){
+			//if($categoria->parent_id==0){
+				array_push($padres, $categoria);
+		//	}
+		}
+		$arbol=$this->crea_arbol($categorias,$arbol,"");
+		
+        $this->set(compact('categorias', 'arbol'));
         $this->set('_serialize', ['categorias']);
     }
 
@@ -31,14 +43,10 @@ class CategoriasController extends AppController
      */
     public function view($id = null)
     {
-        $categoria = $this->Categorias->get($id);
-		$categoria->categorias = $this->paginate($this->Categorias);
-		$nombre_padre="";
-		if($categoria->categoria_id!=0){
-		 $padre = $this->Categorias->get($categoria->categoria_id);
-		 $nombre_padre=$padre->nombre;
-		}
-        $this->set(compact('categoria','nombre_padre'));
+        $categoria = $this->Categorias->get($id, [
+            'contain' => ['ParentCategorias', 'ChildCategorias']
+        ]);
+        $this->set('categoria', $categoria);
         $this->set('_serialize', ['categoria']);
     }
 
@@ -50,33 +58,33 @@ class CategoriasController extends AppController
     public function add()
     {
         $categoria = $this->Categorias->newEntity();
-		$categoria_padres =$this->paginate($this->Categorias);
-		
-		$n=array();
+		$categoria_padres =$this->paginate($this->Categorias);		
+		$parentCategorias=array();
 		foreach($categoria_padres as $v){
-			
-				array_push($n,$v->nombre);
+			array_push($parentCategorias, $v->nombre);
 		}
 		
         if ($this->request->is('post')) {
-			$nombrepadre=$n[$this->request->data['categoria_id']];
-			$this->request->data['categoria_id']=$nombrepadre;
-			$categoria = $this->Categorias->patchEntity($categoria, $this->request->data);
-			
-			foreach($categoria_padres as $v){
-				if(strcmp($v->nombre,$nombrepadre)==0){
-					$categoria->categoria_id=$v->id;
+            $categoria = $this->Categorias->patchEntity($categoria, $this->request->data);
+			$index=$this->request->data['parent_id'];
+			if($index!=null){
+				$nombrepadre=$parentCategorias[$index];
+				foreach($categoria_padres as $v){
+					if(strcmp($v->nombre,$nombrepadre)==0){
+						$categoria->parent_id=$v->id;
+					}
 				}
 			}
+			
             if ($this->Categorias->save($categoria)) {
-                $this->Flash->success(__('La categoria se ha guardado.'));
+                $this->Flash->success(__('The categoria has been saved.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('La categoria no se ha guardado. Pruebe otra vez.'));
+                $this->Flash->error(__('The categoria could not be saved. Please, try again.'));
             }
         }
-		$categoria_padres=$this->Categorias->find('list');
-        $this->set(compact('categoria','categoria_padres','n'));
+        
+        $this->set(compact('categoria', 'parentCategorias'));
         $this->set('_serialize', ['categoria']);
     }
 
@@ -92,37 +100,32 @@ class CategoriasController extends AppController
         $categoria = $this->Categorias->get($id, [
             'contain' => []
         ]);
-		$categoria_padres =$this->paginate($this->Categorias);
-		
-		$n=array("");
-		$i=1;
+		$categoria_padres =$this->paginate($this->Categorias);		
+		$parentCategorias=array();
 		foreach($categoria_padres as $v){
-				
-				array_push($n,$v->nombre);
-				if($v->id==$categoria->categoria_id){
-					$categoria->categoria_id=$i;
-				}
-				$i=$i+1;
+			array_push($parentCategorias, $v->nombre);
 		}
-		$nombrepadre="";
         if ($this->request->is(['patch', 'post', 'put'])) {
-            $nombrepadre=$n[$this->request->data['categoria_id']];
-			$this->request->data['categoria_id']=$nombrepadre;
-			$categoria = $this->Categorias->patchEntity($categoria, $this->request->data);
+            $categoria = $this->Categorias->patchEntity($categoria, $this->request->data);
+			$index=$this->request->data['parent_id'];
 			
-			foreach($categoria_padres as $v){
-				if(strcmp($v->nombre,$nombrepadre)==0){
-					$categoria->categoria_id=$v->id;
+			if($index!=null){
+				$nombrepadre=$parentCategorias[$index];
+				foreach($categoria_padres as $v){
+					if(strcmp($v->nombre,$nombrepadre)==0){
+						$categoria->parent_id=$v->id;
+					}
 				}
 			}
             if ($this->Categorias->save($categoria)) {
-                $this->Flash->success(__('La categoria se ha guardado.'));
+                $this->Flash->success(__('The categoria has been saved.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('La categoria no se ha guardado. Pruebe otra vez.'));
+                $this->Flash->error(__('The categoria could not be saved. Please, try again.'));
             }
         }
-        $this->set(compact('categoria','n'));
+		
+        $this->set(compact('categoria', 'parentCategorias'));
         $this->set('_serialize', ['categoria']);
     }
 
@@ -138,20 +141,20 @@ class CategoriasController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $categoria = $this->Categorias->get($id);
         if ($this->Categorias->delete($categoria)) {
-			$categoria_hijos =$this->paginate($this->Categorias);
-			foreach($categoria_hijos as $c){
-				
-				if($id == $c->categoria_id){
-					$c->categoria_id=0;
-					 if ($this->Categorias->save($c)){
-						  return $this->redirect(['action' => 'add']);
-					 }
-				}
-			}
             $this->Flash->success(__('The categoria has been deleted.'));
         } else {
             $this->Flash->error(__('The categoria could not be deleted. Please, try again.'));
         }
         return $this->redirect(['action' => 'index']);
+    }
+	
+	private function crea_arbol($padres,$arbol,$espacios){
+		foreach($padres as $v){
+			array_push($arbol,$espacios.$v->nombre);
+			$arbol=$this->crea_arbol($v->child_categorias,$arbol,"&nbsp&nbsp&nbsp&nbsp".$espacios);
+		}
+		return $arbol;
+                
+       
     }
 }

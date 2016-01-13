@@ -17,8 +17,7 @@ class CategoriasTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.categorias',
-        'app.categoria_padres'
+        'app.categorias'
     ];
 
     /**
@@ -29,9 +28,7 @@ class CategoriasTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('Categorias') ? [] : ['className' => 'App\Model\Table\CategoriasTable'];
-        $this->Categorias = TableRegistry::get('Categorias', $config);
-    }
+        $config = TableRegistry::exists('Categorias') ? [] : ['className' => 'App\Model\Table\CategoriasTable'];        $this->Categorias = TableRegistry::get('Categorias', $config);    }
 
     /**
      * tearDown method

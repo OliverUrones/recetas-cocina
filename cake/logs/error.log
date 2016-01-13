@@ -4280,3 +4280,2305 @@ Stack Trace:
 #1 {main}
 
 
+2016-01-13 08:34:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:34:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:35:00 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "categorias"
+Request URL: /daw2-2015-recetas-cocina/cake/categorias/view/24
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\ORM\Table.php(1187): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php(37): Cake\ORM\Table->get(23)
+#2 [internal function]: App\Controller\CategoriasController->view('24')
+#3 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CategoriasController))
+#6 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-01-13 08:35:05 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:35:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:35:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:35:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:35:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:37:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:37:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:37:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:42:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:42:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:42:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:42:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:42:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:42:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:43:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:44:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:44:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:44:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:44:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:44:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:45:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:45:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:45:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:45:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:45:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:46:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:46:35 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:46:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:47:37 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:47:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:48:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:49:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:49:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:49:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:49:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:50:05 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:50:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:50:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:50:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:51:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:51:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:51:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:51:35 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:51:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:52:04 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 08:52:05 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:18:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:18:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:19:10 Error: [InvalidArgumentException] Categorias is not associated with Categorias
+Request URL: /daw2-2015-recetas-cocina/cake/categorias/view/25
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(250): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\CategoriasTable), 'Categorias', Array, Array)
+#1 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(358): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\CategoriasTable))
+#2 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(337): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\CategoriasTable))
+#3 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\ORM\Query.php(897): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\CategoriasTable), true)
+#4 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\ORM\Query.php(853): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(121): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Database\Connection.php(216): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Database\Connection.php(268): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Database\Query.php(174): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\ORM\Query.php(872): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(272): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\ORM\Query.php(823): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(395): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(406): Cake\ORM\Query->first()
+#14 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\ORM\Table.php(1187): Cake\ORM\Query->firstOrFail()
+#15 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php(35): Cake\ORM\Table->get('25', Array)
+#16 [internal function]: App\Controller\CategoriasController->view('25')
+#17 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#18 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#19 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CategoriasController))
+#20 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#21 {main}
+
+
+2016-01-13 09:19:23 Error: [InvalidArgumentException] Categorias is not associated with Categorias
+Request URL: /daw2-2015-recetas-cocina/cake/categorias/view/25
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(250): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\CategoriasTable), 'Categorias', Array, Array)
+#1 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(358): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\CategoriasTable))
+#2 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(337): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\CategoriasTable))
+#3 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\ORM\Query.php(897): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\CategoriasTable), true)
+#4 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\ORM\Query.php(853): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(121): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Database\Connection.php(216): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Database\Connection.php(268): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Database\Query.php(174): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\ORM\Query.php(872): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(272): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\ORM\Query.php(823): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(395): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(406): Cake\ORM\Query->first()
+#14 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\ORM\Table.php(1187): Cake\ORM\Query->firstOrFail()
+#15 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php(35): Cake\ORM\Table->get('25', Array)
+#16 [internal function]: App\Controller\CategoriasController->view('25')
+#17 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#18 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#19 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CategoriasController))
+#20 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#21 {main}
+
+
+2016-01-13 09:21:22 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:21:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:21:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:21:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:22:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:22:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:22:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:23:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:24:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:24:16 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:24:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:24:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:25:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:25:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:28:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:28:16 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:28:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:33:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:33:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:33:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:34:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:35:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:35:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:36:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:36:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:36:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:36:16 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:36:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:36:37 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:36:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:37:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:37:31 Error: Fatal Error (1): Cannot use object of type Cake\ORM\ResultSet as array in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 61]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2016-01-13 09:37:31 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\ResultSet as array
+Request URL: /daw2-2015-recetas-cocina/cake/categorias/add
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 61)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-01-13 09:40:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:41:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:42:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:42:36 Warning: Warning (2): array_push() expects parameter 1 to be array, null given in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 55]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_push - [internal], line ??
+App\Controller\CategoriasController::add() - APP/Controller\CategoriasController.php, line 55
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 09:42:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:43:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:43:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:44:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:45:04 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:46:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:46:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:46:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:50:53 Error: Fatal Error (4): syntax error, unexpected '{' in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 60]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2016-01-13 09:50:53 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '{'
+Request URL: /daw2-2015-recetas-cocina/cake/categorias/add
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 60)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-01-13 09:50:55 Error: Fatal Error (4): syntax error, unexpected '{' in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 60]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2016-01-13 09:50:56 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '{'
+Request URL: /daw2-2015-recetas-cocina/cake/categorias/
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 60)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-01-13 09:51:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:51:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:51:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:52:16 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:52:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:52:22 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:53:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:53:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:54:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:54:05 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:55:04 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:55:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:56:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:56:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:56:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:56:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:56:37 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:56:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:56:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:56:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:56:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:57:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:57:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 09:57:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 10:00:44 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 148]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2016-01-13 10:00:45 Error: [Cake\Error\FatalErrorException] syntax error, unexpected end of file
+Request URL: /daw2-2015-recetas-cocina/cake/categorias/
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 148)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-01-13 10:00:46 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 148]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2016-01-13 10:00:46 Error: [Cake\Error\FatalErrorException] syntax error, unexpected end of file
+Request URL: /daw2-2015-recetas-cocina/cake/categorias/arbol
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 148)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-01-13 10:01:10 Error: Fatal Error (1): Call to a member function generatetreelist() on boolean in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 143]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2016-01-13 10:01:10 Error: [Cake\Error\FatalErrorException] Call to a member function generatetreelist() on boolean
+Request URL: /daw2-2015-recetas-cocina/cake/categorias/arbol
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 143)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-01-13 10:01:55 Error: [BadMethodCallException] Unknown method "generatetreelist"
+Request URL: /daw2-2015-recetas-cocina/cake/categorias/arbol
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php(143): Cake\ORM\Table->__call('generatetreelis...', Array)
+#1 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php(143): App\Model\Table\CategoriasTable->generatetreelist(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#2 [internal function]: App\Controller\CategoriasController->arbol()
+#3 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CategoriasController))
+#6 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-01-13 10:01:58 Error: [BadMethodCallException] Unknown method "generatetreelist"
+Request URL: /daw2-2015-recetas-cocina/cake/categorias/arbol
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php(143): Cake\ORM\Table->__call('generatetreelis...', Array)
+#1 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php(143): App\Model\Table\CategoriasTable->generatetreelist(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#2 [internal function]: App\Controller\CategoriasController->arbol()
+#3 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CategoriasController))
+#6 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-01-13 10:09:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 10:09:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 10:09:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 10:10:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 10:26:04 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 10:28:32 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 151]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 151
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 153
+App\Controller\CategoriasController::index() - APP/Controller\CategoriasController.php, line 31
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:28:32 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Template\Categorias\index.ctp, line 19]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Categorias\index.ctp, line 19
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:28:32 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Template\Categorias\index.ctp, line 43]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Categorias\index.ctp, line 43
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:28:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 10:30:02 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 151]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 151
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 153
+App\Controller\CategoriasController::index() - APP/Controller\CategoriasController.php, line 31
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:30:02 Error: Fatal Error (1): Call to undefined function println() in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Template\Categorias\index.ctp, line 44]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2016-01-13 10:30:02 Error: [Cake\Error\FatalErrorException] Call to undefined function println()
+Request URL: /daw2-2015-recetas-cocina/cake/categorias/
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 44)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-01-13 10:30:28 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 151]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 151
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 153
+App\Controller\CategoriasController::index() - APP/Controller\CategoriasController.php, line 31
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:30:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 10:31:44 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE) in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 33]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2016-01-13 10:31:44 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /daw2-2015-recetas-cocina/cake/categorias/
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 33)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-01-13 10:31:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 10:32:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 10:34:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 10:34:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 10:35:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 10:35:26 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 152]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 152
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 154
+App\Controller\CategoriasController::index() - APP/Controller\CategoriasController.php, line 31
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:35:26 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 152]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 152
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 154
+App\Controller\CategoriasController::index() - APP/Controller\CategoriasController.php, line 31
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:35:26 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 152]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 152
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 154
+App\Controller\CategoriasController::index() - APP/Controller\CategoriasController.php, line 31
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:35:26 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 152]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 152
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 154
+App\Controller\CategoriasController::index() - APP/Controller\CategoriasController.php, line 31
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:35:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 10:35:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 10:35:50 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 152]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 152
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 154
+App\Controller\CategoriasController::index() - APP/Controller\CategoriasController.php, line 31
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:35:50 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 152]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 152
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 154
+App\Controller\CategoriasController::index() - APP/Controller\CategoriasController.php, line 31
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:35:50 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 152]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 152
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 154
+App\Controller\CategoriasController::index() - APP/Controller\CategoriasController.php, line 31
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:35:50 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 152]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 152
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 154
+App\Controller\CategoriasController::index() - APP/Controller\CategoriasController.php, line 31
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:35:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 10:37:41 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 152]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 152
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 154
+App\Controller\CategoriasController::index() - APP/Controller\CategoriasController.php, line 31
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:37:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 10:38:19 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 152]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 152
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 154
+App\Controller\CategoriasController::index() - APP/Controller\CategoriasController.php, line 31
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:38:19 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 152]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 152
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 154
+App\Controller\CategoriasController::index() - APP/Controller\CategoriasController.php, line 31
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:38:19 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 152]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 152
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 154
+App\Controller\CategoriasController::index() - APP/Controller\CategoriasController.php, line 31
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:38:19 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 152]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 152
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 154
+App\Controller\CategoriasController::index() - APP/Controller\CategoriasController.php, line 31
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:38:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 10:39:07 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 152]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 152
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 154
+App\Controller\CategoriasController::index() - APP/Controller\CategoriasController.php, line 31
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:39:07 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 152]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 152
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 154
+App\Controller\CategoriasController::index() - APP/Controller\CategoriasController.php, line 31
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:39:07 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 152]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 152
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 154
+App\Controller\CategoriasController::index() - APP/Controller\CategoriasController.php, line 31
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:39:07 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 152]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 152
+App\Controller\CategoriasController::crea_arbol() - APP/Controller\CategoriasController.php, line 154
+App\Controller\CategoriasController::index() - APP/Controller\CategoriasController.php, line 31
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:39:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 10:49:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class RecetaCategoria could not be found.
+Exception Attributes: array (
+  'class' => 'RecetaCategoria',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/receta_categoria
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 10:49:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-13 10:49:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015-recetas-cocina/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+

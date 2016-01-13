@@ -19,8 +19,18 @@ class RecetaCategoriasTableTest extends TestCase
     public $fixtures = [
         'app.receta_categorias',
         'app.recetas',
-        'app.categorias',
-        'app.categoria_padres'
+        'app.usuarios',
+        'app.menus',
+        'app.menu_platos',
+        'app.planificaciones',
+        'app.receta_comentarios',
+        'app.tiendas',
+        'app.tienda_ofertas',
+        'app.ingredientes',
+        'app.receta_ingredientes',
+        'app.receta_pasos',
+        'app.receta_paso_imagenes',
+        'app.categorias'
     ];
 
     /**
@@ -31,9 +41,7 @@ class RecetaCategoriasTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('RecetaCategorias') ? [] : ['className' => 'App\Model\Table\RecetaCategoriasTable'];
-        $this->RecetaCategorias = TableRegistry::get('RecetaCategorias', $config);
-    }
+        $config = TableRegistry::exists('RecetaCategorias') ? [] : ['className' => 'App\Model\Table\RecetaCategoriasTable'];        $this->RecetaCategorias = TableRegistry::get('RecetaCategorias', $config);    }
 
     /**
      * tearDown method

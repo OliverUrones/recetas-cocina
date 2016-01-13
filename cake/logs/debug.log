@@ -380,3 +380,304 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 2016-01-11 13:28:59 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-13 08:34:55 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 08:34:59 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 08:35:01 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 08:35:03 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::delete, res= true
+2016-01-13 08:35:04 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 08:35:06 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 08:35:12 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 08:35:13 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 08:35:16 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 08:35:22 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 08:35:23 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 08:37:47 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 08:37:53 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 08:37:56 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 08:42:44 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 08:42:45 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 08:42:48 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 08:42:50 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 08:42:51 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 08:42:56 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 08:42:56 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 08:43:54 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 08:44:17 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 08:44:27 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 08:44:38 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 08:44:50 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 08:44:52 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 08:45:28 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 08:45:32 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 08:45:50 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 08:45:53 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 08:45:58 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 08:46:06 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 08:46:34 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 08:46:39 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 08:47:36 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 08:47:44 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 08:48:00 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 08:49:07 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 08:49:14 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 08:49:25 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 08:49:44 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 08:50:05 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 08:50:17 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 08:50:18 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 08:50:31 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 08:50:42 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 08:51:00 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 08:51:21 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 08:51:30 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 08:51:34 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 08:51:38 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 08:52:03 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 08:52:05 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 09:18:48 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:19:10 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 09:19:19 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:19:23 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 09:19:27 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:21:21 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:21:30 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 09:21:44 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:21:49 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::delete, res= true
+2016-01-13 09:21:50 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:21:51 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 09:21:59 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:22:02 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:22:15 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:22:15 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:22:24 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::delete, res= true
+2016-01-13 09:22:25 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:23:16 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:23:18 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:23:20 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:23:58 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:24:01 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:24:16 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:24:29 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:24:29 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:24:43 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:24:43 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:24:45 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:25:20 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:25:33 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:28:13 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:28:16 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:28:20 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 09:28:23 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:33:50 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:33:55 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 09:33:59 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:34:06 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:35:02 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:35:08 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:36:08 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:36:10 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:36:12 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:36:16 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:36:20 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:36:37 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:36:43 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:37:27 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:37:31 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:40:49 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:40:50 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:41:01 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:42:12 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:42:35 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:43:30 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:43:31 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:43:35 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:43:35 Notice: Notice (8): Undefined index:  in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 60]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::add() - APP/Controller\CategoriasController.php, line 60
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 09:43:42 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:43:55 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:43:56 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:44:06 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:44:10 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:44:10 Notice: Notice (8): Undefined index:  in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 60]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::add() - APP/Controller\CategoriasController.php, line 60
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 09:45:03 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:46:20 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:46:25 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:46:54 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:47:45 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:47:45 Notice: Notice (8): Undefined index:  in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 61]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::add() - APP/Controller\CategoriasController.php, line 61
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 09:51:07 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:51:10 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:51:16 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:51:16 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:52:16 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::add, res= true
+2016-01-13 09:52:19 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:52:21 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 09:53:38 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:53:41 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 09:53:59 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::delete, res= true
+2016-01-13 09:53:59 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:54:04 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 09:54:09 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 09:54:09 Notice: Notice (8): Undefined variable: index in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 100]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::edit() - APP/Controller\CategoriasController.php, line 100
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 09:55:03 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:55:12 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 09:55:20 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 09:55:20 Notice: Notice (8): Undefined offset: 28 in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 103]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::edit() - APP/Controller\CategoriasController.php, line 103
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 09:56:18 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:56:23 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::delete, res= true
+2016-01-13 09:56:24 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:56:28 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::delete, res= true
+2016-01-13 09:56:28 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:56:30 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:56:37 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 09:56:45 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 09:56:45 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:56:51 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:56:55 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 09:56:58 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 09:56:58 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:57:05 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 09:57:09 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::edit, res= true
+2016-01-13 09:57:09 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 09:57:13 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 10:01:10 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::arbol, res= true
+2016-01-13 10:01:55 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::arbol, res= true
+2016-01-13 10:01:58 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::arbol, res= true
+2016-01-13 10:09:03 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 10:09:05 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 10:09:37 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 10:10:18 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 10:26:03 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 10:28:32 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 10:28:32 Notice: Notice (8): Undefined variable: arbol in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Template\Categorias\index.ctp, line 43]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Categorias\index.ctp, line 43
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:30:01 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 10:30:02 Notice: Notice (8): Use of undefined constant out - assumed 'out' in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Template\Categorias\index.ctp, line 44]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Categorias\index.ctp, line 44
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:30:28 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 10:30:28 Notice: Notice (8): Array to string conversion in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Template\Categorias\index.ctp, line 44]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Categorias\index.ctp, line 44
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:31:57 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 10:31:57 Notice: Notice (8): Array to string conversion in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Template\Categorias\index.ctp, line 44]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Categorias\index.ctp, line 44
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:32:41 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 10:34:27 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 10:34:40 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 10:35:22 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 10:35:26 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 10:35:47 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 10:35:50 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 10:35:53 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::view, res= true
+2016-01-13 10:37:41 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 10:37:41 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\daw2-2015-recetas-cocina\cake\src\Controller\CategoriasController.php, line 27]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CategoriasController::index() - APP/Controller\CategoriasController.php, line 27
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-13 10:38:19 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 10:39:07 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Categorias::index, res= true
+2016-01-13 10:49:42 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaCategorias::index, res= true
+2016-01-13 10:49:56 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaCategorias::add, res= true

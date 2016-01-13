@@ -6,12 +6,7 @@ use Cake\ORM\Entity;
 /**
  * Categoria Entity.
  *
- * @property int $id
- * @property string $nombre
- * @property string $descripcion
- * @property int $categoria_id
- * @property \App\Model\Entity\Categoria[] $categorias
- */
+ * @property int $id * @property string $nombre * @property string $descripcion * @property int $parent_id * @property \App\Model\Entity\Categoria $parent_categoria * @property \App\Model\Entity\Categoria[] $child_categorias */
 class Categoria extends Entity
 {
 

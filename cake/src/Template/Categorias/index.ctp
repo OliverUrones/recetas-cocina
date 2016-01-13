@@ -11,7 +11,7 @@
             <tr>
                 <th><?= $this->Paginator->sort('id') ?></th>
                 <th><?= $this->Paginator->sort('nombre') ?></th>
-                <th><?= $this->Paginator->sort('categoria_id') ?></th>
+                <th><?= $this->Paginator->sort('parent_id') ?></th>
                 <th class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
@@ -20,7 +20,7 @@
             <tr>
                 <td><?= $this->Number->format($categoria->id) ?></td>
                 <td><?= h($categoria->nombre) ?></td>
-                <td><?= $this->Number->format($categoria->categoria_id) ?></td>
+                <td><?= $categoria->has('parent_categoria') ? $this->Html->link($categoria->parent_categoria->nombre, ['controller' => 'Categorias', 'action' => 'view', $categoria->parent_categoria->id]) : '' ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $categoria->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $categoria->id]) ?>
@@ -39,3 +39,6 @@
         <p><?= $this->Paginator->counter() ?></p>
     </div>
 </div>
+<?php
+	print_r($arbol);
+	?>

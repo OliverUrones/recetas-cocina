@@ -10,9 +10,7 @@ use Cake\Validation\Validator;
 /**
  * RecetaCategorias Model
  *
- * @property \Cake\ORM\Association\BelongsTo $Recetas
- * @property \Cake\ORM\Association\BelongsTo $Categorias
- */
+ * @property \Cake\ORM\Association\BelongsTo $Recetas * @property \Cake\ORM\Association\BelongsTo $Categorias */
 class RecetaCategoriasTable extends Table
 {
 
@@ -27,6 +25,8 @@ class RecetaCategoriasTable extends Table
         parent::initialize($config);
 
         $this->table('receta_categorias');
+        $this->displayField('id');
+        $this->primaryKey('id');
 
         $this->belongsTo('Recetas', [
             'foreignKey' => 'receta_id',
@@ -36,6 +36,19 @@ class RecetaCategoriasTable extends Table
             'foreignKey' => 'categoria_id',
             'joinType' => 'INNER'
         ]);
+    }
+
+    /**
+     * Default validation rules.
+     *
+     * @param \Cake\Validation\Validator $validator Validator instance.
+     * @return \Cake\Validation\Validator
+     */
+    public function validationDefault(Validator $validator)
+    {
+        $validator
+            ->add('id', 'valid', ['rule' => 'numeric'])            ->allowEmpty('id', 'create');
+        return $validator;
     }
 
     /**

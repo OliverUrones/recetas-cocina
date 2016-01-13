@@ -151,11 +151,8 @@ foreach ($relations as $alias => $details):
 <?php $otherPk = "\${$otherSingularVar}->{$details['primaryKey'][0]}"; ?>
                 <td class="actions">
                     <CakePHPBakeOpenTag= $this->Html->link(__('View'), ['controller' => '<?= $details['controller'] ?>', 'action' => 'view', <?= $otherPk ?>]) ?>
-
                     <CakePHPBakeOpenTag= $this->Html->link(__('Edit'), ['controller' => '<?= $details['controller'] ?>', 'action' => 'edit', <?= $otherPk ?>]) ?>
-
                     <CakePHPBakeOpenTag= $this->Form->postLink(__('Delete'), ['controller' => '<?= $details['controller'] ?>', 'action' => 'delete', <?= $otherPk ?>], ['confirm' => __('Are you sure you want to delete # {0}?', <?= $otherPk ?>)]) ?>
-
                 </td>
             </tr>
             <CakePHPBakeOpenTagphp endforeach; CakePHPBakeCloseTag>
