@@ -70,12 +70,18 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                       //echo $this->Form->postButton(__('Cambiar Rol'), ['controller' => 'usuarios', 'action' => 'cambiarRol']);
                   }
                 } else {
-                  echo 'Invitado';
+                  echo '<li>';
+                  echo $this->Html->link('Invitado', ['controller' => 'Pages', 'action' => 'display']);
+                  echo '</li>';
+                  echo '<li>';
+                  echo $this->Html->link('Acceder', ['controller' => 'Usuarios', 'action' => 'login']);
+                  echo '</li>';
+                  echo '<li>';
+                  echo $this->Html->link('Registrarse', ['controller' => 'Usuarios', 'action' => 'registro']);
+                  echo '</li>';
                 }
                 echo '</li>';
                 ?>
-                <li><a target="_blank" href="http://book.cakephp.org/3.0/">Documentation</a></li>
-                <li><a target="_blank" href="http://api.cakephp.org/3.0/">API</a></li>
             </ul>
         </section>
     </nav>
