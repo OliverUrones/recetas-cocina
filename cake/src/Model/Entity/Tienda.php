@@ -6,17 +6,7 @@ use Cake\ORM\Entity;
 /**
  * Tienda Entity.
  *
- * @property int $id
- * @property string $nombre
- * @property string $domicilio
- * @property string $poblacion
- * @property string $provincia
- * @property int $usuario_id
- * @property \App\Model\Entity\Usuario $usuario
- * @property bool $activa
- * @property bool $visible
- * @property \App\Model\Entity\TiendaOferta[] $tienda_ofertas
- */
+ * @property int $id * @property string $nombre * @property string $domicilio * @property string $poblacion * @property string $provincia * @property int $usuario_id * @property \App\Model\Entity\Usuario $usuario * @property bool $activa * @property bool $visible * @property \App\Model\Entity\TiendaOferta[] $tienda_ofertas */
 class Tienda extends Entity
 {
 

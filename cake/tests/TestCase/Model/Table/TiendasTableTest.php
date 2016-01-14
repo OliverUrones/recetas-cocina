@@ -19,8 +19,18 @@ class TiendasTableTest extends TestCase
     public $fixtures = [
         'app.tiendas',
         'app.usuarios',
+        'app.menus',
+        'app.menu_platos',
+        'app.recetas',
+        'app.receta_categorias',
+        'app.categorias',
+        'app.receta_comentarios',
+        'app.receta_ingredientes',
+        'app.ingredientes',
         'app.tienda_ofertas',
-        'app.ingredientes'
+        'app.receta_pasos',
+        'app.receta_paso_imagenes',
+        'app.planificaciones'
     ];
 
     /**
@@ -31,9 +41,7 @@ class TiendasTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('Tiendas') ? [] : ['className' => 'App\Model\Table\TiendasTable'];
-        $this->Tiendas = TableRegistry::get('Tiendas', $config);
-    }
+        $config = TableRegistry::exists('Tiendas') ? [] : ['className' => 'App\Model\Table\TiendasTable'];        $this->Tiendas = TableRegistry::get('Tiendas', $config);    }
 
     /**
      * tearDown method

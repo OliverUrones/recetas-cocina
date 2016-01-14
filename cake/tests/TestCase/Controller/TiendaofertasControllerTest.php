@@ -24,7 +24,6 @@ class TiendaOfertasControllerTest extends IntegrationTestCase
         'app.recetas',
         'app.receta_categorias',
         'app.categorias',
-        'app.categoria_padres',
         'app.receta_comentarios',
         'app.receta_ingredientes',
         'app.ingredientes',

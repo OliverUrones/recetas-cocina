@@ -10,9 +10,7 @@ use Cake\Validation\Validator;
 /**
  * Tiendas Model
  *
- * @property \Cake\ORM\Association\BelongsTo $Usuarios
- * @property \Cake\ORM\Association\HasMany $TiendaOfertas
- */
+ * @property \Cake\ORM\Association\BelongsTo $Usuarios * @property \Cake\ORM\Association\HasMany $TiendaOfertas */
 class TiendasTable extends Table
 {
 
@@ -48,32 +46,19 @@ class TiendasTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->add('id', 'valid', ['rule' => 'numeric'])
-            ->allowEmpty('id', 'create');
-
+            ->add('id', 'valid', ['rule' => 'numeric'])            ->allowEmpty('id', 'create');
         $validator
-            ->requirePresence('nombre', 'create')
-            ->notEmpty('nombre');
-
+            ->requirePresence('nombre', 'create')            ->notEmpty('nombre');
         $validator
             ->allowEmpty('domicilio');
-
         $validator
             ->allowEmpty('poblacion');
-
         $validator
             ->allowEmpty('provincia');
-
         $validator
-            ->add('activa', 'valid', ['rule' => 'boolean'])
-            ->requirePresence('activa', 'create')
-            ->notEmpty('activa');
-
+            ->add('activa', 'valid', ['rule' => 'boolean'])            ->requirePresence('activa', 'create')            ->notEmpty('activa');
         $validator
-            ->add('visible', 'valid', ['rule' => 'boolean'])
-            ->requirePresence('visible', 'create')
-            ->notEmpty('visible');
-
+            ->add('visible', 'valid', ['rule' => 'boolean'])            ->requirePresence('visible', 'create')            ->notEmpty('visible');
         return $validator;
     }
 

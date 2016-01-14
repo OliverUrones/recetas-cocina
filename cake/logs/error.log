@@ -7416,3 +7416,1814 @@ Stack Trace:
 #1 {main}
 
 
+2016-01-14 17:04:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Tiendas could not be found.
+Exception Attributes: array (
+  'class' => 'Tiendas',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/tiendas
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 17:05:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 17:10:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 17:10:22 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 17:10:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 17:10:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class TiendasOfertas could not be found.
+Exception Attributes: array (
+  'class' => 'TiendasOfertas',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/tiendas-ofertas
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 17:10:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:29:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:29:47 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\view\3.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\view\\3.ctp',
+)
+Request URL: /daw2-2015/cake/pages/view/3
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\View\View.php(575): Cake\View\View->_getViewFileName('view/3')
+#1 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render('view/3', NULL)
+#2 C:\xampp\htdocs\daw2-2015\cake\src\Controller\PagesController.php(57): Cake\Controller\Controller->render('view/3')
+#3 [internal function]: App\Controller\PagesController->display('view', '3')
+#4 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#6 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PagesController))
+#7 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2016-01-14 18:30:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:30:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:30:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:30:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:30:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:30:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:31:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:31:08 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::validateSort() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 158 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 302]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 302
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 97
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 18:31:08 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::_prefix() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 333 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 345]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::_prefix() - CORE\src\Controller\Component\PaginatorComponent.php, line 345
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 333
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 97
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 18:31:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:31:27 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::validateSort() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 158 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 302]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 302
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 97
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 18:31:27 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::_prefix() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 333 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 345]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::_prefix() - CORE\src\Controller\Component\PaginatorComponent.php, line 345
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 333
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 97
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 18:31:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:32:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:32:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:32:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:32:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:32:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:33:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:33:22 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:33:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:49:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:51:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:51:30 Error: [Cake\Controller\Exception\MissingActionException] Action TiendaOfertasController::view2() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'TiendaOfertasController',
+  'action' => 'view2',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /daw2-2015/cake/tienda-ofertas/view2
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TiendaOfertasController))
+#2 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-01-14 18:52:11 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "tienda_ofertas" with primary key [NULL]
+Request URL: /daw2-2015/cake/tienda-ofertas/view2
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\src\Controller\TiendaofertasController.php(100): Cake\ORM\Table->get(NULL, Array)
+#1 [internal function]: App\Controller\TiendaOfertasController->view2()
+#2 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TiendaOfertasController))
+#5 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-01-14 18:53:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:53:16 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:53:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:53:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 18:56:26 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\view\4.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\view\\4.ctp',
+)
+Request URL: /daw2-2015/cake/pages/view/4
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\View\View.php(575): Cake\View\View->_getViewFileName('view/4')
+#1 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render('view/4', NULL)
+#2 C:\xampp\htdocs\daw2-2015\cake\src\Controller\PagesController.php(57): Cake\Controller\Controller->render('view/4')
+#3 [internal function]: App\Controller\PagesController->display('view', '4')
+#4 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#6 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PagesController))
+#7 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2016-01-14 18:56:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:04:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:09:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:09:26 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::validateSort() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 158 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 302]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 302
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 116
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 19:09:26 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::_prefix() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 333 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 345]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::_prefix() - CORE\src\Controller\Component\PaginatorComponent.php, line 345
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 333
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 116
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 19:09:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:25:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:29:20 Error: Fatal Error (4): syntax error, unexpected '=', expecting ']' in [C:\xampp\htdocs\daw2-2015\cake\src\Template\TiendaOfertas\portada.ctp, line 33]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2016-01-14 19:29:20 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '=', expecting ']'
+Request URL: /daw2-2015/cake/
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 33)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-01-14 19:29:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:29:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:30:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:31:35 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:31:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:31:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:33:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:33:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:33:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:33:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:35:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:38:02 Error: Fatal Error (4): syntax error, unexpected 'h' (T_STRING), expecting ',' or ';' in [C:\xampp\htdocs\daw2-2015\cake\src\Template\TiendaOfertas\view.ctp, line 13]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2016-01-14 19:38:02 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'h' (T_STRING), expecting ',' or ';'
+Request URL: /daw2-2015/cake/tienda-ofertas/view/4
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 13)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-01-14 19:38:45 Error: Fatal Error (4): syntax error, unexpected 'h' (T_STRING), expecting ',' or ';' in [C:\xampp\htdocs\daw2-2015\cake\src\Template\TiendaOfertas\view.ctp, line 13]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2016-01-14 19:38:45 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'h' (T_STRING), expecting ',' or ';'
+Request URL: /daw2-2015/cake/tienda-ofertas/view/4
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 13)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-01-14 19:39:07 Error: Fatal Error (4): syntax error, unexpected 'h' (T_STRING), expecting ',' or ';' in [C:\xampp\htdocs\daw2-2015\cake\src\Template\TiendaOfertas\view.ctp, line 13]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2016-01-14 19:39:08 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'h' (T_STRING), expecting ',' or ';'
+Request URL: /daw2-2015/cake/tienda-ofertas/view/4
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 13)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-01-14 19:39:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:40:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:40:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:40:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:40:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:41:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:42:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:45:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:47:22 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:48:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:49:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:51:37 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:51:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:56:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:56:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 19:56:57 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::validateSort() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 158 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 302]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 302
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 116
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 19:56:57 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::_prefix() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 333 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 345]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::_prefix() - CORE\src\Controller\Component\PaginatorComponent.php, line 345
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 333
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 116
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 19:56:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 20:07:21 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::validateSort() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 158 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 302]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 302
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 116
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:07:21 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::_prefix() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 333 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 345]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::_prefix() - CORE\src\Controller\Component\PaginatorComponent.php, line 345
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 333
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 116
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:07:22 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 20:08:15 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::validateSort() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 158 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 302]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 302
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 116
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:08:15 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::_prefix() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 333 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 345]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::_prefix() - CORE\src\Controller\Component\PaginatorComponent.php, line 345
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 333
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 116
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:08:16 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 20:08:26 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::validateSort() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 158 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 302]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 302
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 116
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:08:26 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::_prefix() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 333 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 345]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::_prefix() - CORE\src\Controller\Component\PaginatorComponent.php, line 345
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 333
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 116
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:08:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 20:09:20 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::validateSort() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 158 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 302]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 302
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 116
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:09:20 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::_prefix() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 333 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 345]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::_prefix() - CORE\src\Controller\Component\PaginatorComponent.php, line 345
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 333
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 116
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:09:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 20:09:31 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::validateSort() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 158 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 302]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 302
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 116
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:09:31 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::_prefix() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 333 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 345]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::_prefix() - CORE\src\Controller\Component\PaginatorComponent.php, line 345
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 333
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 116
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:12:17 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::validateSort() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 158 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 302]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 302
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 116
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:12:17 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::_prefix() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 333 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 345]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::_prefix() - CORE\src\Controller\Component\PaginatorComponent.php, line 345
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 333
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 116
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:12:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 20:16:22 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::validateSort() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 158 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 302]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 302
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 119
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:16:22 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::_prefix() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 333 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 345]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::_prefix() - CORE\src\Controller\Component\PaginatorComponent.php, line 345
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 333
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 119
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:16:22 Error: [InvalidArgumentException] Tiendas is not associated with Tiendas
+Request URL: /daw2-2015/cake/tienda-ofertas/add
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(250): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\TiendasTable), 'Tiendas', Array, Array)
+#1 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(358): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\TiendasTable))
+#2 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(337): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\TiendasTable))
+#3 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\ORM\Query.php(897): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\TiendasTable), true)
+#4 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\ORM\Query.php(853): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(121): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Database\Connection.php(216): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Database\Connection.php(268): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Database\Query.php(174): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\ORM\Query.php(872): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(272): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\ORM\Query.php(823): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(171): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(Cake\ORM\Association\BelongsTo), Array)
+#14 C:\xampp\htdocs\daw2-2015\cake\src\Controller\TiendaofertasController.php(119): Cake\Controller\Controller->paginate(Object(Cake\ORM\Association\BelongsTo))
+#15 [internal function]: App\Controller\TiendaOfertasController->add()
+#16 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#17 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#18 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TiendaOfertasController))
+#19 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2016-01-14 20:19:02 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::validateSort() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 158 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 302]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 302
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 117
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:19:02 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::_prefix() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 333 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 345]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::_prefix() - CORE\src\Controller\Component\PaginatorComponent.php, line 345
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 333
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 117
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:19:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 20:19:37 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::validateSort() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 158 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 302]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 302
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 117
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:19:37 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::_prefix() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 333 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 345]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::_prefix() - CORE\src\Controller\Component\PaginatorComponent.php, line 345
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 333
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 117
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:19:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 20:28:22 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::validateSort() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 158 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 302]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 302
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 117
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:28:22 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::_prefix() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 333 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 345]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::_prefix() - CORE\src\Controller\Component\PaginatorComponent.php, line 345
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 333
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 117
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:28:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 20:29:38 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::validateSort() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 158 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 302]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 302
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 131
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:29:38 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::_prefix() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 333 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 345]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::_prefix() - CORE\src\Controller\Component\PaginatorComponent.php, line 345
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 333
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 131
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:29:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 20:30:01 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::validateSort() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 158 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 302]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 302
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 131
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:30:01 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::_prefix() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 333 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 345]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::_prefix() - CORE\src\Controller\Component\PaginatorComponent.php, line 345
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 333
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 131
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:30:09 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::validateSort() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 158 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 302]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 302
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 131
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:30:09 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::_prefix() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 333 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 345]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::_prefix() - CORE\src\Controller\Component\PaginatorComponent.php, line 345
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 333
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 131
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:30:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 20:30:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 20:30:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 20:31:46 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::validateSort() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 158 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 302]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 302
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 131
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:31:46 Warning: Warning (4096): Argument 1 passed to Cake\Controller\Component\PaginatorComponent::_prefix() must implement interface Cake\Datasource\RepositoryInterface, instance of Cake\ORM\Association\BelongsTo given, called in C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php on line 333 and defined in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php, line 345]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Controller\Component\PaginatorComponent::_prefix() - CORE\src\Controller\Component\PaginatorComponent.php, line 345
+Cake\Controller\Component\PaginatorComponent::validateSort() - CORE\src\Controller\Component\PaginatorComponent.php, line 333
+Cake\Controller\Component\PaginatorComponent::paginate() - CORE\src\Controller\Component\PaginatorComponent.php, line 158
+Cake\Controller\Controller::paginate() - CORE\src\Controller\Controller.php, line 688
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 131
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:31:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 20:40:10 Error: Fatal Error (1): Call to undefined function App\Controller\paginate() in [C:\xampp\htdocs\daw2-2015\cake\src\Controller\TiendaofertasController.php, line 117]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2016-01-14 20:40:10 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\paginate()
+Request URL: /daw2-2015/cake/tienda-ofertas/add
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 117)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-01-14 20:44:56 Error: Fatal Error (1): Call to undefined function App\Controller\paginate() in [C:\xampp\htdocs\daw2-2015\cake\src\Controller\TiendaofertasController.php, line 117]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2016-01-14 20:44:56 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\paginate()
+Request URL: /daw2-2015/cake/tienda-ofertas/add
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 117)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-01-14 20:48:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 20:48:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 20:48:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 20:48:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 20:49:01 Error: [Cake\View\Exception\MissingTemplateException] Template file "MenuPlatos\add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'MenuPlatos\\add.ctp',
+)
+Request URL: /daw2-2015/cake/menu-platos/add
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\View\View.php(575): Cake\View\View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\MenuPlatosController))
+#4 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-01-14 20:50:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 20:50:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 20:50:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-14 20:50:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /daw2-2015/cake/css/admin.css
+Stack Trace:
+#0 C:\xampp\htdocs\daw2-2015\cake\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+

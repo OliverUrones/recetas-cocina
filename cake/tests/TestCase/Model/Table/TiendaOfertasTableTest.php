@@ -19,7 +19,18 @@ class TiendaOfertasTableTest extends TestCase
     public $fixtures = [
         'app.tienda_ofertas',
         'app.tiendas',
-        'app.ingredientes'
+        'app.usuarios',
+        'app.menus',
+        'app.menu_platos',
+        'app.recetas',
+        'app.receta_categorias',
+        'app.categorias',
+        'app.receta_comentarios',
+        'app.receta_ingredientes',
+        'app.ingredientes',
+        'app.receta_pasos',
+        'app.receta_paso_imagenes',
+        'app.planificaciones'
     ];
 
     /**
@@ -30,9 +41,7 @@ class TiendaOfertasTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('TiendaOfertas') ? [] : ['className' => 'App\Model\Table\TiendaOfertasTable'];
-        $this->TiendaOfertas = TableRegistry::get('TiendaOfertas', $config);
-    }
+        $config = TableRegistry::exists('TiendaOfertas') ? [] : ['className' => 'App\Model\Table\TiendaOfertasTable'];        $this->TiendaOfertas = TableRegistry::get('TiendaOfertas', $config);    }
 
     /**
      * tearDown method

@@ -1977,3 +1977,232 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 2016-01-13 21:59:06 Debug: App\Controller\AppController::isAuthorized[128] rol= sysadmin, acceso= Usuarios::login, res= false
 2016-01-13 21:59:19 Debug: App\Controller\AppController::isAuthorized[128] rol= sysadmin, acceso= Usuarios::logout, res= false
+2016-01-14 17:10:35 Debug: App\Controller\AppController::isAuthorized[128] rol= T, acceso= Recetas::index, res= false
+2016-01-14 18:30:23 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Tiendas::index, res= true
+2016-01-14 18:30:44 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Tiendas::view, res= true
+2016-01-14 18:30:50 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Tiendas::index, res= true
+2016-01-14 18:30:55 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Tiendas::add, res= true
+2016-01-14 18:31:08 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::add, res= true
+2016-01-14 18:31:27 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::add, res= true
+2016-01-14 18:31:27 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\daw2-2015\cake\src\Controller\TiendaofertasController.php, line 122]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 122
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 18:31:27 Notice: Notice (8): Undefined index:  in [C:\xampp\htdocs\daw2-2015\cake\src\Controller\TiendaofertasController.php, line 122]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 122
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 18:31:28 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\daw2-2015\cake\src\Controller\TiendaofertasController.php, line 127]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 127
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 18:32:41 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Ingredientes::add, res= true
+2016-01-14 18:32:44 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Ingredientes::index, res= true
+2016-01-14 18:32:47 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Ingredientes::add, res= true
+2016-01-14 18:32:55 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::edit, res= true
+2016-01-14 18:33:10 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::delete, res= true
+2016-01-14 18:33:20 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Ingredientes::index, res= true
+2016-01-14 18:49:56 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Tiendas::index, res= true
+2016-01-14 18:53:15 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::index, res= true
+2016-01-14 18:53:37 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::view, res= true
+2016-01-14 19:04:18 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::index, res= true
+2016-01-14 19:09:22 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::index, res= true
+2016-01-14 19:09:26 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::add, res= true
+2016-01-14 19:30:09 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::index, res= true
+2016-01-14 19:31:34 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::index, res= true
+2016-01-14 19:33:52 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::index, res= true
+2016-01-14 19:33:58 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::view, res= true
+2016-01-14 19:34:03 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::index, res= true
+2016-01-14 19:35:23 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::view, res= true
+2016-01-14 19:38:01 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::view, res= true
+2016-01-14 19:38:45 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::view, res= true
+2016-01-14 19:39:07 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::view, res= true
+2016-01-14 19:39:58 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::view, res= true
+2016-01-14 19:40:08 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::view, res= true
+2016-01-14 19:40:27 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::view, res= true
+2016-01-14 19:40:43 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::view, res= true
+2016-01-14 19:40:56 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::view, res= true
+2016-01-14 19:41:18 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::view, res= true
+2016-01-14 19:42:33 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::view, res= true
+2016-01-14 19:45:46 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::view, res= true
+2016-01-14 19:45:50 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Tiendas::view, res= true
+2016-01-14 19:47:21 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::view, res= true
+2016-01-14 19:48:28 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::edit, res= true
+2016-01-14 19:48:28 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\daw2-2015\cake\src\Template\TiendaOfertas\edit.ctp, line 7]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\TiendaOfertas\edit.ctp, line 7
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 19:48:28 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\daw2-2015\cake\src\Template\TiendaOfertas\edit.ctp, line 7]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\TiendaOfertas\edit.ctp, line 7
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 19:49:55 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::edit, res= true
+2016-01-14 19:49:55 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\daw2-2015\cake\src\Template\TiendaOfertas\edit.ctp, line 7]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\TiendaOfertas\edit.ctp, line 7
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 19:49:55 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\daw2-2015\cake\src\Template\TiendaOfertas\edit.ctp, line 7]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\TiendaOfertas\edit.ctp, line 7
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 19:51:36 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::edit, res= true
+2016-01-14 19:51:54 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::edit, res= true
+2016-01-14 19:51:54 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\daw2-2015\cake\src\Template\TiendaOfertas\edit.ctp, line 7]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\TiendaOfertas\edit.ctp, line 7
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 19:56:33 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::edit, res= true
+2016-01-14 19:56:52 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::index, res= true
+2016-01-14 19:56:57 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::add, res= true
+2016-01-14 20:07:21 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::add, res= true
+2016-01-14 20:08:15 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::add, res= true
+2016-01-14 20:08:26 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::add, res= true
+2016-01-14 20:08:26 Notice: Notice (8): Use of undefined constant tienda_id - assumed 'tienda_id' in [C:\xampp\htdocs\daw2-2015\cake\src\Controller\TiendaofertasController.php, line 141]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 141
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:08:26 Notice: Notice (8): Undefined index: tienda_id in [C:\xampp\htdocs\daw2-2015\cake\src\Controller\TiendaofertasController.php, line 141]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 141
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:08:26 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\daw2-2015\cake\src\Controller\TiendaofertasController.php, line 146]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\TiendaOfertasController::add() - APP/Controller\TiendaofertasController.php, line 146
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:09:20 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::add, res= true
+2016-01-14 20:09:31 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::add, res= true
+2016-01-14 20:12:17 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::add, res= true
+2016-01-14 20:16:22 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::add, res= true
+2016-01-14 20:19:02 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::add, res= true
+2016-01-14 20:19:37 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::add, res= true
+2016-01-14 20:19:42 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::index, res= true
+2016-01-14 20:28:22 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::add, res= true
+2016-01-14 20:29:38 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::add, res= true
+2016-01-14 20:30:01 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::add, res= true
+2016-01-14 20:30:09 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::add, res= true
+2016-01-14 20:30:18 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::index, res= true
+2016-01-14 20:30:33 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::view, res= true
+2016-01-14 20:31:46 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::add, res= true
+2016-01-14 20:40:10 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::add, res= true
+2016-01-14 20:44:56 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= TiendaOfertas::add, res= true
+2016-01-14 20:48:37 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Menus::index, res= true
+2016-01-14 20:48:42 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Menus::add, res= true
+2016-01-14 20:48:49 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Menus::add, res= true
+2016-01-14 20:48:50 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Menus::index, res= true
+2016-01-14 20:48:54 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Menus::view, res= true
+2016-01-14 20:48:54 Notice: Notice (8): Undefined offset: 0 in [C:\xampp\htdocs\daw2-2015\cake\vendor\cakephp\cakephp\src\ORM\Query.php, line 335]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Query::_addAssociationsToTypeMap() - CORE\src\ORM\Query.php, line 335
+Cake\ORM\Query::contain() - CORE\src\ORM\Query.php, line 311
+Cake\ORM\Query::applyOptions() - CORE\src\ORM\Query.php, line 636
+Cake\ORM\Table::callFinder() - CORE\src\ORM\Table.php, line 1754
+Cake\ORM\Table::find() - CORE\src\ORM\Table.php, line 933
+Cake\ORM\Table::get() - CORE\src\ORM\Table.php, line 1174
+App\Controller\MenusController::view() - APP/Controller\MenusController.php, line 39
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-14 20:48:59 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Menus::index, res= true
+2016-01-14 20:49:01 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= MenuPlatos::add, res= true
+2016-01-14 20:50:14 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::index, res= true
+2016-01-14 20:50:20 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-14 20:50:22 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::add, res= true
+2016-01-14 20:50:38 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::add, res= true
+2016-01-14 20:50:38 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true

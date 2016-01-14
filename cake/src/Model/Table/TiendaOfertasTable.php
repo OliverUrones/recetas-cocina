@@ -10,9 +10,7 @@ use Cake\Validation\Validator;
 /**
  * TiendaOfertas Model
  *
- * @property \Cake\ORM\Association\BelongsTo $Tiendas
- * @property \Cake\ORM\Association\BelongsTo $Ingredientes
- */
+ * @property \Cake\ORM\Association\BelongsTo $Tiendas * @property \Cake\ORM\Association\BelongsTo $Ingredientes */
 class TiendaOfertasTable extends Table
 {
 
@@ -49,26 +47,17 @@ class TiendaOfertasTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->add('id', 'valid', ['rule' => 'numeric'])
-            ->allowEmpty('id', 'create');
-
+            ->add('id', 'valid', ['rule' => 'numeric'])            ->allowEmpty('id', 'create');
         $validator
             ->allowEmpty('descripcion');
-
         $validator
             ->allowEmpty('envase');
-
         $validator
-            ->add('cantidad', 'valid', ['rule' => 'numeric'])
-            ->requirePresence('cantidad', 'create')
-            ->notEmpty('cantidad');
-
+            ->add('cantidad', 'valid', ['rule' => 'numeric'])            ->requirePresence('cantidad', 'create')            ->notEmpty('cantidad');
         $validator
             ->allowEmpty('medida');
-
         $validator
             ->allowEmpty('notas');
-
         return $validator;
     }
 
