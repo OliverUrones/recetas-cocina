@@ -109,15 +109,21 @@ class TiendaOfertasController extends AppController
      */
     public function add()
     {	
-		
 		$tiendaOferta = $this->TiendaOfertas->newEntity();
 		$usuario= $this->request->session()->read('Auth.User');
        //$tiendas= $this->paginate($this->Tiendas);
 		//$aux=$this->TiendaOfertas->Tiendas->find('list',[]);
-		$tiendas=$this->paginate($this->TiendaOfertas->Tiendas);
+		$tiendas=$this->paginate('Tiendas');
+                $ingredientes=$this->paginate('Ingredientes');
 		//print_r($aux);
 		$idtiendas=array();
 		$nombres=array();
+                $idingredientes=array();
+		$nombresing=array();
+                foreach($ingredientes as $ingrediente){
+                                array_push($idingredientes,$ingrediente->id);
+				array_push($nombresing,$ingrediente->nombre);
+                }
 		if( $usuario['rol']!=='A'){
 		
 			foreach($tiendas as $tienda){
@@ -139,7 +145,8 @@ class TiendaOfertasController extends AppController
 		}
         if ($this->request->is('post')) {
             $tiendaOferta = $this->TiendaOfertas->patchEntity($tiendaOferta, $this->request->data);
-		    $tiendaOferta->tienda_id=$idtiendas[$tiendaOferta->tienda_id];
+            $tiendaOferta->ingrediente_id= $idingredientes[$tiendaOferta->ingrediente_id];
+            $tiendaOferta->tienda_id=$idtiendas[$tiendaOferta->tienda_id];
             if ($this->TiendaOfertas->save($tiendaOferta)) {
                 $this->Flash->success(__('The tienda oferta has been saved.'));
                 return $this->redirect(['action' => 'index']);
@@ -150,8 +157,8 @@ class TiendaOfertasController extends AppController
         
 		
 		//$nombres= $this->TiendaOfertas->Tiendas->find('list', ['limit' => 200]);
-        $ingredientes = $this->TiendaOfertas->Ingredientes->find('list', ['limit' => 200]);
-        $this->set(compact('tiendaOferta', 'nombres', 'ingredientes'));
+        //$ingredientes = $this->TiendaOfertas->Ingredientes->find('list', ['limit' => 200]);
+        $this->set(compact('tiendaOferta', 'nombres', 'nombresing'));
         $this->set('_serialize', ['tiendaOferta']);
     }
 
@@ -178,7 +185,7 @@ class TiendaOfertasController extends AppController
 			}
 		}
         $tiendaOferta = $this->TiendaOfertas->get($id, [
-            'contain' => []
+            'contain' => ['Tiendas', 'Ingredientes']
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $tiendaOferta = $this->TiendaOfertas->patchEntity($tiendaOferta, $this->request->data);

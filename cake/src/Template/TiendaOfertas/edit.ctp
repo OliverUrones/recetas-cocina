@@ -4,7 +4,7 @@
         <li><?= $this->Form->postLink(
                 __('Borrar'),
                 ['action' => 'delete', $tiendaOferta->id],
-                ['confirm' => __('¿Estas seguro que desea borrar la oferta # {0}?', $tiendaOferta->id)]
+                ['confirm' => __('¿Estas seguro que desea borrar la oferta de  {0} de {1}?', $tiendaOferta->ingrediente->nombre,$tiendaOferta->tienda->nombre)]
             )
         ?></li>
         <li><?= $this->Html->link(__('Listar Ofertas'), ['action' => 'index']) ?></li>
