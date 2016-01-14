@@ -1,6 +1,6 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
+        <li class="heading"><?= __('Menu') ?></li>
         <li><?= $this->Html->link(__('Editar Tienda'), ['action' => 'edit', $tienda->id]) ?> </li>
         <li><?= $this->Form->postLink(__('Borrar Tienda'), ['action' => 'delete', $tienda->id], ['confirm' => __('¿Estas seguro que desea borrar # {0}?', $tienda->id)]) ?> </li>
         <li><?= $this->Html->link(__('Listar Tiendas'), ['action' => 'index']) ?> </li>
@@ -58,7 +58,7 @@
                 <th><?= __('Cantidad') ?></th>
                 <th><?= __('Medida') ?></th>
                 <th><?= __('Notas') ?></th>
-                <th class="actions"><?= __('Actions') ?></th>
+                <th class="actions"><?= __('Acciones') ?></th>
             </tr>
             <?php foreach ($tienda->tienda_ofertas as $tiendaOfertas): ?>
             <tr>
@@ -71,9 +71,9 @@
                 <td><?= h($tiendaOfertas->medida) ?></td>
                 <td><?= h($tiendaOfertas->notas) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'TiendaOfertas', 'action' => 'view', $tiendaOfertas->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'TiendaOfertas', 'action' => 'edit', $tiendaOfertas->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'TiendaOfertas', 'action' => 'delete', $tiendaOfertas->id], ['confirm' => __('Are you sure you want to delete # {0}?', $tiendaOfertas->id)]) ?>
+                    <?= $this->Html->link(__('Ver'), ['controller' => 'TiendaOfertas', 'action' => 'view', $tiendaOfertas->id]) ?>
+                    <?= $this->Html->link(__('Editar'), ['controller' => 'TiendaOfertas', 'action' => 'edit', $tiendaOfertas->id]) ?>
+                    <?= $this->Form->postLink(__('Borrar'), ['controller' => 'TiendaOfertas', 'action' => 'delete', $tiendaOfertas->id], ['confirm' => __('¿Estas seguro que desea borrar # {0}?', $tiendaOfertas->id)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>
