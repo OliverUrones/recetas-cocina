@@ -1,21 +1,21 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
+        <li class="heading"><?= __('Menu') ?></li>
         <li><?= $this->Form->postLink(
                 __('Borrar Tienda'),
                 ['action' => 'delete', $tienda->id],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $tienda->id)]
+                ['confirm' => __('¿Estas seguro que desea borrar # {0}?', $tienda->nombre)]
             )
         ?></li>
-        <li><?= $this->Html->link(__('Lista de Tiendas'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('Lista de Ofertas'), ['controller' => 'TiendaOfertas', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('Listar Tiendas'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('Listar Ofertas'), ['controller' => 'TiendaOfertas', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('Nueva Oferta'), ['controller' => 'TiendaOfertas', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="tiendas form large-9 medium-8 columns content">
     <?= $this->Form->create($tienda) ?>
     <fieldset>
-        <legend><?= __('Edit Tienda') ?></legend>
+        <legend>Edición <?= h($tienda->nombre) ?></legend>
         <?php
             echo $this->Form->input('nombre');
             echo $this->Form->input('domicilio');
@@ -29,6 +29,6 @@
 			}
         ?>
     </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
+    <?= $this->Form->button(__('Modificar')) ?>
     <?= $this->Form->end() ?>
 </div>

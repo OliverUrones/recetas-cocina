@@ -1,6 +1,6 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
+        <li class="heading"><?= __('Menu') ?></li>
         <li><?= $this->Html->link(__('Lista de Tiendas'), ['action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('Lista de Ofertas'), ['controller' => 'TiendaOfertas', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('Nueva Oferta'), ['controller' => 'TiendaOfertas', 'action' => 'add']) ?></li>
@@ -25,6 +25,6 @@
 			}
         ?>
     </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
+    <?= $this->Form->button(__('Crear')) ?>
     <?= $this->Form->end() ?>
 </div>

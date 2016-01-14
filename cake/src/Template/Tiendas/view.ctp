@@ -73,7 +73,7 @@
                 <td class="actions">
                     <?= $this->Html->link(__('Ver'), ['controller' => 'TiendaOfertas', 'action' => 'view', $tiendaOfertas->id]) ?>
                     <?= $this->Html->link(__('Editar'), ['controller' => 'TiendaOfertas', 'action' => 'edit', $tiendaOfertas->id]) ?>
-                    <?= $this->Form->postLink(__('Borrar'), ['controller' => 'TiendaOfertas', 'action' => 'delete', $tiendaOfertas->id], ['confirm' => __('¿Estas seguro que desea borrar # {0}?', $tiendaOfertas->id)]) ?>
+                    <?= $this->Form->postLink(__('Borrar'), ['controller' => 'TiendaOfertas', 'action' => 'delete', $tiendaOfertas->id], ['confirm' => __('¿Estas seguro que desea borrar # {0}?', $tiendaOfertas->nombre)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>
