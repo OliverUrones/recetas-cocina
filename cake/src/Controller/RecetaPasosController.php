@@ -18,6 +18,9 @@ class RecetaPasosController extends AppController
      */
     public function index($receta_id = null)
     {
+        if($receta_id == null){
+            $receta_id = $_GET['receta_id'];
+        }
         $this->paginate = [
             'contain' => ['Recetas']
         ];
@@ -47,14 +50,14 @@ class RecetaPasosController extends AppController
      *
      * @return void Redirects on successful add, renders view otherwise.
      */
-    public function add($receta_id)
+    public function add($receta_id=null)
     {
         $recetaPaso = $this->RecetaPasos->newEntity();
         if ($this->request->is('post')) {
             $recetaPaso = $this->RecetaPasos->patchEntity($recetaPaso, $this->request->data);
 			
-        $receta = $this->RecetaPasos->Recetas->get($receta_id);
-			$recetaPaso->receta=$receta;
+                $receta = $this->RecetaPasos->Recetas->get($receta_id);
+		$recetaPaso->receta=$receta;
             if ($this->RecetaPasos->save($recetaPaso)) {
                 $this->Flash->success(__('The receta paso has been saved.'));
                 return $this->redirect(['action' => 'index',$receta_id]);
@@ -76,6 +79,7 @@ class RecetaPasosController extends AppController
      */
     public function edit($id = null)
     {
+    
         $recetaPaso = $this->RecetaPasos->get($id, [
             'contain' => []
         ]);
@@ -83,7 +87,7 @@ class RecetaPasosController extends AppController
             $recetaPaso = $this->RecetaPasos->patchEntity($recetaPaso, $this->request->data);
             if ($this->RecetaPasos->save($recetaPaso)) {
                 $this->Flash->success(__('The receta paso has been saved.'));
-                return $this->redirect(['action' => 'index',$recetaPaso->receta->id]);
+               return $this->redirect(['action' => 'index','receta_id'=>$recetaPaso->receta_id]);
             } else {
                 $this->Flash->error(__('The receta paso could not be saved. Please, try again.'));
             }
@@ -109,6 +113,6 @@ class RecetaPasosController extends AppController
         } else {
             $this->Flash->error(__('The receta paso could not be deleted. Please, try again.'));
         }
-        return $this->redirect(['action' => 'index',$recetaPaso->receta->id]);
+         return $this->redirect(['action' => 'index','receta_id'=>$recetaPaso->receta_id]);
     }
 }

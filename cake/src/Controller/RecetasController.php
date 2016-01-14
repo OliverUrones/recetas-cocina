@@ -16,12 +16,39 @@ class RecetasController extends AppController
      *
      * @return void
      */
+    public function beforeFilter(\Cake\Event\Event $event)
+    {
+        parent::beforeFilter($event);
+         
+        $usuario= $this->request->session()->read('Auth.User');
+        if($usuario['rol']=='C'){
+            $this->Auth->allow('index');
+            $this->Auth->allow('view');
+            $this->Auth->allow('add');
+            $this->Auth->allow('edit');
+            $this->Auth->allow('delete');
+        }
+         $this->Auth->redirectUrl();
+    }//---*/
+        public $misrecetas;
     public function index()
     {
         $this->paginate = [
             'contain' => ['Usuarios']
         ];
-        $this->set('recetas', $this->paginate($this->Recetas));
+        $recetas=$this->paginate($this->Recetas);
+        $usuario= $this->request->session()->read('Auth.User');
+        if($usuario['rol']=='C'){
+            $aux=array();
+            foreach($recetas as $receta){
+                if($receta->usuario_id==$usuario['id']){
+                    array_push($aux,$receta);
+                }
+                $recetas=$aux;
+            }
+           
+        }
+        $this->set('recetas',$recetas);
         $this->set('_serialize', ['recetas']);
     }
 
@@ -32,6 +59,8 @@ class RecetasController extends AppController
      * @return void
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
+
+    
     public function view($id = null)
     {
         $receta = $this->Recetas->get($id, [
@@ -52,8 +81,8 @@ class RecetasController extends AppController
 		
         if ($this->request->is('post')) {
             $receta = $this->Recetas->patchEntity($receta, $this->request->data);
-			$usuario= $this->request->session()->read('Auth.User');
-			$receta->usuario_id = $usuario['id'];
+	    $usuario= $this->request->session()->read('Auth.User');
+	    $receta->usuario_id = $usuario['id'];
             if ($this->Recetas->save($receta)) {
                 $this->Flash->success(__('La receta ha sido guardada.'));
                 return $this->redirect(['action' => 'index']);
@@ -73,14 +102,16 @@ class RecetasController extends AppController
      * @return void Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function edit($id = null)
+    public function edit($id=null)
     {
-        $receta = $this->Recetas->get($id, [
+      
+        $receta = $this->Recetas->get( $id, [
             'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $receta = $this->Recetas->patchEntity($receta, $this->request->data);
             if ($this->Recetas->save($receta)) {
+                
                 $this->Flash->success(__('La receta ha sido guardada.'));
                 return $this->redirect(['action' => 'index']);
             } else {

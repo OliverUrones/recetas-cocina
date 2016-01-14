@@ -25,10 +25,14 @@
             echo $this->Form->input('descripcion');
             echo $this->Form->input('tipo_plato', ['type' => 'select', 'options'=>\App\model\Entity\Receta::tipo_plato(),'empty'=>'Seleccionar']);
             echo $this->Form->input('dificultad' , ['type' => 'select', 'options'=>\App\model\Entity\Receta::dificultad(),'empty'=>'Seleccionar']);
-             echo $this->Form->input('comensales', ['options' => [1,2,4,6,8], 'empty' => false]);
+             echo $this->Form->input('comensales', ['type' => 'select', 'options' => [1=>1,2=>2,4=>4,6=>6,8=>8], 'empty' => false]);
             echo $this->Form->input('tiempo_elaboracion');
+            $usuario= $this->request->session()->read('Auth.User');
+           
             echo $this->Form->input('valoracion', ['type' => 'select', 'options'=>\App\model\Entity\Receta::valoracion(),'empty'=>'Seleccionar']);
+             if($usuario['rol']=='A'){
             echo $this->Form->input('aceptada');
+            }
         ?>
     </fieldset>
     <?= $this->Form->button(__('Enviar')) ?>

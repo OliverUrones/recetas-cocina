@@ -71,6 +71,9 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                   }
                 } else {
                   echo '<li>';
+                  echo $this->Html->link('Administrar recetas', ['controller' => 'recetas', 'action' => 'index']);
+                  echo '</li>';
+                  echo '<li>';
                   echo $this->Html->link('Invitado', ['controller' => 'Pages', 'action' => 'display']);
                   echo '</li>';
                   echo '<li>';

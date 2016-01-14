@@ -3,7 +3,7 @@
         <li class="heading"><?= __('Acciones') ?></li>
         <li><?= $this->Html->link(__('Editar Imagen de Paso'), ['action' => 'edit', $recetaPasoImagene->id]) ?> </li>
         <li><?= $this->Form->postLink(__('Eliminar Imagen de paso'), ['action' => 'delete', $recetaPasoImagene->id], ['confirm' => __('Esta seguro que la desea eliminar # {0}?', $recetaPasoImagene->id)]) ?> </li>
-        <li><?= $this->Html->link(__('Imagenes de pasos'), ['action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Imagenes de pasos'), ['action' => 'index',$recetaPasoImagene->receta_paso->id]) ?> </li>
         <li><?= $this->Html->link(__('Nueva imagen de paso'), ['action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('Pasos de receta'), ['controller' => 'RecetaPasos', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('Nuevo paso de receta'), ['controller' => 'RecetaPasos', 'action' => 'add']) ?> </li>
@@ -27,6 +27,6 @@
     </table>
     <div class="row">
         <h4><?= __('Imagen') ?></h4>
-        <?= $this->Text->autoParagraph(h($recetaPasoImagene->imagen)); ?>
+        <img src=<?=$recetaPasoImagene->imagen?> />
     </div>
 </div>
