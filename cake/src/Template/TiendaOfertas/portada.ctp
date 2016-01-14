@@ -30,7 +30,7 @@ use App\Model\TiendaOfertasTable;
                 <td><?= $this->Number->format($tiendaOferta->cantidad) ?></td>
                 <td><?= h($tiendaOferta->medida) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('Acceder a la oferta '), ['action' => 'view', $tiendaOferta->id]) ?>
+                    <?= $this->Html->link(__('Acceder a la oferta '), ['controller'=>'TiendaOfertas', 'action' => 'view2', $tiendaOferta->id]) ?>
                  </td>
             </tr>
             <?php endforeach; ?>
