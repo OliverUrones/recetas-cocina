@@ -1,9 +1,9 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Acciones') ?></li>
-        <li><?= $this->Html->link(__('Nueva imagen de paso,$recetaPaso_id'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('Pasos de receta'), ['controller' => 'RecetaPasos', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('Nuevo paso en receta'), ['controller' => 'RecetaPasos', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('Nueva imagen de paso,$recetaPaso_id'), ['action' => 'add',$recetaPaso_id]) ?></li>
+        <li><?= $this->Html->link(__('Pasos de receta'), ['controller' => 'RecetaPasos', 'action' => 'index', $recetaPaso_id]) ?></li>
+        
     </ul>
 </nav>
 <div class="recetaPasoImagenes index large-9 medium-8 columns content">

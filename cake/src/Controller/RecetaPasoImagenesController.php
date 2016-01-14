@@ -16,11 +16,14 @@ class RecetaPasoImagenesController extends AppController
      *
      * @return void
      */
-    public function index($recetaPaso_id)
+    public function index($recetaPaso_id=null)
     {
         $this->paginate = [
             'contain' => ['RecetaPasos']
         ];
+        if($recetaPaso_id == null){
+            $recetaPaso_id = $_GET['recetaPaso_id'];
+        }
         $recetaPasoImagenes= $this->paginate($this->RecetaPasoImagenes);
         $this->set(compact('recetaPasoImagenes','recetaPaso_id'));
         $this->set('_serialize', ['recetaPasoImagenes']);
@@ -47,20 +50,21 @@ class RecetaPasoImagenesController extends AppController
      *
      * @return void Redirects on successful add, renders view otherwise.
      */
-    public function add()
+    public function add($recetaPaso_id=null)
     {
         $recetaPasoImagene = $this->RecetaPasoImagenes->newEntity();
         if ($this->request->is('post')) {
             $recetaPasoImagene = $this->RecetaPasoImagenes->patchEntity($recetaPasoImagene, $this->request->data);
+            $paso = $this->RecetaPasoImagenes->RecetaPasos->get($recetaPaso_id);
+			$recetaPasoImagene->receta_paso=$paso;
             if ($this->RecetaPasoImagenes->save($recetaPasoImagene)) {
                 $this->Flash->success(__('The receta paso imagene has been saved.'));
-                return $this->redirect(['action' => 'index']);
+                return $this->redirect(['action' => 'index',$recetaPaso_id]);
             } else {
                 $this->Flash->error(__('The receta paso imagene could not be saved. Please, try again.'));
             }
         }
-        $recetaPasos = $this->RecetaPasoImagenes->RecetaPasos->find('list', ['limit' => 200]);
-        $this->set(compact('recetaPasoImagene', 'recetaPasos'));
+         $this->set(compact('recetaPasoImagene', 'recetaPaso_id'));
         $this->set('_serialize', ['recetaPasoImagene']);
     }
 
@@ -80,13 +84,12 @@ class RecetaPasoImagenesController extends AppController
             $recetaPasoImagene = $this->RecetaPasoImagenes->patchEntity($recetaPasoImagene, $this->request->data);
             if ($this->RecetaPasoImagenes->save($recetaPasoImagene)) {
                 $this->Flash->success(__('The receta paso imagene has been saved.'));
-                return $this->redirect(['action' => 'index']);
+                return $this->redirect(['action' => 'index','recetaPaso_id'=>$recetaPasoImagene->receta_paso_id]);
             } else {
                 $this->Flash->error(__('The receta paso imagene could not be saved. Please, try again.'));
             }
         }
-        $recetaPasos = $this->RecetaPasoImagenes->RecetaPasos->find('list', ['limit' => 200]);
-        $this->set(compact('recetaPasoImagene', 'recetaPasos'));
+        $this->set(compact('recetaPasoImagene'));
         $this->set('_serialize', ['recetaPasoImagene']);
     }
 
@@ -106,6 +109,6 @@ class RecetaPasoImagenesController extends AppController
         } else {
             $this->Flash->error(__('The receta paso imagene could not be deleted. Please, try again.'));
         }
-        return $this->redirect(['action' => 'index']);
+         return $this->redirect(['action' => 'index','recetaPaso_id'=>$recetaPasoImagene->receta_paso_id]);
     }
 }

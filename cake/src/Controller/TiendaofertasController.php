@@ -114,12 +114,12 @@ class TiendaOfertasController extends AppController
 		$usuario= $this->request->session()->read('Auth.User');
        //$tiendas= $this->paginate($this->Tiendas);
 		//$aux=$this->TiendaOfertas->Tiendas->find('list',[]);
-		$tiendas=paginate($this->TiendaOfertas->Tiendas);
+		$tiendas=$this->paginate($this->TiendaOfertas->Tiendas);
 		//print_r($aux);
 		$idtiendas=array();
 		$nombres=array();
 		if( $usuario['rol']!=='A'){
-			$tiendas=$this->paginate($this->TiendaOfertas->Tiendas);
+		
 			foreach($tiendas as $tienda){
 				//$tienda=$this->TiendaOfertas->Tiendas->get($id, ['contain' => ['Usuarios']]);
 				if($tienda->usuario_id==$usuario['id']){
@@ -128,7 +128,6 @@ class TiendaOfertasController extends AppController
 				}
 			}
 		}else{
-			
 			//foreach($aux as $id)
 			foreach($tiendas as $tienda){
 				//$tienda=$this->TiendaOfertas->Tiendas->get($id, ['contain' => ['Usuarios']]);
