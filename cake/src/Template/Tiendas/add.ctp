@@ -25,6 +25,6 @@
 			}
         ?>
     </fieldset>
-    <?= $this->Form->button(__('Crear')) ?>
+    <?= $this->Form->button(__('Añadir')) ?>
     <?= $this->Form->end() ?>
 </div>
