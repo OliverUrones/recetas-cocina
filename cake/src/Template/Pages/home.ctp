@@ -2,5 +2,5 @@
 Portada Principal, aquí va el contenido de la portada.
 </section>
 <section class="container clearfix lateral-derecho">
-  <?= $this->element('../TiendaOfertas/Portada') ?>
+  <?= $this->element('../TiendaOfertas/portada') ?>
 </section>

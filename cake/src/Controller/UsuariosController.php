@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use App\Model\Entity;
 use Cake\Mailer\Email;
 use Cake\Filesystem\File;
 use Cake\ORM\TableRegistry;
@@ -371,9 +372,12 @@ class UsuariosController extends AppController
         }
     }
     
+    /*
+     * Métod para restaurar los datos de la base de datos
+     * NOTA: Con algunas tablas da error
+     */
     public function restaurarBackup()
     {
-      debug($this->request->data, true, true);
       if($this->request->is('post'))
       {
         //debug($this->request->data['archivo']['tmp_name'], true, true);
@@ -384,8 +388,25 @@ class UsuariosController extends AppController
             //$archivo = new File($this->request->data['archivo']['tmp_name']);
             //$datos = @include($archivo->path);
             $datos = @include( $this->request->data['archivo']['tmp_name']);
-            debug($datos, true, true);
+            $tablas = array();
             //debug(var_dump($datos), true, true);
+            $conexion = \Cake\Datasource\ConnectionManager::get('default');
+            foreach ($datos as $nombreTabla => $valor) {
+                //debug($nombreTabla, true, true);
+                $tablas = TableRegistry::get($nombreTabla);
+                debug($nombreTabla, true, true);
+                $conexion->execute('TRUNCATE '.$tablas->table().';');
+                //debug($tablas, true, true);
+                //debug($tablas->entityClass(), true, true);
+                //debug($valor, true, true);
+                foreach ($valor as $clave => $value) {
+                    $entidad = $tablas->newEntity();
+                    debug($entidad, true, true);
+                    $entidad = $tablas->patchEntity($entidad, $value);
+                    debug($entidad, true, true);
+                    debug($tablas->save($entidad), true, true);
+                }
+            }
         }
       }
     }
