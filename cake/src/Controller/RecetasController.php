@@ -60,7 +60,7 @@ class RecetasController extends AppController
             'contain' => ['Usuarios']
         ];
         $recetas=$this->paginate($this->Recetas);
-        $usuario= $this->request->session()->read('Auth.User');
+        /*$usuario= $this->request->session()->read('Auth.User');
         if($usuario['rol']=='C'){
             $aux=array();
             foreach($recetas as $receta){
@@ -70,7 +70,7 @@ class RecetasController extends AppController
                 $recetas=$aux;
             }
            
-        }
+        }*/
         $this->set('recetas',$recetas);
         $this->set('_serialize', ['recetas']);
     }

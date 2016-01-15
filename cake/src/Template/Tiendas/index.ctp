@@ -29,7 +29,7 @@
                 <td><?= h($tienda->domicilio) ?></td>
                 <td><?= h($tienda->poblacion) ?></td>
                 <td><?= h($tienda->provincia) ?></td>
-                <td><?= $tienda->has('usuario') ? $this->Html->link($tienda->usuario->id, ['controller' => 'Usuarios', 'action' => 'view', $tienda->usuario->id]) : '' ?></td>
+                <td><?= $tienda->has('usuario') ? $this->Html->link($tienda->usuario->nombre, ['controller' => 'Usuarios', 'action' => 'view', $tienda->usuario->id]) : '' ?></td>
                 <td><?= $tienda->activa ? __('Sí') : __('No'); ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('Ver'), ['action' => 'view', $tienda->id]) ?>

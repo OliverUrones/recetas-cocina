@@ -217,7 +217,7 @@ class TiendaOfertasController extends AppController
         //$this->set(compact('tiendaOferta', 'tiendas', 'ingredientes'));
         $tiendaOferta->tienda_id=array_search($tiendaOferta->tienda_id,$idtiendas);
         $tiendaOferta->ingrediente_id=array_search($tiendaOferta->ingrediente_id,$idingredientes);
-        $tiendaOferta->ingredientes=$tiendaOferta->ingredientes - 1;
+        //$tiendaOferta->ingredientes=$tiendaOferta->ingredientes - 1;
         $this->set(compact('tiendaOferta', 'nombres', 'nombresing'));
         $this->set('_serialize', ['tiendaOferta']);
     }

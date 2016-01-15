@@ -37,7 +37,7 @@ use App\Model\RecetasTable;
                 <td><?= h($receta->comensales) ?></td>
                 <td><?= $this->Number->format($receta->tiempo_elaboracion) ?></td>
                 <td><?= h($receta->valoracion) ?></td>
-                <td><?= $receta->has('usuario') ? $this->Html->link($receta->usuario->id, ['controller' => 'Usuarios', 'action' => 'view', $receta->usuario->id]) : '' ?></td>
+                <td><?= $receta->has('usuario') ? $this->Html->link($receta->usuario->nombre, ['controller' => 'Usuarios', 'action' => 'view', $receta->usuario->id]) : '' ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('Ver'), ['controller'=>'Recetas','action' => 'view', $receta->id]) ?>
                 </td>
