@@ -23,7 +23,7 @@
          </tr>
         <tr>
             <th><?= __('Aceptada') ?></th>
-            <td><?= $receta->aceptada ? __('Yes') : __('No'); ?></td>
+            <td><?= $receta->aceptada ? __('Si') : __('No'); ?></td>
          </tr>
     </table>
    
@@ -38,46 +38,32 @@
             <tr>
                 <th><?= __('Menu Id') ?></th>
                 <th><?= __('Receta Id') ?></th>
-                <th class="actions"><?= __('Acciones') ?></th>
+               
             </tr>
             <?php foreach ($receta->menu_platos as $menuPlatos): ?>
             <tr>
                 <td><?= h($menuPlatos->menu_id) ?></td>
                 <td><?= h($menuPlatos->receta_id) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('Ver'), ['controller' => 'MenuPlatos', 'action' => 'view', $menuPlatos->menu_id]) ?>
-
-                    <?= $this->Html->link(__('Editar'), ['controller' => 'MenuPlatos', 'action' => 'edit', $menuPlatos->menu_id]) ?>
-
-                    <?= $this->Form->postLink(__('Eliminar'), ['controller' => 'MenuPlatos', 'action' => 'delete', $menuPlatos->menu_id], ['confirm' => __('Esta seguro que la desea eliminar # {0}?', $menuPlatos->menu_id)]) ?>
-
-                </td>
+               
             </tr>
             <?php endforeach; ?>
         </table>
     <?php endif; ?>
     </div>
     <div class="related">
-        <h4><?= __('Related Receta Categorias') ?></h4>
+        <h4><?= __('Categorias relacionadas') ?></h4>
         <?php if (!empty($receta->receta_categorias)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
                 <th><?= __('Receta Id') ?></th>
                 <th><?= __('Categoria Id') ?></th>
-                <th class="actions"><?= __('Acciones') ?></th>
+                
             </tr>
             <?php foreach ($receta->receta_categorias as $recetaCategorias): ?>
             <tr>
                 <td><?= h($recetaCategorias->receta_id) ?></td>
                 <td><?= h($recetaCategorias->categoria_id) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('Ver'), ['controller' => 'RecetaCategorias', 'action' => 'view', $recetaCategorias->receta_id]) ?>
-
-                    <?= $this->Html->link(__('Editar'), ['controller' => 'RecetaCategorias', 'action' => 'edit', $recetaCategorias->receta_id]) ?>
-
-                    <?= $this->Form->postLink(__('Eliminar'), ['controller' => 'RecetaCategorias', 'action' => 'delete', $recetaCategorias->receta_id], ['confirm' => __('Esta seguro que la desea eliminar # {0}?', $recetaCategorias->receta_id)]) ?>
-
-                </td>
+               
             </tr>
             <?php endforeach; ?>
         </table>
@@ -93,7 +79,7 @@
                 <th><?= __('Usuario Id') ?></th>
                 <th><?= __('Fechahora') ?></th>
                 <th><?= __('Texto') ?></th>
-                <th class="actions"><?= __('Acciones') ?></th>
+                
             </tr>
             <?php foreach ($receta->receta_comentarios as $recetaComentarios): ?>
             <tr>
@@ -102,14 +88,7 @@
                 <td><?= h($recetaComentarios->usuario_id) ?></td>
                 <td><?= h($recetaComentarios->fechahora) ?></td>
                 <td><?= h($recetaComentarios->texto) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('Ver'), ['controller' => 'RecetaComentarios', 'action' => 'view', $recetaComentarios->id]) ?>
-
-                    <?= $this->Html->link(__('Editar'), ['controller' => 'RecetaComentarios', 'action' => 'edit', $recetaComentarios->id]) ?>
-
-                    <?= $this->Form->postLink(__('Eliminar'), ['controller' => 'RecetaComentarios', 'action' => 'delete', $recetaComentarios->id], ['confirm' => __('Esta seguro que la desea eliminar # {0}?', $recetaComentarios->id)]) ?>
-
-                </td>
+                
             </tr>
             <?php endforeach; ?>
         </table>
@@ -126,7 +105,7 @@
                 <th><?= __('Cantidad') ?></th>
                 <th><?= __('Medida') ?></th>
                 <th><?= __('Notas') ?></th>
-                <th class="actions"><?= __('Acciones') ?></th>
+               
             </tr>
             <?php foreach ($receta->receta_ingredientes as $recetaIngredientes): ?>
             <tr>
@@ -136,19 +115,13 @@
                 <td><?= h($recetaIngredientes->cantidad) ?></td>
                 <td><?= h($recetaIngredientes->medida) ?></td>
                 <td><?= h($recetaIngredientes->notas) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('Ver'), ['controller' => 'RecetaIngredientes', 'action' => 'view', $recetaIngredientes->id]) ?>
-
-                    <?= $this->Html->link(__('Editar'), ['controller' => 'RecetaIngredientes', 'action' => 'edit', $recetaIngredientes->id]) ?>
-
-                    <?= $this->Form->postLink(__('Eliminar'), ['controller' => 'RecetaIngredientes', 'action' => 'delete', $recetaIngredientes->id], ['confirm' => __('Esta seguro que la desea eliminar # {0}?', $recetaIngredientes->id)]) ?>
-
-                </td>
+               
             </tr>
             <?php endforeach; ?>
         </table>
     <?php endif; ?>
     </div>
+    
     <div class="related">
         <h4><?= __('Pasos elaboración de la receta') ?></h4>
         <?php if (!empty($receta->receta_pasos)): ?>
@@ -165,11 +138,11 @@
                 <td><?= h($recetaPasos->descripcion) ?></td>
                 <td>
                  <?php
-                 echo var_dump($receta);
-                 foreach ($receta->receta_paso_imagenes as $recetaPasoImagenes): ?>
+                 
+                 foreach ($pasos->receta_paso_imagenes as $recetaPasoImagenes): ?>
             <tr>
               
-                <td><?= h($recetaPasoImagenes->orden) ?></td>
+               
                 <td><img src="<?= h($recetaPasoImagenes->imagen) ?>"height="82" width="152" /></td>
                 
             </tr>
