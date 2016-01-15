@@ -17,8 +17,8 @@
     <fieldset>
         <legend><?= __('Editar Oferta') ?></legend>
         <?php
-            echo $this->Form->input('tienda_id', ['options' => $tiendas]);
-            echo $this->Form->input('ingrediente_id', ['options' => $ingredientes]);
+            echo $this->Form->input('tienda_id', ['options' => $nombres]);
+            echo $this->Form->input('ingrediente_id', ['options' => $nombresing]);
             echo $this->Form->input('descripcion');
             echo $this->Form->input('envase');
             echo $this->Form->input('cantidad');

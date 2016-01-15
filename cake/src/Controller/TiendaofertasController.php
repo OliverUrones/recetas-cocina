@@ -111,11 +111,8 @@ class TiendaOfertasController extends AppController
     {	
 		$tiendaOferta = $this->TiendaOfertas->newEntity();
 		$usuario= $this->request->session()->read('Auth.User');
-       //$tiendas= $this->paginate($this->Tiendas);
-		//$aux=$this->TiendaOfertas->Tiendas->find('list',[]);
 		$tiendas=$this->paginate('Tiendas');
                 $ingredientes=$this->paginate('Ingredientes');
-		//print_r($aux);
 		$idtiendas=array();
 		$nombres=array();
                 $idingredientes=array();
@@ -127,17 +124,13 @@ class TiendaOfertasController extends AppController
 		if( $usuario['rol']!=='A'){
 		
 			foreach($tiendas as $tienda){
-				//$tienda=$this->TiendaOfertas->Tiendas->get($id, ['contain' => ['Usuarios']]);
 				if($tienda->usuario_id==$usuario['id']){
 					array_push($idtiendas,$tienda->id);
 					array_push($nombres,$tienda->nombre);
 				}
 			}
 		}else{
-			//foreach($aux as $id)
-			foreach($tiendas as $tienda){
-				//$tienda=$this->TiendaOfertas->Tiendas->get($id, ['contain' => ['Usuarios']]);
-				
+			foreach($tiendas as $tienda){				
 					array_push($idtiendas,$tienda->id);
 					array_push($nombres,$tienda->nombre);
 				
@@ -171,7 +164,14 @@ class TiendaOfertasController extends AppController
      */
     public function edit($id = null)
     {
-		$usuario= $this->request->session()->read('Auth.User');
+        
+	$usuario= $this->request->session()->read('Auth.User');
+        $tiendas=$this->paginate('Tiendas');
+        $ingredientes=$this->paginate('Ingredientes');  
+        $idtiendas=array();
+        $nombres=array();
+        $idingredientes=array();
+	$nombresing=array();
 		if( $usuario['rol']!=='A'){
 			$mia=false;
 			foreach($misofertas as $oferta){
@@ -183,12 +183,31 @@ class TiendaOfertasController extends AppController
 			if(!$mia){
 				 return $this->redirect(['action' => 'index']);
 			}
+                        foreach($tiendas as $tienda){
+				if($tienda->usuario_id==$usuario['id']){
+                                    array_push($idtiendas,$tienda->id);
+                                    array_push($nombres,$tienda->nombre);
+				}
+			}
 		}
+                else{
+                    foreach($tiendas as $tienda){
+			array_push($idtiendas,$tienda->id);
+			array_push($nombres,$tienda->nombre);
+				
+			}
+                }
+        foreach($ingredientes as $ingrediente){
+                                array_push($idingredientes,$ingrediente->id);
+				array_push($nombresing,$ingrediente->nombre);
+                }
         $tiendaOferta = $this->TiendaOfertas->get($id, [
             'contain' => ['Tiendas', 'Ingredientes']
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $tiendaOferta = $this->TiendaOfertas->patchEntity($tiendaOferta, $this->request->data);
+            $tiendaOferta->tienda_id=$idtiendas[$tiendaOferta->tienda_id];
+            $tiendaOferta->ingrediente_id=$idingredientes[$tiendaOferta->ingrediente_id];
             if ($this->TiendaOfertas->save($tiendaOferta)) {
                 $this->Flash->success(__('The tienda oferta has been saved.'));
                 return $this->redirect(['action' => 'index']);
@@ -196,9 +215,13 @@ class TiendaOfertasController extends AppController
                 $this->Flash->error(__('The tienda oferta could not be saved. Please, try again.'));
             }
         }
-        $tiendas = $this->TiendaOfertas->Tiendas->find('list', ['limit' => 200]);
-        $ingredientes = $this->TiendaOfertas->Ingredientes->find('list', ['limit' => 200]);
-        $this->set(compact('tiendaOferta', 'tiendas', 'ingredientes'));
+        //$tiendas = $this->TiendaOfertas->Tiendas->find('list', ['limit' => 200]);
+        //$ingredientes = $this->TiendaOfertas->Ingredientes->find('list', ['limit' => 200]);
+        //$this->set(compact('tiendaOferta', 'tiendas', 'ingredientes'));
+        $tiendaOferta->tienda_id=array_search($tiendaOferta->tienda_id,$idtiendas);
+        $tiendaOferta->ingrediente_id=array_search($tiendaOferta->ingrediente_id,$idingredientes);
+        $tiendaOferta->ingredientes=$tiendaOferta->ingredientes - 1;
+        $this->set(compact('tiendaOferta', 'nombres', 'nombresing'));
         $this->set('_serialize', ['tiendaOferta']);
     }
 

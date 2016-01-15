@@ -17,7 +17,7 @@
                 <th><?= $this->Paginator->sort('ingrediente_id') ?></th>
                 <th><?= $this->Paginator->sort('cantidad') ?></th>
                 <th><?= $this->Paginator->sort('medida') ?></th>
-                <th class="actions"><?= __('Actions') ?></th>
+                <th class="actions"><?= __('Acciones') ?></th>
             </tr>
         </thead>
         <tbody>
