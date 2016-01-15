@@ -21,6 +21,8 @@ class RecetasController extends AppController
         parent::beforeFilter($event);
          
         $usuario= $this->request->session()->read('Auth.User');
+        $this->Auth->allow('fichadetallada');
+         $this->Auth->allow('portada');
         if($usuario['rol']=='C'){
             $this->Auth->allow('index');
             $this->Auth->allow('view');
@@ -52,14 +54,26 @@ class RecetasController extends AppController
         $this->set('_serialize', ['recetas']);
     }
 
-    /**
-     * View method
-     *
-     * @param string|null $id Receta id.
-     * @return void
-     * @throws \Cake\Network\Exception\NotFoundException When record not found.
-     */
-
+     public function portada()
+    {
+        $this->paginate = [
+            'contain' => ['Usuarios']
+        ];
+        $recetas=$this->paginate($this->Recetas);
+        $usuario= $this->request->session()->read('Auth.User');
+        if($usuario['rol']=='C'){
+            $aux=array();
+            foreach($recetas as $receta){
+                if($receta->usuario_id==$usuario['id']){
+                    array_push($aux,$receta);
+                }
+                $recetas=$aux;
+            }
+           
+        }
+        $this->set('recetas',$recetas);
+        $this->set('_serialize', ['recetas']);
+    }
     
     public function view($id = null)
     {
@@ -69,7 +83,23 @@ class RecetasController extends AppController
         $this->set('receta', $receta);
         $this->set('_serialize', ['receta']);
     }
-
+    
+     public function fichadetallada($id = null)
+    {
+        $receta = $this->Recetas->get($id, [
+            'contain' => [ /*'MenuPlatos', 'RecetaCategorias', */'RecetaComentarios', 'RecetaIngredientes', 'RecetaPasos']
+        ]);
+        $pasos=array();
+        foreach ($receta->receta_pasos as $recetaPasos)
+        {
+            $rp = $this->Recetas->RecetaPasos->get($recetaPasos->id, ['contain' => ['Recetas', 'RecetaPasoImagenes']]);
+            array_push($pasos,$rp);
+            
+        }
+        
+        $this->set(compact('receta', 'pasos'));
+        $this->set('_serialize', ['receta']);
+    }
     /**
      * Add method
      *

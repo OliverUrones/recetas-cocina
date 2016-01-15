@@ -24,22 +24,20 @@
         <?= $this->Text->autoParagraph(h($recetaPaso->descripcion)); ?>
     </div>
     <div class="related">
-        <h4><?= __('Related Receta Paso Imagenes') ?></h4>
+        <h4><?= __('Imagenes relacionadas con el paso') ?></h4>
         <?php if (!empty($recetaPaso->receta_paso_imagenes)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
-                <th><?= __('Id') ?></th>
-                <th><?= __('Receta Paso Id') ?></th>
-                <th><?= __('Orden') ?></th>
+          
+                <th><?= __('Orden de la imagen') ?></th>
                 <th><?= __('Imagen') ?></th>
                 <th class="actions"><?= __('Acciones') ?></th>
             </tr>
             <?php foreach ($recetaPaso->receta_paso_imagenes as $recetaPasoImagenes): ?>
             <tr>
-                <td><?= h($recetaPasoImagenes->id) ?></td>
-                <td><?= h($recetaPasoImagenes->receta_paso_id) ?></td>
+              
                 <td><?= h($recetaPasoImagenes->orden) ?></td>
-                <td><?= h($recetaPasoImagenes->imagen) ?></td>
+                <td><img src="<?= h($recetaPasoImagenes->imagen) ?>"height="82" width="152" /></td>
                 <td class="actions">
                     <?= $this->Html->link(__('Ver'), ['controller' => 'RecetaPasoImagenes', 'action' => 'view', $recetaPasoImagenes->id]) ?>
 

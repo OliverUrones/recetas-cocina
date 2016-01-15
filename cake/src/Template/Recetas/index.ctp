@@ -9,7 +9,7 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <!--th><?= $this->Paginator->sort('id') ?></th-->
+                <th><?= $this->Paginator->sort('nombre') ?></th>
                 <th><?= $this->Paginator->sort('tipo_plato') ?></th>
                 <th><?= $this->Paginator->sort('dificultad') ?></th>
                 <th><?= $this->Paginator->sort('comensales') ?></th>
@@ -22,7 +22,7 @@
         <tbody>
             <?php foreach ($recetas as $receta): ?>
             <tr>
-                <!-- td><?= $this->Number->format($receta->id) ?></td -->
+                <td><?= h($receta->nombre) ?></td >
                 <td><?= h($receta->mostrarTipo_plato($receta->tipo_plato)) ?></td>
                 <td><?= h($receta->mostrarDificultad($this->Number->format($receta->dificultad))) ?></td>
                 <td><?= h($receta->comensales) ?></td>

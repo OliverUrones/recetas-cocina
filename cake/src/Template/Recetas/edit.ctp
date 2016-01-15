@@ -19,12 +19,14 @@
         <?php
             echo $this->Form->input('nombre');
             echo $this->Form->input('descripcion');
-            echo $this->Form->input('tipo_plato');
+            echo $this->Form->input('tipo_plato',['type' => 'select', 'options'=>\App\model\Entity\Receta::tipo_plato()]);
             echo $this->Form->input('dificultad');
             echo $this->Form->input('comensales');
             echo $this->Form->input('tiempo_elaboracion');
             echo $this->Form->input('valoracion');
+            if($usuario['rol']=='A'){
             echo $this->Form->input('aceptada');
+            }
         ?>
     </fieldset>
     <?= $this->Form->button(__('Enviar')) ?>

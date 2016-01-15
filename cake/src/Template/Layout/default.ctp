@@ -49,6 +49,9 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 //\Cake\Log\Log::write( 'debug', __METHOD__.'['.__LINE__.']'.' _SESSION= '.var_export( $this->request->session(), true));
                 echo '<li>';
                 if ($usuario !== null) {
+                    echo '<li>';
+                  echo $this->Html->link('Administrar recetas', ['controller' => 'recetas', 'action' => 'index']);
+                  echo '</li>';
                   echo $this->Html->link( 'Cerrar Sesion ['.$usuario['nombre'].'-'.$usuario['rol'].']', ['controller'=>'usuarios', 'action'=>'logout']);
                   if($usuario['nombre'] === 'sysadmin')
                   {
@@ -70,9 +73,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                       //echo $this->Form->postButton(__('Cambiar Rol'), ['controller' => 'usuarios', 'action' => 'cambiarRol']);
                   }
                 } else {
-                  echo '<li>';
-                  echo $this->Html->link('Administrar recetas', ['controller' => 'recetas', 'action' => 'index']);
-                  echo '</li>';
+                    
+                  
                   echo '<li>';
                   echo $this->Html->link('Invitado', ['controller' => 'Pages', 'action' => 'display']);
                   echo '</li>';

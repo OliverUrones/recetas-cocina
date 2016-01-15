@@ -11,7 +11,7 @@
 </nav>
 <div class="recetaPasoImagenes view large-9 medium-8 columns content">
 
-    <h3>Imagen nº <?= h($recetaPasoImagene->orden)  ?> del paso nº <?= h($recetaPasoImagene->receta_paso->orden) ?></h3>
+    <h3>Imagen nº <?= h($recetaPasoImagene->orden)  ?> del paso  <?= h($recetaPasoImagene->receta_paso->descripcion) ?></h3>
    
     <div class="row">
         
