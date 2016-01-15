@@ -17,16 +17,21 @@
     <fieldset>
         <legend>Edición <?= h($tienda->nombre) ?></legend>
         <?php
+            $usuario= $this->request->session()->read('Auth.User');
+            if ($usuario['rol']=='A')
+            {
+                echo $this->Form->input('usuario_id',['options' => $nusu]);
+            }
             echo $this->Form->input('nombre');
             echo $this->Form->input('domicilio');
             echo $this->Form->input('poblacion');
             echo $this->Form->input('provincia');
 			$usuario= $this->request->session()->read('Auth.User');
             if ($usuario['rol']=='A')
-			{
-				echo $this->Form->input('activa');
-				echo $this->Form->input('visible');
-			}
+            {
+                echo $this->Form->input('activa');
+            }
+            echo $this->Form->input('visible');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Modificar')) ?>

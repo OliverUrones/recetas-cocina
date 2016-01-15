@@ -21,11 +21,11 @@
             echo $this->Form->input('poblacion');
             echo $this->Form->input('provincia');
            
-			if ($usuario['rol']=='A')
-			{	echo $this->Form->input('activa');
-			
-				echo $this->Form->input('visible');
-			}
+            if ($usuario['rol']=='A')
+            {	
+                echo $this->Form->input('activa');
+            }
+            echo $this->Form->input('visible');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Añadir')) ?>

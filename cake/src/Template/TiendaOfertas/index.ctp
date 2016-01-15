@@ -31,7 +31,7 @@
                 <td class="actions">
                     <?= $this->Html->link(__('Ver'), ['action' => 'view', $tiendaOferta->id]) ?>
                     <?= $this->Html->link(__('Editar'), ['action' => 'edit', $tiendaOferta->id]) ?>
-                    <?= $this->Form->postLink(__('Borrar'), ['action' => 'delete', $tiendaOferta->id], ['confirm' => __('¿Estas seguro que desea borrar la oferta # {0}?', $tiendaOferta->id)]) ?>
+                    <?= $this->Form->postLink(__('Borrar'), ['action' => 'delete', $tiendaOferta->id], ['confirm' => __('¿Estas seguro que desea borrar la oferta de {0} de {1}?', $tiendaOferta->ingrediente->nombre, $tiendaOferta->tienda->nombre)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>

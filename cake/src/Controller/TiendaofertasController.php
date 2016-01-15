@@ -31,7 +31,7 @@ class TiendaOfertasController extends AppController
      *
      * @return void
      */
-	 public $misofertas=array();
+	// public $misofertas=array();
 	
     public function index()
     {
@@ -43,12 +43,11 @@ class TiendaOfertasController extends AppController
 		if( $usuario['rol']!=='A'){
 			$aux=array();
 			foreach($tiendaOfertas as $oferta){
-				if($oferta->tienda->usuario_id==$usuario->id){
+				if($oferta->tienda->usuario_id==$usuario['id']){
 					array_push($aux,$oferta);
 				}
 			}
 			$tiendaOfertas=$aux;
-			$misofertas=$aux;
 		}
         $this->set('tiendaOfertas',$tiendaOfertas );
         $this->set('_serialize', ['tiendaOfertas']);
@@ -81,22 +80,17 @@ class TiendaOfertasController extends AppController
      */
     public function view($id = null)
     {
-		$usuario= $this->request->session()->read('Auth.User');
-		if( $usuario['rol']!=='A'){
-			$mia=false;
-			foreach($misofertas as $oferta){
-				if($oferta->id==$id){
-					$mia=true;
-					break;
-				}
-			}
-			if(!$mia){
-				 return $this->redirect(['action' => 'index']);
-			}
-		}
         $tiendaOferta = $this->TiendaOfertas->get($id, [
             'contain' => ['Tiendas', 'Ingredientes']
         ]);
+		$usuario= $this->request->session()->read('Auth.User');
+		if( $usuario['rol']!=='A'){
+			if($tiendaOferta->tienda->usuario_id!==$usuario['id'])
+                        {
+                            return $this->redirect(['action' => 'index']);
+			}
+		}
+        
         $this->set('tiendaOferta', $tiendaOferta);
         $this->set('_serialize', ['tiendaOferta']);
     }
@@ -180,16 +174,13 @@ class TiendaOfertasController extends AppController
         $nombres=array();
         $idingredientes=array();
 	$nombresing=array();
+        $tiendaOferta = $this->TiendaOfertas->get($id, [
+            'contain' => ['Tiendas', 'Ingredientes']
+        ]);
 		if( $usuario['rol']!=='A'){
-			$mia=false;
-			foreach($misofertas as $oferta){
-				if($oferta->id==$id){
-					$mia=true;
-					break;
-				}
-			}
-			if(!$mia){
-				 return $this->redirect(['action' => 'index']);
+			 if($tiendaOferta->tienda->usuario_id!==$usuario['id'])
+                        {
+                            return $this->redirect(['action' => 'index']);
 			}
                         foreach($tiendas as $tienda){
 				if($tienda->usuario_id==$usuario['id']){
@@ -209,9 +200,7 @@ class TiendaOfertasController extends AppController
                                 array_push($idingredientes,$ingrediente->id);
 				array_push($nombresing,$ingrediente->nombre);
                 }
-        $tiendaOferta = $this->TiendaOfertas->get($id, [
-            'contain' => ['Tiendas', 'Ingredientes']
-        ]);
+        
         if ($this->request->is(['patch', 'post', 'put'])) {
             $tiendaOferta = $this->TiendaOfertas->patchEntity($tiendaOferta, $this->request->data);
             $tiendaOferta->tienda_id=$idtiendas[$tiendaOferta->tienda_id];
@@ -242,21 +231,17 @@ class TiendaOfertasController extends AppController
      */
     public function delete($id = null)
     {
+        $tiendaOferta = $this->TiendaOfertas->get($id, [
+            'contain' => ['Tiendas', 'Ingredientes']
+        ]);
 		$usuario= $this->request->session()->read('Auth.User');
 		if( $usuario['rol']!=='A'){
-			$mia=false;
-			foreach($misofertas as $oferta){
-				if($oferta->id==$id){
-					$mia=true;
-					break;
-				}
-			}
-			if(!$mia){
-				 return $this->redirect(['action' => 'index']);
+			 if($tiendaOferta->tienda->usuario_id!==$usuario['id'])
+                        {
+                            return $this->redirect(['action' => 'index']);
 			}
 		}
         $this->request->allowMethod(['post', 'delete']);
-        $tiendaOferta = $this->TiendaOfertas->get($id);
         if ($this->TiendaOfertas->delete($tiendaOferta)) {
             $this->Flash->success(__('The tienda oferta has been deleted.'));
         } else {
