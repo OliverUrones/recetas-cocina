@@ -5,22 +5,24 @@ use Cake\Controller\Component;
 
     if(!isset($Recetas) )
     {
-        $Recetas = TableRegistry::get('Recetas');
+        /*$Recetas = TableRegistry::get('Recetas');
         $Recetas = &paginator->paginate($Recetas->find(), $config);
-        $Recetas = $Recetas->toArray();
+        $Recetas = $Recetas->toArray();*/
+        $Recetas = TableRegistry::get('Recetas')->find();
+        $Recetas = $Recetas->find('all')->toArray();
     }
 ?>
 <div class="recetas left index large-7">
     <h3 align="center"><?= __('RECETAS') ?></h3>
     <h5 align="center"><i><?= __('"Busque la receta que le guste e intentela"') ?></i></h5>
-    <div class="paginator">
+   <!-- <div class="paginator">
         <ul class="pagination">
             <?= $this->Paginator->prev('< ' . __('anterior')) ?>
             <?= $this->Paginator->numbers() ?>
             <?= $this->Paginator->next(__('siguiente') . ' >') ?>
         </ul>
         <p><?= $this->Paginator->counter() ?></p>
-    </div>
+    </div> -->
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
@@ -55,13 +57,13 @@ use Cake\Controller\Component;
             <?php endforeach; ?>
         </tbody>
     </table>
-    <div class="paginator">
+    <!-- <div class="paginator">
         <ul class="pagination">
             <?= $this->Paginator->prev('< ' . __('anterior')) ?>
             <?= $this->Paginator->numbers() ?>
             <?= $this->Paginator->next(__('siguiente') . ' >') ?>
         </ul>
         <p><?= $this->Paginator->counter() ?></p>
-    </div>
+    </div> -->
 </div>
 
