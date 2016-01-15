@@ -1,4 +1,3 @@
-
 <div class="recetas view large-9 medium-8 columns content">
     
         <h4><?= h($receta->nombre); ?></h4>
