@@ -15,6 +15,17 @@ class CategoriasController extends AppController
      *
      * @return void
      */
+	  public function beforeFilter(\Cake\Event\Event $event)
+    {
+        parent::beforeFilter($event);
+         
+        
+        $this->Auth->allow('arbol');
+         
+        
+         $this->Auth->redirectUrl();
+    }
+	 
     public function index()
     {
         $this->paginate = [
@@ -23,17 +34,36 @@ class CategoriasController extends AppController
 		$categorias=$this->paginate($this->Categorias);
 		$arbol=array();
 		$padres=array();
-		foreach($categorias as $categoria){
-			//if($categoria->parent_id==0){
-				array_push($padres, $categoria);
-		//	}
+		if(count($categorias)>0){
+			foreach($categorias as $categoria){
+				if($categoria->parent_id==0){
+					array_push($padres, $this->Categorias->get($categoria->id, ['contain' => ['ParentCategorias', 'ChildCategorias']]));
+				}
+			}
 		}
-		$arbol=$this->crea_arbol($categorias,$arbol,"");
+		$arbol=$this->crea_arbol($padres,$arbol,"");
 		
         $this->set(compact('categorias', 'arbol'));
         $this->set('_serialize', ['categorias']);
     }
-
+public function arbol()
+    {
+        
+		$categorias=$this->paginate($this->Categorias);
+		$arbol=array();
+		$padres=array();
+		if(count($categorias)>0){
+			foreach($categorias as $categoria){
+				if($categoria->parent_id==0){
+					array_push($padres, $this->Categorias->get($categoria->id));
+				}
+			}
+		}
+		$arbol=$this->crea_arbol($padres,$arbol,"");
+		
+        $this->set(compact('categorias', 'arbol'));
+        $this->set('_serialize', ['categorias']);
+    }
     /**
      * View method
      *
@@ -103,20 +133,14 @@ class CategoriasController extends AppController
 		$categoria_padres =$this->paginate($this->Categorias);		
 		$parentCategorias=array();
 		foreach($categoria_padres as $v){
-			array_push($parentCategorias, $v->nombre);
+			$parentCategorias[$v->id]=$v->nombre;
 		}
         if ($this->request->is(['patch', 'post', 'put'])) {
             $categoria = $this->Categorias->patchEntity($categoria, $this->request->data);
-			$index=$this->request->data['parent_id'];
-			
-			if($index!=null){
-				$nombrepadre=$parentCategorias[$index];
-				foreach($categoria_padres as $v){
-					if(strcmp($v->nombre,$nombrepadre)==0){
-						$categoria->parent_id=$v->id;
-					}
-				}
+			if($this->request->data['parent_id']==0){
+				$this->request->data['parent_id']=0;
 			}
+			$categoria = $this->Categorias->patchEntity($categoria, $this->request->data);
             if ($this->Categorias->save($categoria)) {
                 $this->Flash->success(__('The categoria has been saved.'));
                 return $this->redirect(['action' => 'index']);
@@ -150,8 +174,13 @@ class CategoriasController extends AppController
 	
 	private function crea_arbol($padres,$arbol,$espacios){
 		foreach($padres as $v){
-			array_push($arbol,$espacios.$v->nombre);
-			$arbol=$this->crea_arbol($v->child_categorias,$arbol,"&nbsp&nbsp&nbsp&nbsp".$espacios);
+			$v=$this->Categorias->get($v->id, [
+            'contain' => ['ParentCategorias', 'ChildCategorias']
+        ]);
+			array_push($arbol,$espacios."-".$v->nombre);
+			if(count($v->child_categorias)>0){
+				$arbol=$this->crea_arbol($v->child_categorias,$arbol,"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp".$espacios);
+			}
 		}
 		return $arbol;
                 

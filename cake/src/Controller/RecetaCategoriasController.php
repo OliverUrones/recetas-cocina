@@ -9,6 +9,17 @@ use App\Controller\AppController;
  * @property \App\Model\Table\RecetaCategoriasTable $RecetaCategorias */
 class RecetaCategoriasController extends AppController
 {
+	
+	  public function beforeFilter(\Cake\Event\Event $event)
+    {
+        parent::beforeFilter($event);
+         
+        
+        $this->Auth->allow('filtrado');
+         
+        
+         $this->Auth->redirectUrl();
+    }
 
     /**
      * Index method
@@ -23,7 +34,24 @@ class RecetaCategoriasController extends AppController
         $this->set('recetaCategorias', $this->paginate($this->RecetaCategorias));
         $this->set('_serialize', ['recetaCategorias']);
     }
-
+	 public function filtrado()
+    {
+		$nombrecategoria=$_GET['categoria'];
+        $this->paginate = [
+            'contain' => ['Recetas', 'Categorias']
+        ];
+		$rcs=$this->paginate($this->RecetaCategorias);
+		$Recetas=array();
+		foreach($rcs as $rc){
+			$categoria=$this->RecetaCategorias->Categorias->get($rc->categoria_id);
+			if(strcmp($nombrecategoria,$categoria->nombre)==0){
+				array_push($Recetas,$this->RecetaCategorias->Recetas->get($rc->receta_id));
+			}
+		}
+        $this->set('Recetas', $Recetas);
+		
+        $this->set('_serialize', ['Recetas']);
+    }
     /**
      * View method
      *
@@ -57,8 +85,18 @@ class RecetaCategoriasController extends AppController
                 $this->Flash->error(__('The receta categoria could not be saved. Please, try again.'));
             }
         }
-        $recetas = $this->RecetaCategorias->Recetas->find('list', ['limit' => 200]);
-        $categorias = $this->RecetaCategorias->Categorias->find('list', ['limit' => 200]);
+        $rs = $this->RecetaCategorias->Recetas->find('list', ['limit' => 200]);
+        $cs = $this->RecetaCategorias->Categorias->find('list', ['limit' => 200]);
+		$recetas=array();
+		foreach($rs as $id){
+			$r=$this->RecetaCategorias->Recetas->get($id);
+			$recetas[$id]=$r->nombre;
+		}
+		$categorias=array();
+		foreach($cs as $id){
+			$c=$this->RecetaCategorias->Categorias->get($id);
+			$categorias[$id]=$c->nombre;
+		}
         $this->set(compact('recetaCategoria', 'recetas', 'categorias'));
         $this->set('_serialize', ['recetaCategoria']);
     }
@@ -84,8 +122,18 @@ class RecetaCategoriasController extends AppController
                 $this->Flash->error(__('The receta categoria could not be saved. Please, try again.'));
             }
         }
-        $recetas = $this->RecetaCategorias->Recetas->find('list', ['limit' => 200]);
-        $categorias = $this->RecetaCategorias->Categorias->find('list', ['limit' => 200]);
+        $rs = $this->RecetaCategorias->Recetas->find('list', ['limit' => 200]);
+        $cs = $this->RecetaCategorias->Categorias->find('list', ['limit' => 200]);
+		$recetas=array();
+		foreach($rs as $id){
+			$r=$this->RecetaCategorias->Recetas->get($id);
+			$recetas[$id]=$r->nombre;
+		}
+		$categorias=array();
+		foreach($cs as $id){
+			$c=$this->RecetaCategorias->Categorias->get($id);
+			$categorias[$id]=$c->nombre;
+		}
         $this->set(compact('recetaCategoria', 'recetas', 'categorias'));
         $this->set('_serialize', ['recetaCategoria']);
     }

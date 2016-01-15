@@ -1,10 +1,19 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Categoria'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('Nueva Categoria'), ['action' => 'add']) ?></li>
+		<li><?= $this->Html->link(__('Administrar recetas en categorias'), ['controller'=>'recetaCategorias', 'action' => 'index']) ?></li>
     </ul>
 </nav>
 <div class="categorias index large-9 medium-8 columns content">
+
+<?php
+	foreach($arbol as $v){
+		echo $v."<br>";
+	}
+	
+	
+	?>
     <h3><?= __('Categorias') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
@@ -39,6 +48,3 @@
         <p><?= $this->Paginator->counter() ?></p>
     </div>
 </div>
-<?php
-	print_r($arbol);
-	?>

@@ -23,8 +23,8 @@
             <?php foreach ($recetaCategorias as $recetaCategoria): ?>
             <tr>
                 <td><?= $this->Number->format($recetaCategoria->id) ?></td>
-                <td><?= $recetaCategoria->has('receta') ? $this->Html->link($recetaCategoria->receta->id, ['controller' => 'Recetas', 'action' => 'view', $recetaCategoria->receta->id]) : '' ?></td>
-                <td><?= $recetaCategoria->has('categoria') ? $this->Html->link($recetaCategoria->categoria->id, ['controller' => 'Categorias', 'action' => 'view', $recetaCategoria->categoria->id]) : '' ?></td>
+                <td><?= $recetaCategoria->has('receta') ? $this->Html->link($recetaCategoria->receta->nombre, ['controller' => 'Recetas', 'action' => 'view', $recetaCategoria->receta->id]) : '' ?></td>
+                <td><?= $recetaCategoria->has('categoria') ? $this->Html->link($recetaCategoria->categoria->nombre, ['controller' => 'Categorias', 'action' => 'view', $recetaCategoria->categoria->id]) : '' ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $recetaCategoria->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $recetaCategoria->id]) ?>

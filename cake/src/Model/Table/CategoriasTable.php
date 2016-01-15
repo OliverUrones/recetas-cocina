@@ -52,6 +52,8 @@ class CategoriasTable extends Table
             ->allowEmpty('nombre');
         $validator
             ->allowEmpty('descripcion');
+		$validator
+            ->allowEmpty('parent_id');
         return $validator;
     }
 
@@ -64,7 +66,7 @@ class CategoriasTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['parent_id'], 'ParentCategorias'));
+      //  $rules->add($rules->existsIn(['parent_id'], 'ParentCategorias'));
         return $rules;
     }
 }

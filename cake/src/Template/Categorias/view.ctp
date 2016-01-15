@@ -11,7 +11,7 @@
 </nav>
 <div class="categorias view large-9 medium-8 columns content">
     <h3><?= h($categoria->id) ?></h3>
-	<?php print_r($categoria);?>
+<!-- <?php print_r($categoria);?> --> 
     <table class="vertical-table">
         <tr>
             <th><?= __('Nombre') ?></th>
