@@ -7,7 +7,7 @@
                 ['confirm' => __('Are you sure you want to delete # {0}?', $recetaPaso->id)]
             )
         ?></li>
-        <li><?= $this->Html->link(__('Pasos de Receta'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('Pasos de Receta'), ['action' => 'index','receta_id'=>$recetaPaso->receta_id]) ?></li>
         <li><?= $this->Html->link(__('Recetas'), ['controller' => 'Recetas', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('Nueva Receta'), ['controller' => 'Recetas', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('Imagenes de pasos de receta'), ['controller' => 'RecetaPasoImagenes', 'action' => 'index']) ?></li>
@@ -19,7 +19,7 @@
     <fieldset>
         <legend><?= __('Editar Paso de receta') ?></legend>
         <?php
-            echo $this->Form->input('receta_id', ['options' => $recetas]);
+          
             echo $this->Form->input('orden');
             echo $this->Form->input('descripcion');
         ?>

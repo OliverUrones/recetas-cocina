@@ -2994,3 +2994,340 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 2016-01-14 21:09:37 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Tiendas::view, res= true
 2016-01-14 21:09:41 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Tiendas::edit, res= true
 2016-01-14 21:09:44 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Tiendas::index, res= true
+2016-01-15 09:31:13 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::index, res= true
+2016-01-15 09:31:20 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-15 09:31:25 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::index, res= true
+2016-01-15 09:31:28 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::edit, res= true
+2016-01-15 09:31:57 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::edit, res= true
+2016-01-15 09:31:58 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::index, res= true
+2016-01-15 09:32:13 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::index, res= true
+2016-01-15 09:32:23 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-15 09:32:31 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::index, res= true
+2016-01-15 09:32:35 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::view, res= true
+2016-01-15 09:34:30 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::index, res= true
+2016-01-15 09:35:59 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::index, res= true
+2016-01-15 09:36:03 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::index, res= true
+2016-01-15 09:36:12 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::index, res= true
+2016-01-15 09:37:03 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::index, res= true
+2016-01-15 09:37:41 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::index, res= true
+2016-01-15 09:38:19 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::index, res= true
+2016-01-15 09:38:37 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::view, res= true
+2016-01-15 09:39:13 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::view, res= true
+2016-01-15 09:39:34 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::index, res= true
+2016-01-15 09:39:39 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-15 09:42:07 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::view, res= true
+2016-01-15 09:42:41 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-15 09:44:01 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-15 09:44:12 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::view, res= true
+2016-01-15 09:44:51 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-15 09:45:21 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-15 09:45:23 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::view, res= true
+2016-01-15 09:46:26 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::view, res= true
+2016-01-15 09:46:46 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::view, res= true
+2016-01-15 09:47:18 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::edit, res= true
+2016-01-15 09:47:32 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::edit, res= true
+2016-01-15 09:47:32 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-15 09:47:41 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::add, res= true
+2016-01-15 09:47:53 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::add, res= true
+2016-01-15 09:47:54 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-15 09:48:01 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::view, res= true
+2016-01-15 09:48:08 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-15 09:48:11 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::view, res= true
+2016-01-15 09:48:12 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-15 09:48:13 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::add, res= true
+2016-01-15 09:48:16 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-15 09:48:19 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::edit, res= true
+2016-01-15 09:48:43 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::edit, res= true
+2016-01-15 09:49:20 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-15 09:49:20 Notice: Notice (8): Undefined index: receta_id in [C:\xampp\htdocs\daw2-2015-recetas-cocina\trunk\cake\src\Controller\RecetaPasosController.php, line 22]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\RecetaPasosController::index() - APP/Controller\RecetaPasosController.php, line 22
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-15 09:49:30 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::edit, res= true
+2016-01-15 09:50:24 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::edit, res= true
+2016-01-15 09:50:25 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-15 09:52:10 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::edit, res= true
+2016-01-15 09:52:56 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::edit, res= true
+2016-01-15 09:53:28 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::edit, res= true
+2016-01-15 09:53:38 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-15 09:53:43 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::edit, res= true
+2016-01-15 09:53:45 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-15 09:53:51 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::edit, res= true
+2016-01-15 09:54:00 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::index, res= true
+2016-01-15 09:54:09 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-15 09:54:14 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::add, res= true
+2016-01-15 09:54:20 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::add, res= true
+2016-01-15 09:54:21 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-15 09:54:26 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::edit, res= true
+2016-01-15 09:54:33 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-15 09:54:51 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::edit, res= true
+2016-01-15 09:55:15 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::index, res= true
+2016-01-15 09:55:25 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-15 09:55:28 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::index, res= true
+2016-01-15 09:56:07 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::index, res= true
+2016-01-15 09:59:02 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::index, res= true
+2016-01-15 09:59:40 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::index, res= true
+2016-01-15 09:59:40 Notice: Notice (8): Undefined variable: recetaPasoImagene in [C:\xampp\htdocs\daw2-2015-recetas-cocina\trunk\cake\src\Template\RecetaPasoImagenes\index.ctp, line 10]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\RecetaPasoImagenes\index.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-15 10:00:24 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::index, res= true
+2016-01-15 10:00:24 Notice: Notice (8): Undefined variable: recetaPasoImagene in [C:\xampp\htdocs\daw2-2015-recetas-cocina\trunk\cake\src\Template\RecetaPasoImagenes\index.ctp, line 10]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\RecetaPasoImagenes\index.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-15 10:00:24 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\daw2-2015-recetas-cocina\trunk\cake\src\Template\RecetaPasoImagenes\index.ctp, line 10]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\RecetaPasoImagenes\index.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-15 10:00:24 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\daw2-2015-recetas-cocina\trunk\cake\src\Template\RecetaPasoImagenes\index.ctp, line 10]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\RecetaPasoImagenes\index.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-15 10:01:28 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::index, res= true
+2016-01-15 10:01:28 Notice: Notice (8): Undefined property: Cake\ORM\ResultSet::$receta_paso in [C:\xampp\htdocs\daw2-2015-recetas-cocina\trunk\cake\src\Template\RecetaPasoImagenes\index.ctp, line 10]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\RecetaPasoImagenes\index.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-15 10:01:28 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\daw2-2015-recetas-cocina\trunk\cake\src\Template\RecetaPasoImagenes\index.ctp, line 10]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\RecetaPasoImagenes\index.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-15 10:02:24 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::index, res= true
+2016-01-15 10:02:41 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::index, res= true
+2016-01-15 10:02:41 Notice: Notice (8): Undefined variable: recetaPasoImagene in [C:\xampp\htdocs\daw2-2015-recetas-cocina\trunk\cake\src\Template\RecetaPasoImagenes\index.ctp, line 10]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\RecetaPasoImagenes\index.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-15 10:02:41 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\daw2-2015-recetas-cocina\trunk\cake\src\Template\RecetaPasoImagenes\index.ctp, line 10]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\RecetaPasoImagenes\index.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-15 10:02:41 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\daw2-2015-recetas-cocina\trunk\cake\src\Template\RecetaPasoImagenes\index.ctp, line 10]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\RecetaPasoImagenes\index.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-15 10:03:17 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::index, res= true
+2016-01-15 10:04:33 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::index, res= true
+2016-01-15 10:05:49 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::index, res= true
+2016-01-15 10:06:53 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::index, res= true
+2016-01-15 10:07:02 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::view, res= true
+2016-01-15 10:09:07 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::view, res= true
+2016-01-15 10:11:36 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::view, res= true
+2016-01-15 10:12:24 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::view, res= true
+2016-01-15 10:12:35 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::view, res= true
+2016-01-15 10:12:58 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::index, res= true
+2016-01-15 10:13:31 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::view, res= true
+2016-01-15 10:13:53 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::view, res= true
+2016-01-15 10:14:57 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::view, res= true
+2016-01-15 10:14:57 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\daw2-2015-recetas-cocina\trunk\cake\src\Template\RecetaPasoImagenes\view.ctp, line 13]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\RecetaPasoImagenes\view.ctp, line 13
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-15 10:15:36 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::view, res= true
+2016-01-15 10:15:36 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\daw2-2015-recetas-cocina\trunk\cake\src\Template\RecetaPasoImagenes\view.ctp, line 13]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\RecetaPasoImagenes\view.ctp, line 13
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-15 10:15:36 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\daw2-2015-recetas-cocina\trunk\cake\src\Template\RecetaPasoImagenes\view.ctp, line 13]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\RecetaPasoImagenes\view.ctp, line 13
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-15 10:16:25 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::view, res= true
+2016-01-15 10:16:25 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\daw2-2015-recetas-cocina\trunk\cake\src\Template\RecetaPasoImagenes\view.ctp, line 13]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\RecetaPasoImagenes\view.ctp, line 13
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-15 10:17:02 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::view, res= true
+2016-01-15 10:17:52 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::view, res= true
+2016-01-15 10:19:39 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::view, res= true
+2016-01-15 10:20:24 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::view, res= true
+2016-01-15 10:20:42 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::index, res= true
+2016-01-15 10:20:51 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::view, res= true
+2016-01-15 10:20:59 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::index, res= true
+2016-01-15 10:22:37 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::index, res= true
+2016-01-15 10:23:31 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::index, res= true
+2016-01-15 10:24:07 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::view, res= true
+2016-01-15 10:24:12 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::index, res= true
+2016-01-15 10:24:16 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::edit, res= true
+2016-01-15 10:24:19 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::index, res= true
+2016-01-15 10:24:23 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::view, res= true
+2016-01-15 10:24:28 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-15 10:24:28 Notice: Notice (8): Undefined index: receta_id in [C:\xampp\htdocs\daw2-2015-recetas-cocina\trunk\cake\src\Controller\RecetaPasosController.php, line 22]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\RecetaPasosController::index() - APP/Controller\RecetaPasosController.php, line 22
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-15 10:24:37 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= Recetas::index, res= true
+2016-01-15 10:24:39 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-15 10:24:39 Notice: Notice (8): Undefined index: receta_id in [C:\xampp\htdocs\daw2-2015-recetas-cocina\trunk\cake\src\Controller\RecetaPasosController.php, line 22]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\RecetaPasosController::index() - APP/Controller\RecetaPasosController.php, line 22
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-15 10:24:44 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::view, res= true
+2016-01-15 10:24:52 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true
+2016-01-15 10:24:52 Notice: Notice (8): Undefined index: receta_id in [C:\xampp\htdocs\daw2-2015-recetas-cocina\trunk\cake\src\Controller\RecetaPasosController.php, line 22]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\RecetaPasosController::index() - APP/Controller\RecetaPasosController.php, line 22
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-01-15 10:25:25 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::view, res= true
+2016-01-15 10:26:09 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::view, res= true
+2016-01-15 10:26:15 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasoImagenes::index, res= true
+2016-01-15 10:26:37 Debug: App\Controller\AppController::isAuthorized[128] rol= A, acceso= RecetaPasos::index, res= true

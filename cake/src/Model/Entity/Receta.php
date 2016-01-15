@@ -53,11 +53,11 @@ class Receta extends Entity
    {
 	 
 	   $lista= [
-			1=>'1 - Muy fácil',
-			2=>'2 - Fácil',
-			3=>'3 - Media',
-			4=>'4 - Difícil',
-			5=>'5 - Muy Difícil',
+			1=>'Muy fácil',
+			2=>'Fácil',
+			3=>'Media',
+			4=>'Difícil',
+			5=>'Muy Difícil',
 
 	   ];
            

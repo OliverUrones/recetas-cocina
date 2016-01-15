@@ -11,7 +11,7 @@
         <thead>
             <tr>
                 <th><?= $this->Paginator->sort('orden') ?></th>
-               <th><?= $this->Paginator->sort('id') ?></th>
+         
                 <th><?= $this->Paginator->sort('receta_id') ?></th>
                 
                 <th class="actions"><?= __('Acciones') ?></th>
@@ -22,7 +22,7 @@
 			<?php if($recetaPaso->receta->id == $receta_id){ ?>
             <tr>
  <td><?= $this->Number->format($recetaPaso->orden) ?></td>
-                <td><?= $this->Number->format($recetaPaso->id) ?></td>
+             
                 <td><?= $recetaPaso->has('receta') ? $this->Html->link($recetaPaso->receta->nombre, ['controller' => 'Recetas', 'action' => 'view', $recetaPaso->receta->id]) : '' ?></td>
                
                 <td class="actions">

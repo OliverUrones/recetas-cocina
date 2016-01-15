@@ -23,11 +23,11 @@
             <?php foreach ($recetas as $receta): ?>
             <tr>
                 <!-- td><?= $this->Number->format($receta->id) ?></td -->
-                <td><?= h($receta->tipo_plato) ?></td>
-                <td><?= h($receta->dificultad) ?></td>
+                <td><?= h($receta->mostrarTipo_plato($receta->tipo_plato)) ?></td>
+                <td><?= h($receta->mostrarDificultad($this->Number->format($receta->dificultad))) ?></td>
                 <td><?= h($receta->comensales) ?></td>
-                <td><?= $this->Number->format($receta->tiempo_elaboracion) ?></td>
-                <td><?= h($receta->valoracion) ?></td>
+                <td><?= $this->Number->format($receta->tiempo_elaboracion) ?> minutos</td>
+                <td><?= h($receta->mostrarValoracion($this->Number->format($receta->valoracion))) ?></td>
                 <!-- td><?= $receta->has('usuario') ? $this->Html->link($receta->usuario->id, ['controller' => 'Usuarios', 'action' => 'view', $receta->usuario->id]) : '' ?></td -->
                 <td class="actions">
                     <?= $this->Html->link(__('Ver'), ['action' => 'view', $receta->id]) ?>

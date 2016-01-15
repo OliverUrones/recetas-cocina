@@ -15,14 +15,6 @@
             <td><?= $receta->mostrarTipo_plato($receta->tipo_plato)?></td>
         </tr>
         <tr>
-            <th><?= __('Usuario') ?></th>
-            <td><?= $receta->has('usuario') ? $this->Html->link($receta->usuario->id, ['controller' => 'Usuarios', 'action' => 'view', $receta->usuario->id]) : '' ?></td>
-        </tr>
-        <tr>
-            <th><?= __('Id') ?></th>
-            <td><?= $this->Number->format($receta->id) ?></td>
-        </tr>
-        <tr>
             <th><?= __('Tiempo Elaboracion') ?></th>
             <td><?= $this->Number->format($receta->tiempo_elaboracion) ?></td>
         </tr>

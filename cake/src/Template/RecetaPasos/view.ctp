@@ -7,16 +7,13 @@
       </ul>
 </nav>
 <div class="recetaPasos view large-9 medium-8 columns content">
-    <h3><?= h($recetaPaso->id) ?></h3>
+    <h3>Paso nº <?= h($recetaPaso->orden) ?></h3>
     <table class="vertical-table">
         <tr>
             <th><?= __('Receta') ?></th>
-            <td><?= $recetaPaso->has('receta') ? $this->Html->link($recetaPaso->receta->id, ['controller' => 'Recetas', 'action' => 'view', $recetaPaso->receta->id]) : '' ?></td>
+            <td><?= $recetaPaso->has('receta') ? $this->Html->link($recetaPaso->receta->nombre, ['controller' => 'Recetas', 'action' => 'view', $recetaPaso->receta->id]) : '' ?></td>
         </tr>
-        <tr>
-            <th><?= __('Id') ?></th>
-            <td><?= $this->Number->format($recetaPaso->id) ?></td>
-        </tr>
+       
         <tr>
             <th><?= __('Orden') ?></th>
             <td><?= $this->Number->format($recetaPaso->orden) ?></td>
