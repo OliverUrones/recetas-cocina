@@ -3,7 +3,7 @@
         <li class="heading"><?= __('Menu') ?></li>
         <li><?= $this->Html->link(__('Nueva Tienda'), ['action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('Listar Ofertas'), ['controller' => 'TiendaOfertas', 'action' => 'index']) ?></li>
-       
+        <li><?= $this->Html->link(__('Nueva Oferta'), ['controller' => 'TiendaOfertas', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="tiendas index large-9 medium-8 columns content">

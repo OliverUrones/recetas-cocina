@@ -9,10 +9,13 @@
 <div class="tiendas form large-9 medium-8 columns content">
     <?= $this->Form->create($tienda) ?>
     <fieldset>
-        <legend><?= __('Add Tienda') ?></legend>
+        <legend><?= __('Añadir Tienda') ?></legend>
         <?php
 		$usuario= $this->request->session()->read('Auth.User');
-		
+            if ($usuario['rol']=='A')
+            {
+                echo $this->Form->input('usuario_id',['options' => $nusu]);
+            }
             echo $this->Form->input('nombre');
             echo $this->Form->input('domicilio');
             echo $this->Form->input('poblacion');
