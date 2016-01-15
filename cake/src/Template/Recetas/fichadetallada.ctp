@@ -1,14 +1,5 @@
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Acciones') ?></li>
-        <li><?= $this->Html->link(__('Editar Receta'), ['action' => 'edit', $receta->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Eliminar Receta'), ['action' => 'delete', $receta->id], ['confirm' => __('Are you sure you want to delete # {0}?', $receta->id)]) ?> </li>
-        <li><?= $this->Html->link(__('Recetas'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Nueva Receta'), ['action' => 'add']) ?> </li>
-        </ul>
-</nav>
 <div class="recetas view large-9 medium-8 columns content">
-    <h4><?= $this->Text->autoParagraph(h($receta->nombre)); ?></h4>
+    <h3><?= h($receta->nombre) ?></h3>
     <table class="vertical-table">
         <tr>
             <th><?= __('Tipo Plato') ?></th>
@@ -35,7 +26,7 @@
             <td><?= $receta->aceptada ? __('Yes') : __('No'); ?></td>
          </tr>
     </table>
-    
+   
     <div class="row">
         <h4><?= __('Descripcion') ?></h4>
         <?= $this->Text->autoParagraph(h($receta->descripcion)); ?>
@@ -159,30 +150,33 @@
     <?php endif; ?>
     </div>
     <div class="related">
-        <h4><?= __('Related Receta Pasos') ?></h4>
+        <h4><?= __('Pasos elaboración de la receta') ?></h4>
         <?php if (!empty($receta->receta_pasos)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
-                <th><?= __('Id') ?></th>
-                <th><?= __('Receta Id') ?></th>
+
                 <th><?= __('Orden') ?></th>
                 <th><?= __('Descripcion') ?></th>
-                <th class="actions"><?= __('Acciones') ?></th>
+                 <th><?= __('Imagenes del paso') ?></th>
             </tr>
             <?php foreach ($receta->receta_pasos as $recetaPasos): ?>
             <tr>
-                <td><?= h($recetaPasos->id) ?></td>
-                <td><?= h($recetaPasos->receta_id) ?></td>
                 <td><?= h($recetaPasos->orden) ?></td>
                 <td><?= h($recetaPasos->descripcion) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('Ver'), ['controller' => 'RecetaPasos', 'action' => 'view', $recetaPasos->id]) ?>
-
-                    <?= $this->Html->link(__('Editar'), ['controller' => 'RecetaPasos', 'action' => 'edit', $recetaPasos->id]) ?>
-
-                    <?= $this->Form->postLink(__('Eliminar'), ['controller' => 'RecetaPasos', 'action' => 'delete', $recetaPasos->id], ['confirm' => __('Esta seguro que la desea eliminar # {0}?', $recetaPasos->id)]) ?>
-
+                <td>
+                 <?php
+                 echo var_dump($receta);
+                 foreach ($receta->receta_paso_imagenes as $recetaPasoImagenes): ?>
+            <tr>
+              
+                <td><?= h($recetaPasoImagenes->orden) ?></td>
+                <td><img src="<?= h($recetaPasoImagenes->imagen) ?>"height="82" width="152" /></td>
+                
+            </tr>
+            <?php endforeach; ?>
+                
                 </td>
+               
             </tr>
             <?php endforeach; ?>
         </table>
