@@ -15,27 +15,50 @@ class TiendasController extends AppController
      *
      * @return void
      */
-	public $mistiendas=array();
+	private $mistiendas=array();
 	
     public function index()
     {
         $this->paginate = [
             'contain' => ['Usuarios']
         ];
+        $aux=array();
 		$tiendas= $this->paginate($this->Tiendas);
 		$usuario= $this->request->session()->read('Auth.User');
 		if( $usuario['rol']!=='A'){
 			$aux=array();
 			foreach($tiendas as $tienda){
-				if($tienda->usuario_id==$usuario->id){
+				if($tienda->usuario_id==$usuario['id']){
 					array_push($aux,$tienda);
 				}
 			}
 			$tiendas=$aux;
 			$mistiendas=$aux;
 		}
-        $this->set('tiendas',$tiendas);
-        $this->set('_serialize', ['tiendas']);
+
+            $this->set('tiendas',$tiendas);
+             $this->set('_serialize', ['tiendas']);
+
+        
+       
+    }
+    
+    public function beforeFilter(\Cake\Event\Event $event)
+    {
+        parent::beforeFilter($event);
+        
+        //$this->Auth->allow('index2');
+        //$this->Auth->allow('view2');
+        // $this->Auth->allow('portada');
+        $usuario= $this->request->session()->read('Auth.User');
+        if($usuario['rol']=='T'){
+            $this->Auth->allow('index');
+            $this->Auth->allow('view');
+            $this->Auth->allow('add');
+            $this->Auth->allow('edit');
+            $this->Auth->allow('delete');
+        }
+        $this->Auth->redirectUrl();
     }
 
     /**
@@ -52,15 +75,16 @@ class TiendasController extends AppController
             'contain' => ['Usuarios', 'TiendaOfertas']
         ]);
 		if( $usuario['rol']!=='A'){
-			$mia=false;
+			/*$mia=false;
 			foreach($mistiendas as $tienda){
 				if($tienda->id==$id){
 					$mia=true;
 					break;
 				}
-			}
-			if(!$mia){
-				 return $this->redirect(['action' => 'index']);
+			}*/
+                        if($tienda->usuario_id!==$usuario['id'])
+                        {
+                            return $this->redirect(['action' => 'index']);
 			}
 		}
         $this->set('tienda', $tienda);
@@ -75,20 +99,45 @@ class TiendasController extends AppController
     public function add()
     {
         $tienda = $this->Tiendas->newEntity();
-        if ($this->request->is('post')) {
-            $tienda = $this->Tiendas->patchEntity($tienda, $this->request->data);
-			$usuario= $this->request->session()->read('Auth.User');
-			$tienda->usuario_id=$usuario['id'];
-            if ($this->Tiendas->save($tienda)) {
-                $this->Flash->success(__('The tienda has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The tienda could not be saved. Please, try again.'));
+        $usuario= $this->request->session()->read('Auth.User');
+        $nusu=array();
+        $idusu=array();
+        if( $usuario['rol']!=='A'){
+            if ($this->request->is('post')) {
+                $tienda = $this->Tiendas->patchEntity($tienda, $this->request->data);
+                $tienda->usuario_id=$usuario['id'];
+                $tienda->activa=0;
+                $tienda->visible=0;
+                if ($this->Tiendas->save($tienda)) {
+                    $this->Flash->success(__('The tienda has been saved.'));
+                    return $this->redirect(['action' => 'index']);
+                } else {
+                    $this->Flash->error(__('The tienda could not be saved. Please, try again.'));
+                }
             }
-        }
-        $usuarios = $this->Tiendas->Usuarios->find('list', ['limit' => 200]);
-        $this->set(compact('tienda', 'usuarios'));
-        $this->set('_serialize', ['tienda']);
+            $this->set(compact('tienda'));
+            $this->set('_serialize', ['tienda']);
+        }else{
+            $usuarios = $this->paginate('Usuarios');
+            foreach($usuarios as $usu){
+		array_push($nusu,$usu->nombre);
+                array_push($idusu, $usu->id);
+            }
+            if ($this->request->is('post')) {
+                $tienda = $this->Tiendas->patchEntity($tienda, $this->request->data);
+                $tienda->usuario_id=$idusu[$tienda->usuario_id];
+                if ($this->Tiendas->save($tienda)) {
+                    $this->Flash->success(__('The tienda has been saved.'));
+                    return $this->redirect(['action' => 'index']);
+                } else {
+                    $this->Flash->error(__('The tienda could not be saved. Please, try again.'));
+                }
+            }
+            
+            $this->set(compact('tienda', 'nusu'));
+            $this->set('_serialize', ['tienda']);
+        } 
+        
     }
 
     /**
@@ -101,21 +150,16 @@ class TiendasController extends AppController
     public function edit($id = null)
     {
         $usuario= $this->request->session()->read('Auth.User');
-		if( $usuario['rol']!=='A'){
-			$mia=false;
-			foreach($mistiendas as $tienda){
-				if($tienda->id==$id){
-					$mia=true;
-					break;
-				}
-			}
-			if(!$mia){
-				 return $this->redirect(['action' => 'index']);
-			}
-		}
-		$tienda = $this->Tiendas->get($id, [
+        $tienda = $this->Tiendas->get($id, [
             'contain' => []
         ]);
+		if( $usuario['rol']!=='A'){
+			if($tienda->usuario_id!==$usuario['id'])
+                        {
+                            return $this->redirect(['action' => 'index']);
+			}
+		}
+		
 
         if ($this->request->is(['patch', 'post', 'put'])) {
             $tienda = $this->Tiendas->patchEntity($tienda, $this->request->data);
@@ -144,15 +188,9 @@ class TiendasController extends AppController
     {
 		$usuario= $this->request->session()->read('Auth.User');
 		if( $usuario['rol']!=='A'){
-			$mia=false;
-			foreach($mistiendas as $tienda){
-				if($tienda->id==$id){
-					$mia=true;
-					break;
-				}
-			}
-			if(!$mia){
-				 return $this->redirect(['action' => 'index']);
+			 if($tienda->usuario_id!==$usuario['id'])
+                        {
+                            return $this->redirect(['action' => 'index']);
 			}
 		}
         $this->request->allowMethod(['post', 'delete']);

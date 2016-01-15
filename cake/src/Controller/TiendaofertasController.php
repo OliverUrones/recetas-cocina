@@ -9,13 +9,21 @@ use App\Controller\AppController;
  * @property \App\Model\Table\TiendaOfertasTable $TiendaOfertas */
 class TiendaOfertasController extends AppController
 {
-	 public function beforeFilter(\Cake\Event\Event $event)
+    public function beforeFilter(\Cake\Event\Event $event)
     {
         parent::beforeFilter($event);
         
         $this->Auth->allow('index2');
          $this->Auth->allow('view2');
           $this->Auth->allow('portada');
+        $usuario= $this->request->session()->read('Auth.User');
+        if($usuario['rol']=='T'){
+            $this->Auth->allow('index');
+            $this->Auth->allow('view');
+            $this->Auth->allow('add');
+            $this->Auth->allow('edit');
+            $this->Auth->allow('delete');
+        }
         $this->Auth->redirectUrl();
     }
     /**
