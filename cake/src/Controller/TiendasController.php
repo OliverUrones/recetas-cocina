@@ -43,6 +43,21 @@ class TiendasController extends AppController
        
     }
     
+    
+    public function indexpublico()
+    {
+        $this->paginate = [
+            'contain' => ['Usuarios']
+        ];
+		$tiendas= $this->paginate($this->Tiendas);
+
+            $this->set('tiendas',$tiendas);
+             $this->set('_serialize', ['tiendas']);
+
+        
+       
+    }
+    
     public function beforeFilter(\Cake\Event\Event $event)
     {
         parent::beforeFilter($event);
@@ -51,6 +66,8 @@ class TiendasController extends AppController
         //$this->Auth->allow('view2');
         // $this->Auth->allow('portada');
         $usuario= $this->request->session()->read('Auth.User');
+        $this->Auth->allow('indexpublico');
+         $this->Auth->allow('viewpublico');
         if($usuario['rol']=='T'){
             $this->Auth->allow('index');
             $this->Auth->allow('view');
@@ -90,7 +107,14 @@ class TiendasController extends AppController
         $this->set('tienda', $tienda);
         $this->set('_serialize', ['tienda']);
     }
-
+    public function viewpublico($id = null)
+    {
+        $tienda = $this->Tiendas->get($id, [
+            'contain' => ['Usuarios', 'TiendaOfertas']
+        ]);
+        $this->set('tienda', $tienda);
+        $this->set('_serialize', ['tienda']);
+    }
     /**
      * Add method
      *
