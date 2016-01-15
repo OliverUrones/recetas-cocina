@@ -4,36 +4,46 @@ use App\Model\RecetasTable;
 
     if(!isset($Recetas) )
     {
-        $tiendaOfertas = TableRegistry::get('TiendaOfertas')->find();
-        $tiendaOfertas = TableRegistry::get('TiendaOfertas')->find('all')->contain(['Tiendas','Ingredientes']);
-        $tiendaOfertas = $tiendaOfertas->find('all')->toArray();
+        $Recetas = TableRegistry::get('Recetas')->find();
+        $Recetas = $Recetas->find('all')->toArray();
     }
 ?>
-<div class="tiendaOfertas right index large-4">
-    <h3><?= __('¡OFERTAS ACTIVAS!') ?></h3>
-    <h5><i><?= __('"Anímese y eche un vistazo a nuestra sección de Ofertas"') ?></i></h5>
+<div class="recetas left index large-7">
+    <h3><?= __('RECETAS') ?></h3>
+    <h5><i><?= __('"Busque la receta que le guste e intentela"') ?></i></h5>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                 <th><?= $this->Paginator->sort('tienda_id') ?></th>
-                <th><?= $this->Paginator->sort('ingrediente_id') ?></th>
-                <th><?= $this->Paginator->sort('cantidad') ?></th>
-                <th><?= $this->Paginator->sort('medida') ?></th>
+                <th><?= $this->Paginator->sort('tipo_plato') ?></th>
+                <th><?= $this->Paginator->sort('nombre') ?></th>
+                <th><?= $this->Paginator->sort('descripcion') ?></th>
+                <th><?= $this->Paginator->sort('dificultad') ?></th>
+                <th><?= $this->Paginator->sort('comensales') ?></th>
+                <th><?= $this->Paginator->sort('tiempo_elaboracion') ?></th>
+                <th><?= $this->Paginator->sort('valoracion') ?></th>
+                <th><?= $this->Paginator->sort('usuario_id') ?></th>
+                <th class="actions"><?= __('Acciones') ?></th>
             
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($tiendaOfertas as $tiendaOferta): ?>
+            <?php foreach ($Recetas as $receta): ?>
             <tr>
-                <td><?= $tiendaOferta->has('tienda') ? $this->Html->link($tiendaOferta->tienda->nombre, ['controller' => 'Tiendas', 'action' => 'view', $tiendaOferta->tienda->id]) : '' ?></td>
-                <td><?= $tiendaOferta->has('ingrediente') ? $this->Html->link($tiendaOferta->ingrediente->nombre, ['controller' => 'Ingredientes', 'action' => 'view', $tiendaOferta->ingrediente->id]) : '' ?></td>
-                <td><?= $this->Number->format($tiendaOferta->cantidad) ?></td>
-                <td><?= h($tiendaOferta->medida) ?></td>
+
+                <td><?= h($receta->mostrarTipo_plato($receta->tipo_plato)) ?></td>
+                <td><?= h($receta->nombre) ?></td>
+                <td><?= h($receta->descripcion) ?></td>
+                <td><?= h($receta->dificultad) ?></td>
+                <td><?= h($receta->comensales) ?></td>
+                <td><?= $this->Number->format($receta->tiempo_elaboracion) ?></td>
+                <td><?= h($receta->valoracion) ?></td>
+                <td><?= $receta->has('usuario') ? $this->Html->link($receta->usuario->id, ['controller' => 'Usuarios', 'action' => 'view', $receta->usuario->id]) : '' ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('Acceder a la oferta '), ['controller'=>'TiendaOfertas', 'action' => 'view2', $tiendaOferta->id]) ?>
-                 </td>
+                    <?= $this->Html->link(__('Ver'), ['controller'=>'Recetas','action' => 'view', $receta->id]) ?>
+                </td>
             </tr>
             <?php endforeach; ?>
         </tbody>
     </table>
 </div>
+
