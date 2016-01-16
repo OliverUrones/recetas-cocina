@@ -1,11 +1,8 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Receta Categoria'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Recetas'), ['controller' => 'Recetas', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Receta'), ['controller' => 'Recetas', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Categorias'), ['controller' => 'Categorias', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Categoria'), ['controller' => 'Categorias', 'action' => 'add']) ?></li>
+        <li class="heading"><?= __('Acciones') ?></li>
+        <li><?= $this->Html->link(__('Nueva Receta Categoria'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('Listar Recetas Categoria'), ['controller' => 'Recetas', 'action' => 'index']) ?></li>
     </ul>
 </nav>
 <div class="recetaCategorias index large-9 medium-8 columns content">
@@ -14,9 +11,9 @@
         <thead>
             <tr>
                 <th><?= $this->Paginator->sort('id') ?></th>
-                <th><?= $this->Paginator->sort('receta_id') ?></th>
-                <th><?= $this->Paginator->sort('categoria_id') ?></th>
-                <th class="actions"><?= __('Actions') ?></th>
+                <th><?= $this->Paginator->sort('Nombre Receta') ?></th>
+                <th><?= $this->Paginator->sort('Nombre Categoria') ?></th>
+                <th class="actions"><?= __('Acciones') ?></th>
             </tr>
         </thead>
         <tbody>
@@ -26,9 +23,9 @@
                 <td><?= $recetaCategoria->has('receta') ? $this->Html->link($recetaCategoria->receta->nombre, ['controller' => 'Recetas', 'action' => 'view', $recetaCategoria->receta->id]) : '' ?></td>
                 <td><?= $recetaCategoria->has('categoria') ? $this->Html->link($recetaCategoria->categoria->nombre, ['controller' => 'Categorias', 'action' => 'view', $recetaCategoria->categoria->id]) : '' ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $recetaCategoria->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $recetaCategoria->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $recetaCategoria->id], ['confirm' => __('Are you sure you want to delete # {0}?', $recetaCategoria->id)]) ?>
+                    <?= $this->Html->link(__('Ver'), ['action' => 'view', $recetaCategoria->id]) ?>
+                    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $recetaCategoria->id]) ?>
+                    <?= $this->Form->postLink(__('Borrar'), ['action' => 'delete', $recetaCategoria->id], ['confirm' => __('¿Desea Borrar # {0}?', $recetaCategoria->id)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>
@@ -36,9 +33,9 @@
     </table>
     <div class="paginator">
         <ul class="pagination">
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
+            <?= $this->Paginator->prev('< ' . __('anterior')) ?>
             <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
+            <?= $this->Paginator->next(__('siguiente') . ' >') ?>
         </ul>
         <p><?= $this->Paginator->counter() ?></p>
     </div>
