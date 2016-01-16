@@ -30,7 +30,7 @@
                 <td><?= $tienda->has('usuario') ? $this->Html->link($tienda->usuario->nombre, ['controller' => 'Usuarios', 'action' => 'view', $tienda->usuario->id]) : '' ?></td>
                 <td><?= $tienda->activa ? __('Sí') : __('No'); ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('Ver'), ['action' => 'view', $tienda->id]) ?>
+                    <?= $this->Html->link(__('Ver'), ['action' => 'viewpublico', $tienda->id]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>
