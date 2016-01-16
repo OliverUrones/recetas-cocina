@@ -1,4 +1,4 @@
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
+    <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Menu') ?></li>
         <li><?= $this->Html->link(__('Editar Tienda'), ['action' => 'edit', $tienda->id]) ?> </li>
@@ -50,9 +50,7 @@
         <?php if (!empty($tienda->tienda_ofertas)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
-                <th><?= __('Id') ?></th>
-                <th><?= __('Tienda Id') ?></th>
-                <th><?= __('Ingrediente Id') ?></th>
+                <th><?= __('Ingrediente') ?></th>
                 <th><?= __('Descripcion') ?></th>
                 <th><?= __('Envase') ?></th>
                 <th><?= __('Cantidad') ?></th>
@@ -60,11 +58,9 @@
                 <th><?= __('Notas') ?></th>
                 <th class="actions"><?= __('Acciones') ?></th>
             </tr>
-            <?php foreach ($tienda->tienda_ofertas as $tiendaOfertas): ?>
+            <?php foreach ($listaOfertas as $tiendaOfertas): ?>
             <tr>
-                <td><?= h($tiendaOfertas->id) ?></td>
-                <td><?= h($tiendaOfertas->tienda_id) ?></td>
-                <td><?= h($tiendaOfertas->ingrediente_id) ?></td>
+                <td><?= h($tiendaOfertas->ingrediente->nombre) ?></td>
                 <td><?= h($tiendaOfertas->descripcion) ?></td>
                 <td><?= h($tiendaOfertas->envase) ?></td>
                 <td><?= h($tiendaOfertas->cantidad) ?></td>

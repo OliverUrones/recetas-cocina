@@ -66,6 +66,7 @@ class TiendasController extends AppController
         //$this->Auth->allow('view2');
         // $this->Auth->allow('portada');
         $usuario= $this->request->session()->read('Auth.User');
+      
         $this->Auth->allow('indexpublico');
          $this->Auth->allow('viewpublico');
         if($usuario['rol']=='T'){
@@ -75,6 +76,7 @@ class TiendasController extends AppController
             $this->Auth->allow('edit');
             $this->Auth->allow('delete');
         }
+         
         $this->Auth->redirectUrl();
     }
 
@@ -104,15 +106,37 @@ class TiendasController extends AppController
                             return $this->redirect(['action' => 'index']);
 			}
 		}
-        $this->set('tienda', $tienda);
+                
+        $listaOfertas=array();
+        foreach ($tienda->tienda_ofertas as $tiendaOfertas){
+            $tiendaOfertas = $this->Tiendas->TiendaOfertas->get($tiendaOfertas->id, [
+            'contain' => [ 'Ingredientes']
+            ]);
+            array_push($listaOfertas,$tiendaOfertas);
+        }
+        $this->set(compact('tienda', 'listaOfertas'));
         $this->set('_serialize', ['tienda']);
     }
     public function viewpublico($id = null)
     {
+        
         $tienda = $this->Tiendas->get($id, [
             'contain' => ['Usuarios', 'TiendaOfertas']
         ]);
-        $this->set('tienda', $tienda);
+     
+        $listaOfertas=array();
+        foreach ($tienda->tienda_ofertas as $tiendaOfertas){
+            $tiendaOfertas = $this->Tiendas->TiendaOfertas->get($tiendaOfertas->id, [
+            'contain' => [ 'Ingredientes']
+            ]);
+            array_push($listaOfertas,$tiendaOfertas);
+        }
+        if($tienda->visible!==true || $tienda->activa!== true )
+                        {
+                            return $this->redirect(['action' => 'indexpublico']);
+			}
+        
+        $this->set(compact('tienda', 'listaOfertas'));
         $this->set('_serialize', ['tienda']);
     }
     /**
