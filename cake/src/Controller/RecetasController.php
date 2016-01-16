@@ -87,7 +87,7 @@ class RecetasController extends AppController
      public function fichadetallada($id = null)
     {
         $receta = $this->Recetas->get($id, [
-            'contain' => [ /*'MenuPlatos', 'RecetaCategorias', */'RecetaComentarios', 'RecetaIngredientes', 'RecetaPasos']
+            'contain' => [ /*'MenuPlatos',*/ 'RecetaCategorias', 'RecetaComentarios', 'RecetaIngredientes', 'RecetaPasos']
         ]);
         $pasos=array();
         foreach ($receta->receta_pasos as $recetaPasos)
@@ -98,14 +98,21 @@ class RecetasController extends AppController
         }
         
         $ingredientes=array();
-        
          foreach ($receta->receta_ingredientes as $RecetaIngredientes)
         {
             $ing = $this->Recetas->RecetaIngredientes->get($RecetaIngredientes->id, ['contain' => ['Ingredientes'] ]);
             array_push($ingredientes,$ing);
         }
        
-        $this->set(compact('receta', 'pasos','ingredientes'));
+        $comentarios=array();
+         foreach ($receta->receta_comentarios as $RecetaComentarios)
+        {
+            $com = $this->Recetas->RecetaComentarios->get($RecetaComentarios->id, ['contain' => ['Usuarios'] ]);
+            array_push($comentarios,$com);
+        }
+       
+       
+        $this->set(compact('receta', 'pasos','ingredientes','comentarios'));
         
         
         
