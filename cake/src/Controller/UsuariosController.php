@@ -374,7 +374,8 @@ class UsuariosController extends AppController
     
     /*
      * Métod para restaurar los datos de la base de datos
-     * NOTA: Con algunas tablas da error
+     * NOTA: Con las modificaciones hechas en PlanificacionMenusTable.php, RecetaCategoriasTable.php
+     * y las actualizaciones a la base de datos ya no da error.
      */
     public function restaurarBackup()
     {
@@ -382,7 +383,6 @@ class UsuariosController extends AppController
       {
         //debug($this->request->data['archivo']['tmp_name'], true, true);
         $nombre = explode('_', $this->request->data['archivo']['name']);
-        //if($this->request->data['archivo']['type'] === 'application/x-php' && $nombre[1] === 'backup.php' && $this->request->data['archivo']['size'] > 0)
         if( ($nombre[2] === 'backup.php') && ($this->request->data['archivo']['size'] > 0))
         {
             //$archivo = new File($this->request->data['archivo']['tmp_name']);
@@ -394,17 +394,17 @@ class UsuariosController extends AppController
             foreach ($datos as $nombreTabla => $valor) {
                 //debug($nombreTabla, true, true);
                 $tablas = TableRegistry::get($nombreTabla);
-                debug($nombreTabla, true, true);
+                //debug($nombreTabla, true, true);
                 $conexion->execute('TRUNCATE '.$tablas->table().';');
                 //debug($tablas, true, true);
                 //debug($tablas->entityClass(), true, true);
                 //debug($valor, true, true);
                 foreach ($valor as $clave => $value) {
                     $entidad = $tablas->newEntity();
-                    debug($entidad, true, true);
+                    //debug($entidad, true, true);
                     $entidad = $tablas->patchEntity($entidad, $value);
-                    debug($entidad, true, true);
-                    debug($tablas->save($entidad), true, true);
+                    //debug($entidad, true, true);
+                    $tablas->save($entidad, ['checkRules' => false, 'associated' => false]);
                 }
             }
         }

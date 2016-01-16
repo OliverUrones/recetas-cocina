@@ -25,8 +25,8 @@ class RecetaCategoriasTable extends Table
         parent::initialize($config);
 
         $this->table('receta_categorias');
-        $this->displayField('id');
-        $this->primaryKey('id');
+        $this->displayField(['receta_id', 'categoria_id']);
+        $this->primaryKey(['receta_id', 'categoria_id']);
 
         $this->belongsTo('Recetas', [
             'foreignKey' => 'receta_id',
@@ -47,7 +47,11 @@ class RecetaCategoriasTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->add('id', 'valid', ['rule' => 'numeric'])            ->allowEmpty('id', 'create');
+            ->add('receta_id', 'valid', ['rule' => 'numeric'])            
+            ->allowEmpty('receta_id', 'create');
+        $validator
+            ->add('categoria_id', 'valid', ['rule' => 'numeric'])            
+            ->allowEmpty('categoria_id', 'create');
         return $validator;
     }
 

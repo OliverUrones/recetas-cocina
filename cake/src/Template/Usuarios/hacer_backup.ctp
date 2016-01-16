@@ -5,12 +5,22 @@
         <legend>Tablas</legend>
         <?php
             echo '<table>';
+                            
                 echo '<tr>';
                 echo '<td>';
-                echo $this->Form->Label('Categorías');
+                echo $this->Form->Label('Usuarios');
                 echo '</td>';
                 echo '<td>';
-                echo $this->Form->checkbox('Categorias', ['checked' => true, 'id' => 'categorias']);
+                echo $this->Form->checkbox('Usuarios', ['checked' => true, 'id' => 'usuarios']);
+                echo '</td>';
+                echo '</tr>';
+                
+                echo '<tr>';
+                echo '<td>';
+                echo $this->Form->Label('Recetas');
+                echo '</td>';
+                echo '<td>';
+                echo $this->Form->checkbox('Recetas', ['checked' => true, 'id' => 'recetas']);
                 echo '</td>';
                 echo '</tr>';
                 
@@ -25,15 +35,6 @@
                 
                 echo '<tr>';
                 echo '<td>';
-                echo $this->Form->Label('Menu-Platos');
-                echo '</td>';
-                echo '<td>';
-                echo $this->Form->checkbox('MenuPlatos', ['checked' => true, 'id' => 'menu-platos']);
-                echo '</td>';
-                echo '</tr>';
-                
-                echo '<tr>';
-                echo '<td>';
                 echo $this->Form->Label('Menus');
                 echo '</td>';
                 echo '<td>';
@@ -43,10 +44,10 @@
                 
                 echo '<tr>';
                 echo '<td>';
-                echo $this->Form->Label('Planificación-Menús');
+                echo $this->Form->Label('Tiendas');
                 echo '</td>';
                 echo '<td>';
-                echo $this->Form->checkbox('PlanificacionMenus', ['checked' => true, 'id' => 'planificacion-menus']);
+                echo $this->Form->checkbox('Tiendas', ['checked' => true, 'id' => 'tiendas']);
                 echo '</td>';
                 echo '</tr>';
                 
@@ -56,6 +57,33 @@
                 echo '</td>';
                 echo '<td>';
                 echo $this->Form->checkbox('Planificaciones', ['checked' => true, 'id' => 'planificaciones']);
+                echo '</td>';
+                echo '</tr>';
+                
+                echo '<tr>';
+                echo '<td>';
+                echo $this->Form->Label('Categorías');
+                echo '</td>';
+                echo '<td>';
+                echo $this->Form->checkbox('Categorias', ['checked' => true, 'id' => 'categorias']);
+                echo '</td>';
+                echo '</tr>';
+                
+                echo '<tr>';
+                echo '<td>';
+                echo $this->Form->Label('Menu-Platos');
+                echo '</td>';
+                echo '<td>';
+                echo $this->Form->checkbox('MenuPlatos', ['checked' => true, 'id' => 'menu-platos']);
+                echo '</td>';
+                echo '</tr>';
+                
+                echo '<tr>';
+                echo '<td>';
+                echo $this->Form->Label('Planificación-Menús');
+                echo '</td>';
+                echo '<td>';
+                echo $this->Form->checkbox('PlanificacionMenus', ['checked' => true, 'id' => 'planificacion-menus']);
                 echo '</td>';
                 echo '</tr>';
                 
@@ -88,15 +116,6 @@
                 
                 echo '<tr>';
                 echo '<td>';
-                echo $this->Form->Label('Receta-Paso-Imágenes');
-                echo '</td>';
-                echo '<td>';
-                echo $this->Form->checkbox('RecetaPasoImagenes', ['checked' => true, 'id' => 'receta-paso-imagenes']);
-                echo '</td>';
-                echo '</tr>';
-                
-                echo '<tr>';
-                echo '<td>';
                 echo $this->Form->Label('Receta-Pasos');
                 echo '</td>';
                 echo '<td>';
@@ -106,10 +125,10 @@
                 
                 echo '<tr>';
                 echo '<td>';
-                echo $this->Form->Label('Recetas');
+                echo $this->Form->Label('Receta-Paso-Imágenes');
                 echo '</td>';
                 echo '<td>';
-                echo $this->Form->checkbox('Recetas', ['checked' => true, 'id' => 'recetas']);
+                echo $this->Form->checkbox('RecetaPasoImagenes', ['checked' => true, 'id' => 'receta-paso-imagenes']);
                 echo '</td>';
                 echo '</tr>';
                 
@@ -119,24 +138,6 @@
                 echo '</td>';
                 echo '<td>';
                 echo $this->Form->checkbox('TiendaOfertas', ['checked' => true, 'id' => 'tienda-ofertas']);
-                echo '</td>';
-                echo '</tr>';
-                
-                echo '<tr>';
-                echo '<td>';
-                echo $this->Form->Label('Tiendas');
-                echo '</td>';
-                echo '<td>';
-                echo $this->Form->checkbox('Tiendas', ['checked' => true, 'id' => 'tiendas']);
-                echo '</td>';
-                echo '</tr>';
-                
-                echo '<tr>';
-                echo '<td>';
-                echo $this->Form->Label('Usuarios');
-                echo '</td>';
-                echo '<td>';
-                echo $this->Form->checkbox('Usuarios', ['checked' => true, 'id' => 'usuarios']);
                 echo '</td>';
                 echo '</tr>';
                                 

@@ -30,7 +30,7 @@ class PlanificacionMenusTable extends Table
         $this->displayField('id');
         $this->primaryKey('id');
 
-        $this->belongsTo('Planificacions', [
+        $this->belongsTo('Planificaciones', [
             'foreignKey' => 'planificacion_id',
             'joinType' => 'INNER'
         ]);
@@ -69,7 +69,7 @@ class PlanificacionMenusTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['planificacion_id'], 'Planificacions'));
+        $rules->add($rules->existsIn(['planificacion_id'], 'Planificaciones'));
         $rules->add($rules->existsIn(['menu_id'], 'Menus'));
         return $rules;
     }
