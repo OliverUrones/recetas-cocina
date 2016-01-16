@@ -10,7 +10,7 @@ use App\Model\TiendaOfertasTable;
     }
 ?>
 <div class="tiendaOfertas right index large-4">
-    <h3><?= __('¡OFERTAS ACTIVAS!') ?></h3>
+    <h3 align="center"><FONT COLOR="red"><?= __('¡OFERTAS ACTIVAS!') ?></FONT></h3>
     <h5><i><?= __('"Anímese y eche un vistazo a nuestra sección de Ofertas"') ?></i></h5>
     <table cellpadding="0" cellspacing="0">
         <thead>
