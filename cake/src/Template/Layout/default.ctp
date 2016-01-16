@@ -52,6 +52,15 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                     echo '<li>';
                   echo $this->Html->link('Administrar recetas', ['controller' => 'recetas', 'action' => 'index']);
                   echo '</li>';
+                  
+                  echo '<li>';
+                  echo $this->Html->link('Administrar menús', ['controller' => 'menus', 'action' => 'index']);
+                  echo '</li>';
+				  
+                  echo '<li>';
+                  echo $this->Html->link('Administrar planificaciones', ['controller' => 'planificacioneMenus', 'action' => 'index']);
+                  echo '</li>';
+                  
                   echo $this->Html->link( 'Cerrar Sesion ['.$usuario['nombre'].'-'.$usuario['rol'].']', ['controller'=>'usuarios', 'action'=>'logout']);
                   if($usuario['nombre'] === 'sysadmin')
                   {

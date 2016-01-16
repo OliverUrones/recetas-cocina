@@ -1,18 +1,19 @@
 <?php
 namespace App\Model\Table;
 
-use App\Model\Entity\Planificacione;
+use App\Model\Entity\PlanificacioneMenu;
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
 /**
- * Planificaciones Model
+ * PlanificacioneMenus Model
  *
- * @property \Cake\ORM\Association\BelongsTo $Usuarios
+ * @property \Cake\ORM\Association\BelongsTo $Planificaciones
+ * @property \Cake\ORM\Association\BelongsTo $Menus
  */
-class PlanificacionesTable extends Table
+class PlanificacioneMenusTable extends Table
 {
 
     /**
@@ -25,12 +26,16 @@ class PlanificacionesTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('planificaciones');
+        $this->table('planificacione_menus');
         $this->displayField('id');
         $this->primaryKey('id');
 
-        $this->belongsTo('Usuarios', [
-            'foreignKey' => 'usuario_id',
+        $this->belongsTo('Planificaciones', [
+            'foreignKey' => 'planificacione_id',
+            'joinType' => 'INNER'
+        ]);
+        $this->belongsTo('Menus', [
+            'foreignKey' => 'menu_id',
             'joinType' => 'INNER'
         ]);
     }
@@ -48,15 +53,9 @@ class PlanificacionesTable extends Table
             ->allowEmpty('id', 'create');
 
         $validator
-            ->requirePresence('nombre', 'create')
-            ->notEmpty('nombre');
-
-        $validator
-            ->requirePresence('periodo', 'create')
-            ->notEmpty('periodo');
-
-        $validator
-            ->allowEmpty('notas');
+            ->add('numero_dia', 'valid', ['rule' => 'numeric'])
+            ->requirePresence('numero_dia', 'create')
+            ->notEmpty('numero_dia');
 
         return $validator;
     }
@@ -70,7 +69,8 @@ class PlanificacionesTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['usuario_id'], 'Usuarios'));
+        $rules->add($rules->existsIn(['planificacione_id'], 'Planificaciones'));
+        $rules->add($rules->existsIn(['menu_id'], 'Menus'));
         return $rules;
     }
 }

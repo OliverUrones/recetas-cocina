@@ -4,16 +4,15 @@ namespace App\Model\Entity;
 use Cake\ORM\Entity;
 
 /**
- * Menu Entity.
+ * MenuReceta Entity.
  *
  * @property int $id
- * @property string $titulo
- * @property string $descripcion
- * @property int $usuario_id
- * @property \App\Model\Entity\Usuario $usuario
- * @property \App\Model\Entity\MenuPlato[] $menu_recetas
+ * @property int $menu_id
+ * @property \App\Model\Entity\Menu $menu
+ * @property int $receta_id
+ * @property \App\Model\Entity\Receta $receta
  */
-class Menu extends Entity
+class MenuReceta extends Entity
 {
 
     /**

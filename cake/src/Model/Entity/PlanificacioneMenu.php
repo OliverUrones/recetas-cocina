@@ -4,16 +4,16 @@ namespace App\Model\Entity;
 use Cake\ORM\Entity;
 
 /**
- * Menu Entity.
+ * PlanificacioneMenu Entity.
  *
  * @property int $id
- * @property string $titulo
- * @property string $descripcion
- * @property int $usuario_id
- * @property \App\Model\Entity\Usuario $usuario
- * @property \App\Model\Entity\MenuPlato[] $menu_recetas
+ * @property int $planificacione_id
+ * @property \App\Model\Entity\Planificacione $planificacione
+ * @property int $menu_id
+ * @property \App\Model\Entity\Menu $menu
+ * @property int $numero_dia
  */
-class Menu extends Entity
+class PlanificacioneMenu extends Entity
 {
 
     /**
@@ -25,6 +25,12 @@ class Menu extends Entity
      *
      * @var array
      */
+	
+	 public static function dia($numero_dia){
+		$lista=array("lunes","martes","miercoles","jueves","viernes","sabado","domingo");
+		return $lista[$numero_dia];
+	 }
+	 
     protected $_accessible = [
         '*' => true,
         'id' => false,
