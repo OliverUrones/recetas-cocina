@@ -79,10 +79,10 @@ class RecetaCategoriasController extends AppController
         if ($this->request->is('post')) {
             $recetaCategoria = $this->RecetaCategorias->patchEntity($recetaCategoria, $this->request->data);
             if ($this->RecetaCategorias->save($recetaCategoria)) {
-                $this->Flash->success(__('The receta categoria has been saved.'));
+                $this->Flash->success(__('RecetaCategorias guardada.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The receta categoria could not be saved. Please, try again.'));
+                $this->Flash->error(__('RecetaCategorias no pudo ser guardada.'));
             }
         }
         $rs = $this->RecetaCategorias->Recetas->find('list', ['limit' => 200]);
@@ -116,10 +116,10 @@ class RecetaCategoriasController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $recetaCategoria = $this->RecetaCategorias->patchEntity($recetaCategoria, $this->request->data);
             if ($this->RecetaCategorias->save($recetaCategoria)) {
-                $this->Flash->success(__('The receta categoria has been saved.'));
+                $this->Flash->success(__('RecetaCategorias editada.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The receta categoria could not be saved. Please, try again.'));
+                $this->Flash->error(__('RecetaCategorias no pudo ser editada.'));
             }
         }
         $rs = $this->RecetaCategorias->Recetas->find('list', ['limit' => 200]);
@@ -150,9 +150,9 @@ class RecetaCategoriasController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $recetaCategoria = $this->RecetaCategorias->get($id);
         if ($this->RecetaCategorias->delete($recetaCategoria)) {
-            $this->Flash->success(__('The receta categoria has been deleted.'));
+            $this->Flash->success(__('RecetaCategorias borrada.'));
         } else {
-            $this->Flash->error(__('The receta categoria could not be deleted. Please, try again.'));
+            $this->Flash->error(__('RecetaCategorias no pudo ser borrada.'));
         }
         return $this->redirect(['action' => 'index']);
     }

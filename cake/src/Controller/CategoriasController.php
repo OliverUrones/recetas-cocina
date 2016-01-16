@@ -107,10 +107,10 @@ public function arbol()
 			}
 			
             if ($this->Categorias->save($categoria)) {
-                $this->Flash->success(__('The categoria has been saved.'));
+                $this->Flash->success(__('Categoria guardada.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The categoria could not be saved. Please, try again.'));
+                $this->Flash->error(__('La categoria no ha podido ser guardada.'));
             }
         }
         
@@ -142,10 +142,10 @@ public function arbol()
 			}
 			$categoria = $this->Categorias->patchEntity($categoria, $this->request->data);
             if ($this->Categorias->save($categoria)) {
-                $this->Flash->success(__('The categoria has been saved.'));
+                $this->Flash->success(__('Categoria editada.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The categoria could not be saved. Please, try again.'));
+                $this->Flash->error(__('la categoria no pudo ser editada.'));
             }
         }
 		
@@ -165,9 +165,9 @@ public function arbol()
         $this->request->allowMethod(['post', 'delete']);
         $categoria = $this->Categorias->get($id);
         if ($this->Categorias->delete($categoria)) {
-            $this->Flash->success(__('The categoria has been deleted.'));
+            $this->Flash->success(__('categoria borrada.'));
         } else {
-            $this->Flash->error(__('The categoria could not be deleted. Please, try again.'));
+            $this->Flash->error(__('la categoria no pudo ser borrada.'));
         }
         return $this->redirect(['action' => 'index']);
     }
