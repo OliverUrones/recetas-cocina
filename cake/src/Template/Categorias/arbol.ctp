@@ -1,6 +1,6 @@
 
-<div class="categorias index large-4 medium-8 columns content">
- <h3><?= __('Categorias') ?></h3>
+<div class="categorias left index large-7">
+ <h3 align="center"><?= __('ARBOL DE CATEGORIAS') ?></h3>
  <table>	
 <?php
 
