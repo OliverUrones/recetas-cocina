@@ -97,7 +97,18 @@ class RecetasController extends AppController
             
         }
         
-        $this->set(compact('receta', 'pasos'));
+        $ingredientes=array();
+        
+         foreach ($receta->receta_ingredientes as $RecetaIngredientes)
+        {
+            $ing = $this->Recetas->RecetaIngredientes->get($RecetaIngredientes->id, ['contain' => ['Ingredientes'] ]);
+            array_push($ingredientes,$ing);
+        }
+       
+        $this->set(compact('receta', 'pasos','ingredientes'));
+        
+        
+        
         $this->set('_serialize', ['receta']);
     }
     /**
@@ -172,3 +183,4 @@ class RecetasController extends AppController
         return $this->redirect(['action' => 'index']);
     }
 }
+
