@@ -15,12 +15,12 @@
                 <th><?= $this->Paginator->sort('poblacion') ?></th>
                 <th><?= $this->Paginator->sort('provincia') ?></th>
                 <th><?= $this->Paginator->sort('usuario_id') ?></th>
-                <th><?= $this->Paginator->sort('activa') ?></th>
                 <th class="actions"><?= __('Acciones') ?></th>
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($tiendas as $tienda): ?>
+            <?php foreach ($tiendas as $tienda){?>
+            <?php if ($tienda->visible== true && $tienda->activa== true ) { ?>
             <tr>
                 <td><?= $this->Number->format($tienda->id) ?></td>
                 <td><?= h($tienda->nombre) ?></td>
@@ -28,12 +28,11 @@
                 <td><?= h($tienda->poblacion) ?></td>
                 <td><?= h($tienda->provincia) ?></td>
                 <td><?= $tienda->has('usuario') ? $this->Html->link($tienda->usuario->nombre, ['controller' => 'Usuarios', 'action' => 'view', $tienda->usuario->id]) : '' ?></td>
-                <td><?= $tienda->activa ? __('Sí') : __('No'); ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('Ver'), ['action' => 'view', $tienda->id]) ?>
+                    <?= $this->Html->link(__('Ver'), ['action' => 'viewpublico', $tienda->id]) ?>
                 </td>
             </tr>
-            <?php endforeach; ?>
+            <?php }} ?>
         </tbody>
     </table>
     <div class="paginator">

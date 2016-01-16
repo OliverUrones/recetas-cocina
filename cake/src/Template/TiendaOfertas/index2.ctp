@@ -1,7 +1,7 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Menu') ?></li>
-        <li><?= $this->Html->link(__('Listar Tiendas'), ['action' => 'indexpublico']) ?> </li>
+        <li><?= $this->Html->link(__('Listar Tiendas'), ['controller' => 'Tiendas','action' => 'indexpublico']) ?> </li>
        </ul>
 </nav>
 <div class="tiendaOfertas index large-9 medium-8 columns content">
@@ -17,9 +17,10 @@
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($tiendaOfertas as $tiendaOferta): ?>
+            <?php foreach ($tiendaOfertas as $tiendaOferta){ ?>
+            <?php if ($tiendaOferta->tienda->visible== true && $tiendaOferta->tienda->activa== true ) { ?>
             <tr>
-                <td><?= $tiendaOferta->has('tienda') ? $this->Html->link($tiendaOferta->tienda->nombre, ['controller' => 'Tiendas', 'action' => 'view', $tiendaOferta->tienda->id]) : '' ?></td>
+                <td><?= $tiendaOferta->has('tienda') ? $this->Html->link($tiendaOferta->tienda->nombre, ['controller' => 'Tiendas', 'action' => 'viewpubico', $tiendaOferta->tienda->id]) : '' ?></td>
                 <td><?= $tiendaOferta->has('ingrediente') ? $this->Html->link($tiendaOferta->ingrediente->nombre, ['controller' => 'Ingredientes', 'action' => 'view', $tiendaOferta->ingrediente->id]) : '' ?></td>
                 <td><?= $this->Number->format($tiendaOferta->cantidad) ?></td>
                 <td><?= h($tiendaOferta->medida) ?></td>
@@ -27,7 +28,7 @@
                     <?= $this->Html->link(__('Ver'), ['action' => 'view2', $tiendaOferta->id]) ?>
                  </td>
             </tr>
-            <?php endforeach; ?>
+            <?php }} ?>
         </tbody>
     </table>
     <div class="paginator">

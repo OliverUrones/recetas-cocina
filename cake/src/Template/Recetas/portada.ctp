@@ -24,37 +24,35 @@ use Cake\Controller\Component;
         <p><?= $this->Paginator->counter() ?></p>
     </div> -->
     <table cellpadding="0" cellspacing="0">
-        <thead>
-            <tr>
-                <th><?= $this->Paginator->sort('tipo_plato') ?></th>
-                <th><?= $this->Paginator->sort('nombre') ?></th>
-                <th><?= $this->Paginator->sort('descripcion') ?></th>
-                <th><?= $this->Paginator->sort('dificultad') ?></th>
-                <th><?= $this->Paginator->sort('comensales') ?></th>
-                <th><?= $this->Paginator->sort('tiempo_elaboracion') ?></th>
-                <th><?= $this->Paginator->sort('valoracion') ?></th>
-                <!-- <th><?= $this->Paginator->sort('usuario_id') ?></th> 
-                <th class="actions"><?= __('Acciones') ?></th>-->
-            
-            </tr>
-        </thead>
+        
         <tbody>
-            <?php foreach ($Recetas as $receta): ?>
+            <?php foreach ($Recetas as $receta){ ?>
+            <?php if ($receta->aceptada== true ) { ?>
             <tr>
 
-                <td><?= h($receta->mostrarTipo_plato($receta->tipo_plato)) ?></td>
-                <td><?= h($receta->nombre) ?></td>
-                <td><?= h($receta->descripcion) ?></td>
-                <td><?= h($receta->dificultad) ?></td>
-                <td><?= h($receta->comensales) ?></td>
-                <td><?= $this->Number->format($receta->tiempo_elaboracion) ?></td>
-                <td><?= h($receta->valoracion) ?></td>
-                <!-- <td><?= $receta->has('usuario') ? $this->Html->link($receta->usuario->nombre, ['controller' => 'Usuarios', 'action' => 'view', $receta->usuario->id]) : '' ?></td> -->
-                <td class="actions">
-                    <?= $this->Html->link(__('Ver'), ['controller'=>'Recetas','action' => 'fichadetallada', $receta->id]) ?>
-                </td>
+                <h4><?= h($receta->nombre); ?></h4>
+                <table>
+                    <tr>
+                        <td>Tipo de plato: <?= h($receta->mostrarTipo_plato($receta->tipo_plato)) ?></td>
+                    </tr>
+                    <tr >
+                        <td colspan="2"><?= substr($receta->descripcion,0,100)?>...</td>
+                    </tr>
+                    <tr>
+                        <td>Dificultad: <?=  $receta->mostrarDificultad($receta->dificultad) ?></td>
+                        <td> Valoración: <?=  $receta->mostrarValoracion($receta->valoracion) ?></td>
+                     </tr>
+                     <tr>
+                        <td></td>
+                       
+                        <td class="actions">
+                             <?= $this->Html->link(__('Ver '.$receta->nombre ), ['controller'=>'Recetas','action' => 'fichadetallada', $receta->id]) ?>
+                        </td>
+                         <td></td>
+                     </tr>
+                </table>
             </tr>
-            <?php endforeach; ?>
+            <?php }} ?>
         </tbody>
     </table>
     <!-- <div class="paginator">

@@ -84,25 +84,36 @@
         </table>
     <?php endif; ?>
     </div>
-        <?php include ("comentarios.ctp"); ?>
+        <?php include ("comentarios.ctp");/* ?>
+
+     
+          <?php  var_dump($ingredientes);
+  foreach ($ingredientes as $ingre): ?>
+           
+                <?php echo $ingre->ingrediente->nombre; ?>
+
+  <?php endforeach;*/ ?>
+
+    
     <div class="related">
         <h4><?= __('Ingredientes') ?></h4>
         <?php if (!empty($receta->receta_ingredientes)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
-                <th><?= __('Id') ?></th>
-                <th><?= __('Receta Id') ?></th>
-                <th><?= __('Ingrediente Id') ?></th>
+                <th><?= __('Ingrediente') ?></th>
                 <th><?= __('Cantidad') ?></th>
                 <th><?= __('Medida') ?></th>
                 <th><?= __('Notas') ?></th>
                 <th class="actions"><?= __('Acciones') ?></th>
             </tr>
-            <?php foreach ($receta->receta_ingredientes as $recetaIngredientes): ?>
+            <?php
+            
+            
+            foreach ($receta->receta_ingredientes as $recetaIngredientes): ?>
             <tr>
-                <td><?= h($recetaIngredientes->id) ?></td>
-                <td><?= h($recetaIngredientes->receta_id) ?></td>
-                <td><?= h($recetaIngredientes->ingrediente_id) ?></td>
+                <td><?php  foreach ($ingredientes as $ingre): ?>
+                    <?php if($ingre->ingrediente->id == $recetaIngredientes->id) echo $ingre->ingrediente->nombre ; ?>
+                <?php endforeach; ?> </td>
                 <td><?= h($recetaIngredientes->cantidad) ?></td>
                 <td><?= h($recetaIngredientes->medida) ?></td>
                 <td><?= h($recetaIngredientes->notas) ?></td>

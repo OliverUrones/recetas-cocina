@@ -100,6 +100,10 @@ class TiendaOfertasController extends AppController
         $tiendaOferta = $this->TiendaOfertas->get($id, [
             'contain' => ['Tiendas', 'Ingredientes']
         ]);
+         if($tiendaOferta->tienda->visible!==true || $tiendaOferta->tienda->activa!== true )
+                        {
+                            return $this->redirect(['action' => 'index2']);
+			}
         $this->set('tiendaOferta', $tiendaOferta);
         $this->set('_serialize', ['tiendaOferta']);
     }
