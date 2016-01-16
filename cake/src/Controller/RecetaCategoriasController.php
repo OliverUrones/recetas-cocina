@@ -61,9 +61,14 @@ class RecetaCategoriasController extends AppController
      */
     public function view($id = null)
     {
-        $recetaCategoria = $this->RecetaCategorias->get($id, [
-            'contain' => ['Recetas', 'Categorias']
-        ]);
+		$recetaCategoria;
+		$todas=$this->paginate($this->RecetaCategorias);
+		foreach($todas as $una){
+			if($una->id==$id){
+				$recetaCategoria=$una;
+			}
+		}
+        
         $this->set('recetaCategoria', $recetaCategoria);
         $this->set('_serialize', ['recetaCategoria']);
     }
@@ -78,6 +83,8 @@ class RecetaCategoriasController extends AppController
         $recetaCategoria = $this->RecetaCategorias->newEntity();
         if ($this->request->is('post')) {
             $recetaCategoria = $this->RecetaCategorias->patchEntity($recetaCategoria, $this->request->data);
+			$recetaCategoria->receta_id=$this->request->data['recetas_id'];
+			$recetaCategoria->categoria_id=$this->request->data['categorias_id'];
             if ($this->RecetaCategorias->save($recetaCategoria)) {
                 $this->Flash->success(__('RecetaCategorias guardada.'));
                 return $this->redirect(['action' => 'index']);
@@ -108,35 +115,7 @@ class RecetaCategoriasController extends AppController
      * @return void Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function edit($id = null)
-    {
-        $recetaCategoria = $this->RecetaCategorias->get($id, [
-            'contain' => []
-        ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $recetaCategoria = $this->RecetaCategorias->patchEntity($recetaCategoria, $this->request->data);
-            if ($this->RecetaCategorias->save($recetaCategoria)) {
-                $this->Flash->success(__('RecetaCategorias editada.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('RecetaCategorias no pudo ser editada.'));
-            }
-        }
-        $rs = $this->RecetaCategorias->Recetas->find('list', ['limit' => 200]);
-        $cs = $this->RecetaCategorias->Categorias->find('list', ['limit' => 200]);
-		$recetas=array();
-		foreach($rs as $id){
-			$r=$this->RecetaCategorias->Recetas->get($id);
-			$recetas[$id]=$r->nombre;
-		}
-		$categorias=array();
-		foreach($cs as $id){
-			$c=$this->RecetaCategorias->Categorias->get($id);
-			$categorias[$id]=$c->nombre;
-		}
-        $this->set(compact('recetaCategoria', 'recetas', 'categorias'));
-        $this->set('_serialize', ['recetaCategoria']);
-    }
+   
 
     /**
      * Delete method
@@ -148,7 +127,14 @@ class RecetaCategoriasController extends AppController
     public function delete($id = null)
     {
         $this->request->allowMethod(['post', 'delete']);
-        $recetaCategoria = $this->RecetaCategorias->get($id);
+        $recetaCategoria;
+		$todas=$this->paginate($this->RecetaCategorias);
+		foreach($todas as $una){
+			if($una->id==$id){
+				$recetaCategoria=$una;
+			}
+		}
+        
         if ($this->RecetaCategorias->delete($recetaCategoria)) {
             $this->Flash->success(__('RecetaCategorias borrada.'));
         } else {

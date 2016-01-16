@@ -1,7 +1,6 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Acciones') ?></li>
-        <li><?= $this->Html->link(__('Editar Receta Categoria'), ['action' => 'edit', $recetaCategoria->id]) ?> </li>
         <li><?= $this->Form->postLink(__('Borrar Receta Categoria'), ['action' => 'delete', $recetaCategoria->id], ['confirm' => __('¿Desea borrar # {0}?', $recetaCategoria->id)]) ?> </li>
         <li><?= $this->Html->link(__('Listar Receta Categorias'), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('Nueva Receta Categoria'), ['action' => 'add']) ?> </li>

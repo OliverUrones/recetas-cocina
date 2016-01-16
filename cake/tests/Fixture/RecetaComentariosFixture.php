@@ -42,7 +42,7 @@ class RecetaComentariosFixture extends TestFixture
             'id' => 1,
             'receta_id' => 1,
             'usuario_id' => 1,
-            'fechahora' => '2015-12-15 07:43:55',
+            'fechahora' => '2016-01-16 16:25:18',
             'texto' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.'
         ],
     ];

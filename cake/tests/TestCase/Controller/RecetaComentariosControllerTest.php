@@ -27,7 +27,6 @@ class RecetaComentariosControllerTest extends IntegrationTestCase
         'app.ingredientes',
         'app.receta_categorias',
         'app.categorias',
-        'app.categoria_padres',
         'app.receta_ingredientes',
         'app.receta_pasos',
         'app.receta_paso_imagenes'

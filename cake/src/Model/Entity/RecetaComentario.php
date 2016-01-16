@@ -6,14 +6,7 @@ use Cake\ORM\Entity;
 /**
  * RecetaComentario Entity.
  *
- * @property int $id
- * @property int $receta_id
- * @property \App\Model\Entity\Receta $receta
- * @property int $usuario_id
- * @property \App\Model\Entity\Usuario $usuario
- * @property \Cake\I18n\Time $fechahora
- * @property string $texto
- */
+ * @property int $id * @property int $receta_id * @property \App\Model\Entity\Receta $receta * @property int $usuario_id * @property \App\Model\Entity\Usuario $usuario * @property \Cake\I18n\Time $fechahora * @property string $texto */
 class RecetaComentario extends Entity
 {
 

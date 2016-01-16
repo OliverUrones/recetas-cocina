@@ -28,7 +28,6 @@ class RecetaComentariosTableTest extends TestCase
         'app.ingredientes',
         'app.receta_categorias',
         'app.categorias',
-        'app.categoria_padres',
         'app.receta_ingredientes',
         'app.receta_pasos',
         'app.receta_paso_imagenes'
@@ -42,9 +41,7 @@ class RecetaComentariosTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('RecetaComentarios') ? [] : ['className' => 'App\Model\Table\RecetaComentariosTable'];
-        $this->RecetaComentarios = TableRegistry::get('RecetaComentarios', $config);
-    }
+        $config = TableRegistry::exists('RecetaComentarios') ? [] : ['className' => 'App\Model\Table\RecetaComentariosTable'];        $this->RecetaComentarios = TableRegistry::get('RecetaComentarios', $config);    }
 
     /**
      * tearDown method

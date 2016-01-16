@@ -12,7 +12,7 @@
         <?php
             echo $this->Form->input('nombre');
             echo $this->Form->input('descripcion');
-            echo $this->Form->input('Categoria del padre', ['options' => $parentCategorias,'empty'=>true]);
+            echo $this->Form->input('parent_id', ['options' => $parentCategorias,'empty'=>true]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Enviar')) ?>

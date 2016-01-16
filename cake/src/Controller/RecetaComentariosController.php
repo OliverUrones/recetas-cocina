@@ -6,8 +6,7 @@ use App\Controller\AppController;
 /**
  * RecetaComentarios Controller
  *
- * @property \App\Model\Table\RecetaComentariosTable $RecetaComentarios
- */
+ * @property \App\Model\Table\RecetaComentariosTable $RecetaComentarios */
 class RecetaComentariosController extends AppController
 {
 
@@ -46,21 +45,22 @@ class RecetaComentariosController extends AppController
      *
      * @return void Redirects on successful add, renders view otherwise.
      */
-    public function add()
+    public function add($idreceta=null)
     {
+		$usuario= $this->request->session()->read('Auth.User');
         $recetaComentario = $this->RecetaComentarios->newEntity();
         if ($this->request->is('post')) {
             $recetaComentario = $this->RecetaComentarios->patchEntity($recetaComentario, $this->request->data);
+			$recetaComentario->receta_id=$idreceta;
+			$recetaComentario->usuario_id=$usuario['id'];
             if ($this->RecetaComentarios->save($recetaComentario)) {
-                $this->Flash->success(__('The receta comentario has been saved.'));
-                return $this->redirect(['action' => 'index']);
+                $this->Flash->success(__('el comentario se guardo.'));
+                return $this->redirect(['controller' => 'recetas', 'action' => 'fichadetallada',$idreceta]);
             } else {
-                $this->Flash->error(__('The receta comentario could not be saved. Please, try again.'));
+                $this->Flash->error(__('el comentario no se pudo guardar.'));
             }
         }
-        $recetas = $this->RecetaComentarios->Recetas->find('list', ['limit' => 200]);
-        $usuarios = $this->RecetaComentarios->Usuarios->find('list', ['limit' => 200]);
-        $this->set(compact('recetaComentario', 'recetas', 'usuarios'));
+       $this->set(compact('recetaComentario', 'idreceta'));
         $this->set('_serialize', ['recetaComentario']);
     }
 
@@ -72,22 +72,24 @@ class RecetaComentariosController extends AppController
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
     public function edit($id = null)
-    {
-        $recetaComentario = $this->RecetaComentarios->get($id, [
-            'contain' => []
+    {	
+	$recetaComentario = $this->RecetaComentarios->get($id, [
+            'contain' => ['Recetas', 'Usuarios']
         ]);
+		$idreceta=$recetaComentario->receta->id;
+		
+       
         if ($this->request->is(['patch', 'post', 'put'])) {
-            $recetaComentario = $this->RecetaComentarios->patchEntity($recetaComentario, $this->request->data);
+			 $recetaComentario = $this->RecetaComentarios->patchEntity($recetaComentario, $this->request->data);
             if ($this->RecetaComentarios->save($recetaComentario)) {
-                $this->Flash->success(__('The receta comentario has been saved.'));
-                return $this->redirect(['action' => 'index']);
+                $this->Flash->success(__('El comentario se guardo.'));
+                return $this->redirect(['controller' => 'recetas', 'action' => 'fichadetallada',$idreceta]);
             } else {
-                $this->Flash->error(__('The receta comentario could not be saved. Please, try again.'));
+                $this->Flash->error(__('el comentario no pudo ser guardado.'));
             }
         }
-        $recetas = $this->RecetaComentarios->Recetas->find('list', ['limit' => 200]);
-        $usuarios = $this->RecetaComentarios->Usuarios->find('list', ['limit' => 200]);
-        $this->set(compact('recetaComentario', 'recetas', 'usuarios'));
+ 
+      $this->set(compact('recetaComentario', 'idreceta'));
         $this->set('_serialize', ['recetaComentario']);
     }
 
@@ -102,11 +104,12 @@ class RecetaComentariosController extends AppController
     {
         $this->request->allowMethod(['post', 'delete']);
         $recetaComentario = $this->RecetaComentarios->get($id);
+		$idreceta=$recetaComentario->receta_id;
         if ($this->RecetaComentarios->delete($recetaComentario)) {
-            $this->Flash->success(__('The receta comentario has been deleted.'));
+            $this->Flash->success(__('Se borro el comentario.'));
         } else {
-            $this->Flash->error(__('The receta comentario could not be deleted. Please, try again.'));
+            $this->Flash->error(__('el comentario no pudo ser borrado.'));
         }
-        return $this->redirect(['action' => 'index']);
+            return $this->redirect(['controller' => 'recetas', 'action' => 'fichadetallada',$idreceta]);
     }
 }

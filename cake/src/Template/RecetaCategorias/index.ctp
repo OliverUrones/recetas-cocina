@@ -24,7 +24,6 @@
                 <td><?= $recetaCategoria->has('categoria') ? $this->Html->link($recetaCategoria->categoria->nombre, ['controller' => 'Categorias', 'action' => 'view', $recetaCategoria->categoria->id]) : '' ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('Ver'), ['action' => 'view', $recetaCategoria->id]) ?>
-                    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $recetaCategoria->id]) ?>
                     <?= $this->Form->postLink(__('Borrar'), ['action' => 'delete', $recetaCategoria->id], ['confirm' => __('¿Desea Borrar # {0}?', $recetaCategoria->id)]) ?>
                 </td>
             </tr>

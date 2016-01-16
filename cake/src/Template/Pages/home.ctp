@@ -5,5 +5,5 @@
 <section class="container clearfix ">
   <?= $this->element('../Recetas/portada') ?>
   <?= $this->element('../TiendaOfertas/portada') ?>
-  <?= $this->element('../categorias/arbol')?>
+  <?= $this->element('../Categorias/arbol')?>
 </section>

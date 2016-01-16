@@ -10,9 +10,7 @@ use Cake\Validation\Validator;
 /**
  * RecetaComentarios Model
  *
- * @property \Cake\ORM\Association\BelongsTo $Recetas
- * @property \Cake\ORM\Association\BelongsTo $Usuarios
- */
+ * @property \Cake\ORM\Association\BelongsTo $Recetas * @property \Cake\ORM\Association\BelongsTo $Usuarios */
 class RecetaComentariosTable extends Table
 {
 
@@ -49,18 +47,11 @@ class RecetaComentariosTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->add('id', 'valid', ['rule' => 'numeric'])
-            ->allowEmpty('id', 'create');
-
+            ->add('id', 'valid', ['rule' => 'numeric'])            ->allowEmpty('id', 'create');
         $validator
-            ->add('fechahora', 'valid', ['rule' => 'datetime'])
-            ->requirePresence('fechahora', 'create')
-            ->notEmpty('fechahora');
-
+            ->add('fechahora', 'valid', ['rule' => 'datetime'])            ->requirePresence('fechahora', 'create')            ->notEmpty('fechahora');
         $validator
-            ->requirePresence('texto', 'create')
-            ->notEmpty('texto');
-
+            ->requirePresence('texto', 'create')            ->notEmpty('texto');
         return $validator;
     }
 
