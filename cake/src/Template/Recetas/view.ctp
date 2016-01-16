@@ -8,7 +8,7 @@
         </ul>
 </nav>
 <div class="recetas view large-9 medium-8 columns content">
-    <h3><?= h($receta->id) ?></h3>
+    <h3><?= h($receta->nombre) ?></h3>
     <table class="vertical-table">
         <tr>
             <th><?= __('Tipo Plato') ?></th>
@@ -32,19 +32,15 @@
          </tr>
         <tr>
             <th><?= __('Aceptada') ?></th>
-            <td><?= $receta->aceptada ? __('Yes') : __('No'); ?></td>
+            <td><?= $receta->aceptada ? __('Si') : __('No'); ?></td>
          </tr>
-    </table>
-    <div class="row">
-        <h4><?= __('Nombre') ?></h4>
-        <?= $this->Text->autoParagraph(h($receta->nombre)); ?>
-    </div>
+    </table> 
     <div class="row">
         <h4><?= __('Descripcion') ?></h4>
         <?= $this->Text->autoParagraph(h($receta->descripcion)); ?>
     </div>
     <div class="related">
-        <h4><?= __('Related Menu Platos') ?></h4>
+        <h4><?= __('Platos') ?></h4>
         <?php if (!empty($receta->menu_platos)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
@@ -70,7 +66,7 @@
     <?php endif; ?>
     </div>
     <div class="related">
-        <h4><?= __('Related Receta Categorias') ?></h4>
+        <h4><?= __('Categorias') ?></h4>
         <?php if (!empty($receta->receta_categorias)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
@@ -96,7 +92,7 @@
     <?php endif; ?>
     </div>
     <div class="related">
-        <h4><?= __('Related Receta Comentarios') ?></h4>
+        <h4><?= __('Comentarios') ?></h4>
         <?php if (!empty($receta->receta_comentarios)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
@@ -128,7 +124,7 @@
     <?php endif; ?>
     </div>
     <div class="related">
-        <h4><?= __('Related Receta Ingredientes') ?></h4>
+        <h4><?= __('Ingredientes') ?></h4>
         <?php if (!empty($receta->receta_ingredientes)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
@@ -162,7 +158,7 @@
     <?php endif; ?>
     </div>
     <div class="related">
-        <h4><?= __('Related Receta Pasos') ?></h4>
+        <h4><?= __('Pasos') ?></h4>
         <?php if (!empty($receta->receta_pasos)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
