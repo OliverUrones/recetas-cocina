@@ -12,7 +12,10 @@
             <?php if($recetaPaso->receta->id == $receta_id){
                 $nombre= $recetaPaso->receta->nombre ; 
                 
-            }}?>
+            }}
+$nombre= $recetaPaso->receta->nombre ; 
+
+?>
     <h3><?= __('Pasos para elaboración de '.$nombre) ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
