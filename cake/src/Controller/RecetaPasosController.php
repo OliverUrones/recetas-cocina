@@ -60,7 +60,7 @@ class RecetaPasosController extends AppController
 		$recetaPaso->receta=$receta;
             if ($this->RecetaPasos->save($recetaPaso)) {
                 $this->Flash->success(__('The receta paso has been saved.'));
-                return $this->redirect(['action' => 'index',$receta_id]);
+                return $this->redirect(['action' => 'index','receta_id']);
             } else {
                 $this->Flash->error(__('The receta paso could not be saved. Please, try again.'));
             }

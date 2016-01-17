@@ -2,7 +2,7 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Acciones') ?></li>
         
-        <li><?= $this->Html->link(__('Ir a imagenes de pasos de elaboración'), ['action' => 'view', $recetaPasoImagene->receta_paso_id]) ?></li>
+        <li><?= $this->Html->link(__('Ir a imagenes de pasos de elaboración'), ['action' => 'index', $recetaPasoImagene->receta_paso_id]) ?></li>
        </ul>
 </nav>
 <div class="recetaPasoImagenes form large-9 medium-8 columns content">
