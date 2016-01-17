@@ -46,16 +46,10 @@ class TiendasController extends AppController
     
     public function indexpublico()
     {
-        $this->paginate = [
-            'contain' => ['Usuarios']
-        ];
-		$tiendas= $this->paginate($this->Tiendas);
+	$tiendas= $this->paginate($this->Tiendas);
+        $this->set('tiendas');
+        $this->set('_serialize', ['tiendas']);
 
-            $this->set('tiendas',$tiendas);
-             $this->set('_serialize', ['tiendas']);
-
-        
-       
     }
     
     public function beforeFilter(\Cake\Event\Event $event)
@@ -89,7 +83,7 @@ class TiendasController extends AppController
      */
     public function view($id = null)
     {
-		$usuario= $this->request->session()->read('Auth.User');
+        $usuario= $this->request->session()->read('Auth.User');
         $tienda = $this->Tiendas->get($id, [
             'contain' => ['Usuarios', 'TiendaOfertas']
         ]);
@@ -156,10 +150,10 @@ class TiendasController extends AppController
                 $tienda->usuario_id=$usuario['id'];
                 $tienda->activa=0;
                 if ($this->Tiendas->save($tienda)) {
-                    $this->Flash->success(__('The tienda has been saved.'));
+                    $this->Flash->success(__('La tienda ha sido guardada.'));
                     return $this->redirect(['action' => 'index']);
                 } else {
-                    $this->Flash->error(__('The tienda could not be saved. Please, try again.'));
+                    $this->Flash->error(__('La tienda no se ha podido guardar. Por favor, intentelo de nuevo.'));
                 }
             }
             $this->set(compact('tienda'));
@@ -167,17 +161,18 @@ class TiendasController extends AppController
         }else{
             $usuarios = $this->paginate('Usuarios');
             foreach($usuarios as $usu){
+                if($usu->rol !== 'C'){
 		array_push($nusu,$usu->nombre);
-                array_push($idusu, $usu->id);
+                array_push($idusu, $usu->id);}
             }
             if ($this->request->is('post')) {
                 $tienda = $this->Tiendas->patchEntity($tienda, $this->request->data);
                 $tienda->usuario_id=$idusu[$tienda->usuario_id];
                 if ($this->Tiendas->save($tienda)) {
-                    $this->Flash->success(__('The tienda has been saved.'));
+                    $this->Flash->success(__('La tienda ha sido guardada.'));
                     return $this->redirect(['action' => 'index']);
                 } else {
-                    $this->Flash->error(__('The tienda could not be saved. Please, try again.'));
+                    $this->Flash->error(__('La tienda no se ha podido guardar. Por favor, intentelo de nuevo.'));
                 }
             }
             
@@ -211,14 +206,13 @@ class TiendasController extends AppController
                 $tienda = $this->Tiendas->patchEntity($tienda, $this->request->data);
 		$tienda->usuario_id=$usuario['id'];
                 if ($this->Tiendas->save($tienda)) {
-                    $this->Flash->success(__('The tienda has been saved.'));
+                    $this->Flash->success(__('La tienda ha sido guardada.'));
                     return $this->redirect(['action' => 'index']);
                 } else {
-                    $this->Flash->error(__('The tienda could not be saved. Please, try again.'));
+                    $this->Flash->error(__('La tienda no se ha podido guardar. Por favor, intentelo de nuevo.'));
                 }
             }
-            $usuarios = $this->Tiendas->Usuarios->find('list', ['limit' => 200]);
-            $this->set(compact('tienda', 'usuarios'));
+            $this->set('tienda');
             $this->set('_serialize', ['tienda']);
 	}else{
             $usuarios = $this->paginate('Usuarios');
@@ -265,9 +259,9 @@ class TiendasController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         
         if ($this->Tiendas->delete($tienda)) {
-            $this->Flash->success(__('The tienda has been deleted.'));
+            $this->Flash->success(__('La tienda ha sido borrada.'));
         } else {
-            $this->Flash->error(__('The tienda could not be deleted. Please, try again.'));
+            $this->Flash->error(__('La tienda no ha podido ser borrada. Por favor, intentelo de nuevo.'));
         }
         return $this->redirect(['action' => 'index']);
     }

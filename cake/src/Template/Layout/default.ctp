@@ -49,12 +49,22 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 //\Cake\Log\Log::write( 'debug', __METHOD__.'['.__LINE__.']'.' _SESSION= '.var_export( $this->request->session(), true));
                 echo '<li>';
                 if ($usuario !== null) {
-					echo '<li>';
-                  echo $this->Html->link('Administrar Tiendas', ['controller' => 'tiendas', 'action' => 'index']);
-                  echo '</li>';
-				  echo '<li>';
-                  echo $this->Html->link('Administrar Ofertas', ['controller' => 'tiendaOfertas', 'action' => 'index']);
-                  echo '</li>';
+				  if($usuario['rol']!=='C')
+                  {
+					  echo '<li>';
+					  echo $this->Html->link('Administrar Tiendas', ['controller' => 'tiendas', 'action' => 'index']);
+					  echo '</li>';
+					  echo '<li>';
+					  echo $this->Html->link('Administrar Ofertas', ['controller' => 'tiendaOfertas', 'action' => 'index']);
+					  echo '</li>';
+				  }else{
+						  echo '<li>';
+					  echo $this->Html->link('Tiendas', ['controller' => 'tiendas', 'action' => 'indexpublico']);
+					  echo '</li>';
+					  echo '<li>';
+					  echo $this->Html->link('Ofertas', ['controller' => 'tiendaOfertas', 'action' => 'index2']);
+					  echo '</li>';
+				  }
                     echo '<li>';
                   echo $this->Html->link('Administrar recetas', ['controller' => 'recetas', 'action' => 'index']);
                   echo '</li>';

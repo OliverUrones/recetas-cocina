@@ -30,7 +30,8 @@ use Cake\Controller\Component;
             <?php if ($receta->aceptada== true ) { ?>
             <tr>
 
-                <h4><?= h($receta->nombre); ?></h4>
+                <h4 class="actions">
+                <?=$this->Html->link(__($receta->nombre ), ['controller'=>'Recetas','action' => 'fichadetallada', $receta->id])?></h4>
                 <table>
                     <tr>
                         <td>Tipo de plato: <?= h($receta->mostrarTipo_plato($receta->tipo_plato)) ?></td>

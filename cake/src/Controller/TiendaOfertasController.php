@@ -49,7 +49,7 @@ class TiendaOfertasController extends AppController
 			}
 			$tiendaOfertas=$aux;
 		}
-        $this->set('tiendaOfertas',$tiendaOfertas );
+        $this->set('tiendaOfertas',$tiendaOfertas);
         $this->set('_serialize', ['tiendaOfertas']);
     }
 	
@@ -69,7 +69,7 @@ class TiendaOfertasController extends AppController
         ];
         $this->set('tiendaOfertas', $this->paginate($this->TiendaOfertas));
         $this->set('_serialize', ['tiendaOfertas']);
-    }
+    }     
 
     /**
      * View method
@@ -104,7 +104,7 @@ class TiendaOfertasController extends AppController
                         {
                             return $this->redirect(['action' => 'index2']);
 			}
-        $this->set('tiendaOferta', $tiendaOferta);
+        $this->set('tiendaOferta');
         $this->set('_serialize', ['tiendaOferta']);
     }
 
@@ -147,10 +147,10 @@ class TiendaOfertasController extends AppController
             $tiendaOferta->ingrediente_id= $idingredientes[$tiendaOferta->ingrediente_id];
             $tiendaOferta->tienda_id=$idtiendas[$tiendaOferta->tienda_id];
             if ($this->TiendaOfertas->save($tiendaOferta)) {
-                $this->Flash->success(__('The tienda oferta has been saved.'));
+                $this->Flash->success(__('La oferta ha sido guardada.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The tienda oferta could not be saved. Please, try again.'.$this->request->data->tienda_id));
+                $this->Flash->error(__('La oferta ha sido guardada. Por favor, intentelo de nuevo.'.$this->request->data->tienda_id));
             }
         }
         
@@ -201,19 +201,19 @@ class TiendaOfertasController extends AppController
 			}
                 }
         foreach($ingredientes as $ingrediente){
-                                array_push($idingredientes,$ingrediente->id);
-				array_push($nombresing,$ingrediente->nombre);
-                }
+                array_push($idingredientes,$ingrediente->id);
+		array_push($nombresing,$ingrediente->nombre);
+        }
         
         if ($this->request->is(['patch', 'post', 'put'])) {
             $tiendaOferta = $this->TiendaOfertas->patchEntity($tiendaOferta, $this->request->data);
             $tiendaOferta->tienda_id=$idtiendas[$tiendaOferta->tienda_id];
             $tiendaOferta->ingrediente_id=$idingredientes[$tiendaOferta->ingrediente_id];
             if ($this->TiendaOfertas->save($tiendaOferta)) {
-                $this->Flash->success(__('The tienda oferta has been saved.'));
+                $this->Flash->success(__('La oferta ha sido guardada.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The tienda oferta could not be saved. Please, try again.'));
+                $this->Flash->error(__('La oferta no ha podido ser guardada. Por favor, intentelo de nuevo.'));
             }
         }
         //$tiendas = $this->TiendaOfertas->Tiendas->find('list', ['limit' => 200]);
@@ -247,9 +247,9 @@ class TiendaOfertasController extends AppController
 		}
         $this->request->allowMethod(['post', 'delete']);
         if ($this->TiendaOfertas->delete($tiendaOferta)) {
-            $this->Flash->success(__('The tienda oferta has been deleted.'));
+            $this->Flash->success(__('La oferta ha sido borrada.'));
         } else {
-            $this->Flash->error(__('The tienda oferta could not be deleted. Please, try again.'));
+            $this->Flash->error(__('La oferta no ha podido ser borrada. Por favor, intentelo de nuevo.'));
         }
         return $this->redirect(['action' => 'index']);
     }
