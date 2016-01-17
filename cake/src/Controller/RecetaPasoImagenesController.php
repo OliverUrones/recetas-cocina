@@ -23,9 +23,10 @@ class RecetaPasoImagenesController extends AppController
         ];
         if($recetaPaso_id == null){
             $recetaPaso_id = $_GET['recetaPaso_id'];
+            $recetaPaso_id = $_GET['recetaPaso_orden'];
         }
         $recetaPasoImagenes= $this->paginate($this->RecetaPasoImagenes);
-        $this->set(compact('recetaPasoImagenes','recetaPaso_id'));
+        $this->set(compact('recetaPasoImagenes','recetaPaso_id','recetaPaso_orden'));
         $this->set('_serialize', ['recetaPasoImagenes']);
     }
 

@@ -1,12 +1,12 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Acciones') ?></li>
-        <li><?= $this->Html->link(__('Nueva Receta'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('Añadir nueva receta'), ['action' => 'add']) ?></li>
         
         </ul>
 </nav>
 <div class="recetas index large-9 medium-8 columns content">
-    <h3><?= __('Recetas') ?></h3>
+    <h3><?= __('Administrar Recetas') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
@@ -32,6 +32,7 @@
                 <!-- td><?= $receta->has('usuario') ? $this->Html->link($receta->usuario->id, ['controller' => 'Usuarios', 'action' => 'view', $receta->usuario->id]) : '' ?></td -->
                 <td class="actions">
                     <?= $this->Html->link(__('Ver'), ['action' => 'view', $receta->id]) ?>
+                    <?= $this->Html->link(__('Pública'), ['action' => 'fichadetallada', $receta->id]) ?>
                     <?= $this->Html->link(__('Editar'), ['action' => 'edit', $receta->id]) ?>
                     <?= $this->Html->link(__('Pasos'), ['controller'=>'RecetaPasos','action' => 'index', $receta->id]) ?>
                     <?= $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $receta->id], ['confirm' => __('Esta seguro que la desea eliminar # {0}?', $receta->id)]) ?>

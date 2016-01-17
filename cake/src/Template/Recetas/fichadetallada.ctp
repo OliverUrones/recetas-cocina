@@ -94,6 +94,11 @@
         </table>
     <?php endif;*/ ?>
     <!--/div-->
+     <?php foreach ($pasos as $recetaPasos): ?>
+     <?php $a=1;foreach ($recetaPasos->receta_paso_imagenes as $recetaPasoImagenes): ?>
+     <?php $a++; ?>
+     <?php endforeach; ?> 
+     <?php endforeach; ?>
     <div class="related">
         <h4><?= __('Pasos') ?></h4>
         <?php if (!empty($receta->receta_pasos)): ?>
@@ -102,6 +107,10 @@
                <th><?= __('Orden') ?></th>
                 <th><?= __('Descripcion') ?></th>
                 <th> <?= __('imagenes') ?></th>
+                <?php for($i=0;$i<$a;$i++){
+                    echo '<th></th>';
+                   
+                }?>
             </tr>
             <?php foreach ($pasos as $recetaPasos): ?>
             <tr>

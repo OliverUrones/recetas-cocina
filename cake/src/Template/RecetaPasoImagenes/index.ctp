@@ -6,13 +6,22 @@
         
     </ul>
 </nav>
-<?php foreach ($recetaPasoImagenes as $recetaPasoImagene): ?>
+<?php 
+$orden=NULL;
+foreach ($recetaPasoImagenes as $recetaPasoImagene): ?>
 <?php if($recetaPasoImagene->receta_paso->id == $recetaPaso_id){ ?>
 <?php 
 $orden=$recetaPasoImagene->receta_paso->orden; ?>
 <?php } ?>
 <?php endforeach; ?>
+<?php 
+if ($orden == NULL){
+    ?><div class="recetaPasoImagenes index large-9 medium-8 columns content">
+    
+    <h3><?= __('No hay imagenes para este paso de elaboración de la receta') ?> </h3>
+<?php }else{ ?>
 <div class="recetaPasoImagenes index large-9 medium-8 columns content">
+    
     <h3><?= __('Imagenes del paso nº '). $orden  ?> </h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
@@ -48,4 +57,5 @@ $orden=$recetaPasoImagene->receta_paso->orden; ?>
         </ul>
         <p><?= $this->Paginator->counter() ?></p>
     </div>
+<?php } ?>
 </div>
