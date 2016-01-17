@@ -1,0 +1,11 @@
+ALTER TABLE `planificacion_menus` CHANGE `planificacion_id` `planificacione_id` INT(12) UNSIGNED NOT NULL;
+ALTER TABLE planificacion_menus RENAME AS planificacione_menus;
+
+DROP TABLE IF EXISTS `daw_recetas`.`menu_platos` ;
+
+CREATE TABLE IF NOT EXISTS `daw_recetas`.`menu_recetas` (
+  `id` INT(12) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `menu_id` INT(12) UNSIGNED NOT NULL,
+  `receta_id` INT(12) UNSIGNED NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;

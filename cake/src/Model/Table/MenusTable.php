@@ -11,7 +11,7 @@ use Cake\Validation\Validator;
  * Menus Model
  *
  * @property \Cake\ORM\Association\BelongsTo $Usuarios
- * @property \Cake\ORM\Association\HasMany $MenuPlatos
+ * @property \Cake\ORM\Association\HasMany $MenuRecetas
  */
 class MenusTable extends Table
 {
@@ -33,7 +33,7 @@ class MenusTable extends Table
         $this->belongsTo('Usuarios', [
             'foreignKey' => 'usuario_id'
         ]);
-        $this->hasMany('MenuPlatos', [
+        $this->hasMany('MenuRecetas', [
             'foreignKey' => 'menu_id'
         ]);
     }

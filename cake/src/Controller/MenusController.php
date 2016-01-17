@@ -11,12 +11,33 @@ use App\Controller\AppController;
 class MenusController extends AppController
 {
 
+	public function beforeFilter(\Cake\Event\Event $event)
+    {
+        parent::beforeFilter($event);
+        //$this->Auth->allow(['registro','index','add']);//DTR: pruebas y poder añadir un usuario...
+        //$this->Auth->allow(['registro','index','add','edit']);//DTR: pruebas y poder añadir un usuario...
+        
+        $this->Auth->allow('publico');
+		$this->Auth->allow('vista');
+         
+        //DTR: establecer la URL a la que redirigir si hay que pasar por LOGIN.
+        $this->Auth->redirectUrl();
+    }//---*/
+
     /**
      * Index method
      *
      * @return void
      */
     public function index()
+    {
+        $this->paginate = [
+            'contain' => ['Usuarios']
+        ];
+        $this->set('menus', $this->paginate($this->Menus));
+        $this->set('_serialize', ['menus']);
+    }
+	public function publico()
     {
         $this->paginate = [
             'contain' => ['Usuarios']
@@ -35,11 +56,21 @@ class MenusController extends AppController
     public function view($id = null)
     {
         $menu = $this->Menus->get($id, [
-            'contain' => ['Usuarios', 'MenuPlatos']
+            'contain' => ['Usuarios', 'MenuRecetas']
         ]);
         $this->set('menu', $menu);
         $this->set('_serialize', ['menu']);
     }
+	
+	public function vista($id = null)
+    {
+        $menu = $this->Menus->get($id, [
+            'contain' => ['Usuarios', 'MenuRecetas']
+        ]);
+        $this->set('menu', $menu);
+        $this->set('_serialize', ['menu']);
+    }
+	
 
     /**
      * Add method
@@ -51,11 +82,13 @@ class MenusController extends AppController
         $menu = $this->Menus->newEntity();
         if ($this->request->is('post')) {
             $menu = $this->Menus->patchEntity($menu, $this->request->data);
+			$usuario= $this->request->session()->read('Auth.User');
+			$menu->usuario_id=$usuario['id'];
             if ($this->Menus->save($menu)) {
-                $this->Flash->success(__('The menu has been saved.'));
+                $this->Flash->success(__('El menú se ha guardado correctamente'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The menu could not be saved. Please, try again.'));
+                $this->Flash->error(__('Ha ocurrido un error al guardar el menú. Inténtelo de nuevo'));
             }
         }
         $usuarios = $this->Menus->Usuarios->find('list', ['limit' => 200]);
@@ -77,11 +110,12 @@ class MenusController extends AppController
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $menu = $this->Menus->patchEntity($menu, $this->request->data);
+			
             if ($this->Menus->save($menu)) {
-                $this->Flash->success(__('The menu has been saved.'));
+                $this->Flash->success(__('El menú se ha guardado correctamente'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The menu could not be saved. Please, try again.'));
+                $this->Flash->error(__('Ha ocurrido un error al guardar el menú. Inténtelo de nuevo'));
             }
         }
         $usuarios = $this->Menus->Usuarios->find('list', ['limit' => 200]);
@@ -101,9 +135,9 @@ class MenusController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $menu = $this->Menus->get($id);
         if ($this->Menus->delete($menu)) {
-            $this->Flash->success(__('The menu has been deleted.'));
+            $this->Flash->success(__('El menú se ha borrado correctamente.'));
         } else {
-            $this->Flash->error(__('The menu could not be deleted. Please, try again.'));
+            $this->Flash->error(__('Ha ocurrido un error al borrar el menú. Inténtelo de nuevo.'));
         }
         return $this->redirect(['action' => 'index']);
     }

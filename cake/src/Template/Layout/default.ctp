@@ -49,15 +49,43 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 //\Cake\Log\Log::write( 'debug', __METHOD__.'['.__LINE__.']'.' _SESSION= '.var_export( $this->request->session(), true));
                 echo '<li>';
                 if ($usuario !== null) {
+<<<<<<< HEAD
 					echo '<li>';
                   echo $this->Html->link('Administrar categorias en recetas', ['controller' => 'RecetaCategorias', 'action' => 'index']);
                   echo '</li>';
 					echo '<li>';
                   echo $this->Html->link('Administrar categorias', ['controller' => 'categorias', 'action' => 'index']);
                   echo '</li>';
+=======
+				  if($usuario['rol']!=='C')
+                  {
+					  echo '<li>';
+					  echo $this->Html->link('Administrar Tiendas', ['controller' => 'tiendas', 'action' => 'index']);
+					  echo '</li>';
+					  echo '<li>';
+					  echo $this->Html->link('Administrar Ofertas', ['controller' => 'tiendaOfertas', 'action' => 'index']);
+					  echo '</li>';
+				  }else{
+						  echo '<li>';
+					  echo $this->Html->link('Tiendas', ['controller' => 'tiendas', 'action' => 'indexpublico']);
+					  echo '</li>';
+					  echo '<li>';
+					  echo $this->Html->link('Ofertas', ['controller' => 'tiendaOfertas', 'action' => 'index2']);
+					  echo '</li>';
+				  }
+>>>>>>> 8f0cb6dd7ee791048434e684350f7680d18d9cde
                     echo '<li>';
                   echo $this->Html->link('Administrar recetas', ['controller' => 'recetas', 'action' => 'index']);
                   echo '</li>';
+                  
+                  echo '<li>';
+                  echo $this->Html->link('Administrar menús', ['controller' => 'menus', 'action' => 'index']);
+                  echo '</li>';
+				  
+                  echo '<li>';
+                  echo $this->Html->link('Administrar planificaciones', ['controller' => 'planificacioneMenus', 'action' => 'index']);
+                  echo '</li>';
+                  
                   echo $this->Html->link( 'Cerrar Sesion ['.$usuario['nombre'].'-'.$usuario['rol'].']', ['controller'=>'usuarios', 'action'=>'logout']);
                   if($usuario['nombre'] === 'sysadmin')
                   {
@@ -80,7 +108,12 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                   }
                 } else {
                     
-                  
+                  echo '<li>';
+                  echo $this->Html->link('Tiendas', ['controller' => 'tiendas', 'action' => 'indexpublico']);
+                  echo '</li>';
+				  echo '<li>';
+                  echo $this->Html->link('Ofertas', ['controller' => 'tiendaOfertas', 'action' => 'index2']);
+                  echo '</li>';
                   echo '<li>';
                   echo $this->Html->link('Invitado', ['controller' => 'Pages', 'action' => 'display']);
                   echo '</li>';

@@ -1,18 +1,19 @@
 <?php
 namespace App\Model\Table;
 
-use App\Model\Entity\Planificacione;
+use App\Model\Entity\MenuReceta;
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
 /**
- * Planificaciones Model
+ * MenuRecetas Model
  *
- * @property \Cake\ORM\Association\BelongsTo $Usuarios
+ * @property \Cake\ORM\Association\BelongsTo $Menus
+ * @property \Cake\ORM\Association\BelongsTo $Recetas
  */
-class PlanificacionesTable extends Table
+class MenuRecetasTable extends Table
 {
 
     /**
@@ -25,12 +26,16 @@ class PlanificacionesTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('planificaciones');
+        $this->table('menu_recetas');
         $this->displayField('id');
         $this->primaryKey('id');
 
-        $this->belongsTo('Usuarios', [
-            'foreignKey' => 'usuario_id',
+        $this->belongsTo('Menus', [
+            'foreignKey' => 'menu_id',
+            'joinType' => 'INNER'
+        ]);
+        $this->belongsTo('Recetas', [
+            'foreignKey' => 'receta_id',
             'joinType' => 'INNER'
         ]);
     }
@@ -47,17 +52,6 @@ class PlanificacionesTable extends Table
             ->add('id', 'valid', ['rule' => 'numeric'])
             ->allowEmpty('id', 'create');
 
-        $validator
-            ->requirePresence('nombre', 'create')
-            ->notEmpty('nombre');
-
-        $validator
-            ->requirePresence('periodo', 'create')
-            ->notEmpty('periodo');
-
-        $validator
-            ->allowEmpty('notas');
-
         return $validator;
     }
 
@@ -70,7 +64,8 @@ class PlanificacionesTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['usuario_id'], 'Usuarios'));
+        $rules->add($rules->existsIn(['menu_id'], 'Menus'));
+        $rules->add($rules->existsIn(['receta_id'], 'Recetas'));
         return $rules;
     }
 }

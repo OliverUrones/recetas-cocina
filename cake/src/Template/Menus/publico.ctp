@@ -1,10 +1,8 @@
 ﻿<nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Acciones') ?></li>
-        <li><?= $this->Html->link(__('Nuevo menú'), ['action' => 'add']) ?></li>
-       <li><?= $this->Html->link(__('Menús y sus platos asociados'), ['controller' => 'MenuRecetas', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('Añadir plato a menú'), ['controller' => 'MenuRecetas', 'action' => 'add']) ?></li>
-		<li><?= $this->Html->link(__('Planificaciones de menús'), ['controller' => 'PlanificacioneMenus', 'action' => 'index']) ?></li>
+       <li><?= $this->Html->link(__('Listar platos asociados a menús'), ['controller' => 'MenuRecetas', 'action' => 'publico']) ?></li>
+		<li><?= $this->Html->link(__('Planificaciones de menús'), ['controller' => 'PlanificacioneMenus', 'action' => 'publico']) ?></li>
     </ul>
 </nav>
 <div class="menus index large-9 medium-8 columns content">
@@ -23,9 +21,8 @@
                 <td><?= $this->Number->format($menu->id) ?></td>
 				<td><?= $menu->titulo ?></td>
                <td class="actions">
-                    <?= $this->Html->link(__('Ver'), ['action' => 'view', $menu->id]) ?>
-                    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $menu->id]) ?>
-                    <?= $this->Form->postLink(__('Borrar'), ['action' => 'delete', $menu->id], ['confirm' => __('Está seguro de que desea eliminar # {0}?', $menu->id)]) ?>
+                    <?= $this->Html->link(__('Ver'), ['action' => 'vista', $menu->id]) ?>
+
                 </td>
             </tr>
             <?php endforeach; ?>
