@@ -1,15 +1,8 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Acciones') ?></li>
-        <li><?= $this->Form->postLink(
-                __('Eliminar'),
-                ['action' => 'delete', $receta->id],
-                ['confirm' => __('Esta seguro que la desea eliminar # {0}?', $receta->id)]
-            )
-        ?></li>
-        <li><?= $this->Html->link(__('Recetas'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('Pasos de Receta'), ['controller' => 'RecetaPasos', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('Nuevo paso de receta'), ['controller' => 'RecetaPasos', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('Ir a recetas'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('Ir a pasos de elaboración de receta'), ['controller' => 'RecetaPasos', 'action' => 'index',$receta->id]) ?></li>
     </ul>
 </nav>
 <div class="recetas form large-9 medium-8 columns content">

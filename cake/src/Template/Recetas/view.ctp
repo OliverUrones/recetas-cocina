@@ -1,10 +1,11 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Acciones') ?></li>
+        <li><?= $this->Html->link(__('Ir a recetas'), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('Editar Receta'), ['action' => 'edit', $receta->id]) ?> </li>
         <li><?= $this->Form->postLink(__('Eliminar Receta'), ['action' => 'delete', $receta->id], ['confirm' => __('Are you sure you want to delete # {0}?', $receta->id)]) ?> </li>
-        <li><?= $this->Html->link(__('Recetas'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Nueva Receta'), ['action' => 'add']) ?> </li>
+
+        <li><?= $this->Html->link(__('Añadir nueva Receta'), ['action' => 'add']) ?> </li>
         </ul>
 </nav>
 <div class="recetas view large-9 medium-8 columns content">

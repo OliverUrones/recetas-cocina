@@ -1,29 +1,39 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Acciones') ?></li>
-        <li><?= $this->Html->link(__('Nuevo paso de receta'), ['action' => 'add',$receta_id]) ?></li>
-        <li><?= $this->Html->link(__('Recetas'), ['controller' => 'Recetas', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('Añadir nuevo paso de elaboración de la receta'), ['action' => 'add',$receta_id]) ?></li>
+        <li><?= $this->Html->link(__('ir a recetas'), ['controller' => 'Recetas', 'action' => 'index']) ?></li>
         </ul>
 </nav>
 <div class="recetaPasos index large-9 medium-8 columns content">
-    <h3><?= __('Pasos de Receta') ?></h3>
+    <?php
+                   
+            foreach ($recetaPasos as $recetaPaso){ ?>
+            <?php if($recetaPaso->receta->id == $receta_id){
+                $nombre= $recetaPaso->receta->nombre ; 
+                
+            }}?>
+    <h3><?= __('Pasos para elaboración de '.$nombre) ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th><?= $this->Paginator->sort('orden') ?></th>
+                <th><?= $this->Paginator->sort('Paso nº') ?></th>
+                <th><?= $this->Paginator->sort('descripción') ?></th>
          
-                <th><?= $this->Paginator->sort('receta_id') ?></th>
+               
                 
                 <th class="actions"><?= __('Acciones') ?></th>
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($recetaPasos as $recetaPaso){ ?>
+            <?php
+                   
+            foreach ($recetaPasos as $recetaPaso){ ?>
 			<?php if($recetaPaso->receta->id == $receta_id){ ?>
             <tr>
  <td><?= $this->Number->format($recetaPaso->orden) ?></td>
              
-                <td><?= $recetaPaso->has('receta') ? $this->Html->link($recetaPaso->receta->nombre, ['controller' => 'Recetas', 'action' => 'view', $recetaPaso->receta->id]) : '' ?></td>
+                <td><?=  $recetaPaso->descripcion ?></td>
                
                 <td class="actions">
                     <?= $this->Html->link(__('Ver'), ['action' => 'view', $recetaPaso->id]) ?>

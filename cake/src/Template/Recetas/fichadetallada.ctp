@@ -6,7 +6,7 @@
         <li><?= __('Dificultad :').'<b>'. $receta->mostrarDificultad($this->Number->format($receta->dificultad))?></b></li>
         <li><?= __('Comensales :').'<b>'. $this->Number->format($receta->comensales)?></b></li>
         <li><?= __('Valoracion :').'<b>'. $receta->mostrarValoracion($this->Number->format($receta->valoracion))?></b></li>
-        <li><?= __('Aceptada :').'<b>'. $receta->aceptada ? __('Si') : __('No');?></b></li>
+        <li><?= __('Aceptada :').'<b>'. $receta->aceptada ? __('Aceptada') : __('No aceptada');?></b></li>
         
         
         <li class="heading"><?= __('Ingredientes') ?></li>
