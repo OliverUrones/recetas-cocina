@@ -9,7 +9,6 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th><?= $this->Paginator->sort('id') ?></th>
                 <th><?= $this->Paginator->sort('nombre') ?></th>
                 <th><?= $this->Paginator->sort('domicilio') ?></th>
                 <th><?= $this->Paginator->sort('poblacion') ?></th>
@@ -22,7 +21,6 @@
             <?php foreach ($tiendas as $tienda){?>
             <?php if ($tienda->visible== true && $tienda->activa== true ) { ?>
             <tr>
-                <td><?= $this->Number->format($tienda->id) ?></td>
                 <td><?= h($tienda->nombre) ?></td>
                 <td><?= h($tienda->domicilio) ?></td>
                 <td><?= h($tienda->poblacion) ?></td>
