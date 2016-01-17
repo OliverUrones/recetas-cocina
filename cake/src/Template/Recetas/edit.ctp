@@ -17,6 +17,7 @@
             echo $this->Form->input('comensales');
             echo $this->Form->input('tiempo_elaboracion');
             echo $this->Form->input('valoracion');
+            $usuario= $this->request->session()->read('Auth.User');
             if($usuario['rol']=='A'){
             echo $this->Form->input('aceptada');
             }

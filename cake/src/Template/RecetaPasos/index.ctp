@@ -7,16 +7,20 @@
 </nav>
 <div class="recetaPasos index large-9 medium-8 columns content">
     <?php
-                   
+               $nombre=null;    
             foreach ($recetaPasos as $recetaPaso){ ?>
             <?php if($recetaPaso->receta->id == $receta_id){
                 $nombre= $recetaPaso->receta->nombre ; 
                 
             }}
-$nombre= $recetaPaso->receta->nombre ; 
+          
 
 ?>
-    <h3><?= __('Pasos para elaboración de '.$nombre) ?></h3>
+    <h3><?php 
+        if ($nombre==null){
+               echo('No hay pasos para elaboración ');
+       }else{
+           echo('Pasos para elaboración de '.$nombre); }?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
