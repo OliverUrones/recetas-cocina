@@ -2,6 +2,7 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Acciones') ?></li>
         <li><?= $this->Html->link(__('Ir a recetas'), ['action' => 'index']) ?> </li>
+         
         <li><?= $this->Html->link(__('Editar Receta'), ['action' => 'edit', $receta->id]) ?> </li>
         <li><?= $this->Form->postLink(__('Eliminar Receta'), ['action' => 'delete', $receta->id], ['confirm' => __('Are you sure you want to delete # {0}?', $receta->id)]) ?> </li>
 

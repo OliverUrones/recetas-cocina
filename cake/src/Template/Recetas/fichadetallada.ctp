@@ -17,7 +17,8 @@
                <?= h($recetaIngredientes->medida) ?>
                   
                 <?php  foreach ($ingredientes as $ingre): 
-                    if($ingre->ingrediente->id == $recetaIngredientes->id) echo $ingre->ingrediente->nombre ; ?>
+                    
+                    if($ingre->ingrediente->id == $recetaIngredientes->ingrediente_id) echo $ingre->ingrediente->nombre ; ?>
                 <?php endforeach; ?>  
             </li>
             <?php endforeach; ?>
@@ -33,26 +34,9 @@
         
         <?= $this->Text->autoParagraph(h($receta->descripcion)); ?>
     </div>
-    <!--    
-    <div class="related">
-        <h4><?= __('Platos') ?></h4>
-        <?php if (!empty($receta->menu_platos)): ?>
-        <table cellpadding="0" cellspacing="0">
-            <tr>
-                <th><?= __('Menu Id') ?></th>
-                <th><?= __('Receta Id') ?></th>
-                
-            </tr>
-            <?php foreach ($receta->menu_platos as $menuPlatos): ?>
-            <tr>
-                <td><?= h($menuPlatos->menu_id) ?></td>
-                <td><?= h($menuPlatos->receta_id) ?></td>
-               
-            </tr>
-            <?php endforeach; ?>
-        </table>
-    <?php endif; ?>
-    </div>
+     
+
+        <!--   
     <div class="related">
         <h4><?= __('Categorias') ?></h4>
         <?php if (!empty($receta->receta_categorias)): ?>

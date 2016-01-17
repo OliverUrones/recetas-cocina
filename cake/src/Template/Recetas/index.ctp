@@ -2,6 +2,7 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Acciones') ?></li>
         <li><?= $this->Html->link(__('Nueva Receta'), ['action' => 'add']) ?></li>
+        
         </ul>
 </nav>
 <div class="recetas index large-9 medium-8 columns content">
