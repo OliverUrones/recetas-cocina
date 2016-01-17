@@ -16,6 +16,22 @@ class RecetaPasosController extends AppController
      *
      * @return void
      */
+    
+     public function beforeFilter(\Cake\Event\Event $event)
+    {
+        parent::beforeFilter($event);
+         
+        $usuario= $this->request->session()->read('Auth.User');
+      
+        if($usuario['rol']=='C'){
+            $this->Auth->allow('index');
+            $this->Auth->allow('view');
+            $this->Auth->allow('add');
+            $this->Auth->allow('edit');
+            $this->Auth->allow('delete');
+        }
+         $this->Auth->redirectUrl();
+    }//---*/
     public function index($receta_id = null)
     {
         if($receta_id == null){
