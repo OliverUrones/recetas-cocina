@@ -39,7 +39,7 @@ class RecetaPasoImagenesController extends AppController
         ];
         if($recetaPaso_id == null){
             $recetaPaso_id = $_GET['recetaPaso_id'];
-            $recetaPaso_id = $_GET['recetaPaso_orden'];
+           
         }
         $recetaPasoImagenes= $this->paginate($this->RecetaPasoImagenes);
         $this->set(compact('recetaPasoImagenes','recetaPaso_id','recetaPaso_orden'));
@@ -101,8 +101,8 @@ class RecetaPasoImagenesController extends AppController
             $recetaPasoImagene = $this->RecetaPasoImagenes->patchEntity($recetaPasoImagene, $this->request->data);
             if ($this->RecetaPasoImagenes->save($recetaPasoImagene)) {
                 $this->Flash->success(__('The receta paso imagene has been saved.'));
-                return $this->redirect(['controller' => 'Recetas','action' => 'index']);
-                //return $this->redirect(['action' => 'index','recetaPaso_id'=>$recetaPasoImagene->receta_paso_id]);
+                //return $this->redirect(['controller' => 'Recetas','action' => 'index']);
+                return $this->redirect(['action' => 'index','recetaPaso_id'=>$recetaPasoImagene->receta_paso_id]);
             } else {
                 $this->Flash->error(__('The receta paso imagene could not be saved. Please, try again.'));
             }
@@ -127,7 +127,7 @@ class RecetaPasoImagenesController extends AppController
         } else {
             $this->Flash->error(__('The receta paso imagene could not be deleted. Please, try again.'));
         }
-        return $this->redirect(['controller' => 'Recetas','action' => 'index']);
-         //return $this->redirect(['action' => 'index','recetaPaso_id'=>$recetaPasoImagene->receta_paso_id]);
+       // return $this->redirect(['controller' => 'Recetas','action' => 'index']);
+         return $this->redirect(['action' => 'index','recetaPaso_id'=>$recetaPasoImagene->receta_paso_id]);
     }
 }
