@@ -55,7 +55,6 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 					echo '<li>';
                   echo $this->Html->link('Administrar categorias', ['controller' => 'categorias', 'action' => 'index']);
                   echo '</li>';
-=======
 				  if($usuario['rol']!=='C')
                   {
 					  echo '<li>';
@@ -72,7 +71,6 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 					  echo $this->Html->link('Ofertas', ['controller' => 'tiendaOfertas', 'action' => 'index2']);
 					  echo '</li>';
 				  }
->>>>>>> 8f0cb6dd7ee791048434e684350f7680d18d9cde
                     echo '<li>';
                   echo $this->Html->link('Administrar recetas', ['controller' => 'recetas', 'action' => 'index']);
                   echo '</li>';
