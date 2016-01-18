@@ -122,6 +122,23 @@ class Receta extends Entity
    }
 
 
+   
+   //Funcion para mostrar el numero de comensales de cada receta. Para usar en formularios como select
+    public static function comensales()
+   {
+	 
+	   $lista= [
+			1=>'1 - Comensal',
+			2=>'2 - Comensales',
+			4=>'4 - Comensales',
+			6=>'6 - Comensales',
+			8=>'8 - Comensales',
+
+	   ];
+		return $lista;
+   }
+   
+   
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
      *
