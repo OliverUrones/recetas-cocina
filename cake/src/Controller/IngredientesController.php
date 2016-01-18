@@ -29,6 +29,13 @@ class IngredientesController extends AppController
             $this->Auth->allow('edit');
             $this->Auth->allow('delete');
         }
+		
+		
+        if($usuario['rol']=='T'){
+            $this->Auth->allow('index');
+            $this->Auth->allow('view');
+            $this->Auth->allow('add');
+        }
          $this->Auth->redirectUrl();
     }//---*/
 
