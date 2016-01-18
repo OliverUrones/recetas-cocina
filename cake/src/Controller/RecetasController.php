@@ -222,6 +222,7 @@ class RecetasController extends AppController
 					}
 				
 				/*Obtenemos los terminos de la busqueda*/
+				$busqueda->nombre1=$busqueda['nombre'];
 				//Comprobamos si es nulo. En caso de ser nulo significa que debemos buscar cualquier nombre
 				if (empty($busqueda->nombre1))
 				{
@@ -229,6 +230,7 @@ class RecetasController extends AppController
 					$busqueda->nombre1="'%%'";
 				}
 				
+				$busqueda->tipo_plato1=$busqueda['tipo_plato'];
 				//Comprobamos si es nulo. En caso de ser nulo significa que debemos buscar cualquier tipo de plato
 				if (empty($busqueda->tipo_plato1))
 				{
@@ -236,6 +238,7 @@ class RecetasController extends AppController
 					$busqueda->tipo_plato1="'%%'";
 				}
 				
+				$busqueda->dificultad1=$busqueda['dificultad'];
 				//Comprobamos si es nulo. En caso de ser nulo significa que debemos buscar cualquier dificultad
 				if (empty($busqueda->dificultad1))
 				{
@@ -243,6 +246,7 @@ class RecetasController extends AppController
 					$busqueda->dificultad1="'%%'";
 				}
 				
+				$busqueda->comensales1=$busqueda['comensales'];
 				//Comprobamos si es nulo. En caso de ser nulo significa que debemos buscar cualquier comensales
 				if (empty($busqueda->comensales1))
 				{
@@ -250,6 +254,7 @@ class RecetasController extends AppController
 					$busqueda->comensales1="'%%'";
 				}
 				
+				$busqueda->tiempo_elaboracion1=$busqueda['tiempo_elaboracion'];
 				//Comprobamos si es nulo. En caso de ser nulo significa que debemos buscar cualquier tiempo_elaboracion
 				if (empty($busqueda->tiempo_elaboracion1))
 				{
@@ -257,6 +262,7 @@ class RecetasController extends AppController
 					$busqueda->tiempo_elaboracion1="'%%'";
 				}
 				
+				$busqueda->valoracion1=$busqueda['valoracion'];
 				//Comprobamos si es nulo. En caso de ser nulo significa que debemos buscar cualquier valoracion
 				if (empty($busqueda->valoracion1))
 				{
@@ -273,9 +279,9 @@ class RecetasController extends AppController
 				
 				$total=$query->count();
 				
-				foreach ($query as $receta) {
+				/*foreach ($query as $receta) {
 					echo $receta;
-				}
+				}*/
 				
 				//$comments = $this->paginate($commentsTable->find());
 				 $this->set('recetas', $this->paginate($query));
