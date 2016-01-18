@@ -210,8 +210,8 @@ class RecetasController extends AppController
 	
     $this->Auth->allow();
 	
-	$this->set('recetas', $this->paginate($this->Recetas));
-        $this->set('_serialize', ['recetas']);
+/*	$this->set('recetas', $this->paginate($this->Recetas));
+        $this->set('_serialize', ['recetas']);*/
 		
 	$busqueda = $this->Recetas->newEntity();
 	
@@ -285,6 +285,7 @@ class RecetasController extends AppController
 				
 				//$comments = $this->paginate($commentsTable->find());
 				 $this->set('recetas', $this->paginate($query));
+					$this->set('_serialize', ['recetas']);
 		
 	}//funcion busquedaver
 	
@@ -295,8 +296,8 @@ class RecetasController extends AppController
 	
     $this->Auth->allow();
 	
-	$this->set('recetas', $this->paginate($this->Recetas));
-        $this->set('_serialize', ['recetas']);
+	/*$this->set('recetas', $this->paginate($this->Recetas));
+        $this->set('_serialize', ['recetas']);*/
 		
 	$busquedafiltros = $this->Recetas->newEntity();
 					
@@ -329,6 +330,7 @@ class RecetasController extends AppController
 				
 				//$comments = $this->paginate($commentsTable->find());
 				 $this->set('recetas', $this->paginate($query));
+				$this->set('_serialize', ['recetas']);
 		
 	}//funcion busqueda
 	
