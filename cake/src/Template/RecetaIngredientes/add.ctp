@@ -13,8 +13,7 @@
     <fieldset>
         <legend><?= __('Añadir Ingrediente a Receta') ?></legend>
         <?php
-            //echo $this->Form->input('receta_id', ['options' => $recetas]);
-            echo $this->Form->input('receta_id', ['options' => $clientslist]);
+            echo $this->Form->input('receta_id', ['options' => $recetas]);
             echo $this->Form->input('ingrediente_id', ['options' => $ingredientes]);
             echo $this->Form->input('cantidad');
             echo $this->Form->input('medida');
