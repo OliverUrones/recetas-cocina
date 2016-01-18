@@ -300,6 +300,9 @@ class RecetasController extends AppController
 					}
 				
 				/*Obtenemos los terminos de la busqueda*/
+				$busquedafiltros->campo1=$busquedafiltros['campo'];
+				
+				$busquedafiltros->forma1=$busquedafiltros['forma'];
 				
 				$ordenmuestra=null;
 				$ordenmuestra=$busquedafiltros->campo1;
@@ -308,16 +311,15 @@ class RecetasController extends AppController
 				
 				
 				$query = $this->Recetas->find();
-				$query-> select(['id', 'nombre', 'tipo_plato', 'descripcion', 'dificultad', 'comensales', 'tiempo_elaboracion', 'valoracion']);	
+				$query-> select(['id', 'nombre', 'tipo_plato', 'descripcion', 'dificultad', 'comensales', 'tiempo_elaboracion', 'valoracion']);			
 				$query->order($ordenmuestra);
 				
 				
 				$total=$query->count();
-
 				
-				foreach ($query as $receta) {
+				/*foreach ($query as $receta) {
 					echo $receta;
-				}
+				}*/
 				
 				//$comments = $this->paginate($commentsTable->find());
 				 $this->set('recetas', $this->paginate($query));
