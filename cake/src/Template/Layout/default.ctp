@@ -49,6 +49,16 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 //\Cake\Log\Log::write( 'debug', __METHOD__.'['.__LINE__.']'.' _SESSION= '.var_export( $this->request->session(), true));
                 echo '<li>';
                 if ($usuario !== null) {
+				
+				
+                    echo '<li>';//Para realizar la busqueda avanzada y fitrado
+                  echo $this->Html->link('Busqueda Avanzada', ['controller' => 'recetas', 'action' => 'busqueda']);
+                  echo '</li>';
+				  
+                    echo '<li>';//Para realizar la administracion de ingredientes
+                  echo $this->Html->link('Administrar Ingredientes', ['controller' => 'RecetaIngredientes', 'action' => 'index']);
+                  echo '</li>';
+				
 					echo '<li>';
                   echo $this->Html->link('Administrar categorias en recetas', ['controller' => 'RecetaCategorias', 'action' => 'index']);
                   echo '</li>';
@@ -104,6 +114,10 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                       //echo $this->Form->postButton(__('Cambiar Rol'), ['controller' => 'usuarios', 'action' => 'cambiarRol']);
                   }
                 } else {
+				
+                    echo '<li>';//Para realizar la busqueda avanzada y fitrado
+                  echo $this->Html->link('Busqueda Avanzada', ['controller' => 'recetas', 'action' => 'busqueda']);
+                  echo '</li>';
                     
                   echo '<li>';
                   echo $this->Html->link('Tiendas', ['controller' => 'tiendas', 'action' => 'indexpublico']);
