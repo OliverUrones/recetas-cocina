@@ -24,6 +24,7 @@ use App\Model\TiendaOfertasTable;
         </thead>
         <tbody>
             <?php foreach ($tiendaOfertas as $tiendaOferta): ?>
+            <?php if($tiendaOferta->tienda->activa === true && $tiendaOferta->tienda->visible === true){ ?>
             <tr>
                 <td><?= $tiendaOferta->has('tienda') ? $this->Html->link($tiendaOferta->tienda->nombre, ['controller' => 'Tiendas', 'action' => 'viewpublico', $tiendaOferta->tienda->id]) : '' ?></td>
                 <td><?= $tiendaOferta->has('ingrediente') ? $this->Html->link($tiendaOferta->ingrediente->nombre, ['controller' => 'Ingredientes', 'action' => 'view', $tiendaOferta->ingrediente->id]) : '' ?></td>
@@ -33,6 +34,7 @@ use App\Model\TiendaOfertasTable;
                     <?= $this->Html->link(__('Acceder a la oferta '), ['controller'=>'TiendaOfertas', 'action' => 'view2', $tiendaOferta->id]) ?>
                  </td>
             </tr>
+             <?php } ?>
             <?php endforeach; ?>
         </tbody>
     </table>
