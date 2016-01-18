@@ -86,14 +86,9 @@ class RecetaIngredientesController extends AppController
     public function add()
     {
 	
-		
+		$recetaIngrediente = $this->RecetaIngredientes->newEntity();
         $usuario= $this->request->session()->read('Auth.User');
 		
-		$clientslist = $this->RecetaIngredientes->Recetas->find();
-		$clientslist->select(['id']);
-		$clientslist->where(['usuario_id'=>$usuario['id']]);
-		
-        $recetaIngrediente = $this->RecetaIngredientes->newEntity();
         if ($this->request->is('post')) {
             $recetaIngrediente = $this->RecetaIngredientes->patchEntity($recetaIngrediente, $this->request->data);
 			echo $recetaIngrediente;
@@ -105,8 +100,9 @@ class RecetaIngredientesController extends AppController
             }
         }
         $recetas = $this->RecetaIngredientes->Recetas->find('list', ['limit' => 200]);
+		$recetas->where(['usuario_id'=>$usuario['id']]);
         $ingredientes = $this->RecetaIngredientes->Ingredientes->find('list', ['limit' => 200]);
-        $this->set(compact('recetaIngrediente', 'recetas', 'ingredientes', 'clientslist'));
+        $this->set(compact('recetaIngrediente', 'recetas', 'ingredientes'));
         $this->set('_serialize', ['recetaIngrediente']);
     }
 
