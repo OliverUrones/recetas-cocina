@@ -61,5 +61,22 @@ class PagesController extends AppController
             }
             throw new NotFoundException();
         }
+        
+        
+    }
+    
+        public function home()
+    {
+        $Recetas=$this->paginate('Recetas');
+        $aux=array();
+        foreach ($Recetas as $receta){ 
+            if ($receta->aceptada== true ) { 
+                array_push($aux, $receta);
+            }
+        }
+        $Recetas=$aux;
+        $this->set('Recetas', $Recetas);
+        $this->set('_serialize', ['Recetas']);
+
     }
 }

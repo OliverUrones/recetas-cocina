@@ -47,7 +47,7 @@ class TiendasController extends AppController
     public function indexpublico()
     {
 	$tiendas= $this->paginate($this->Tiendas);
-        $this->set('tiendas');
+        $this->set('tiendas',$tiendas);
         $this->set('_serialize', ['tiendas']);
 
     }
