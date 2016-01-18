@@ -7,7 +7,7 @@
 <div class="recetas index large-9 medium-8 columns content">
     <h3><?= __('Resultados Busqueda Avanzada') ?></h3>
     <!-- *****************<?//= $this->Form->create($busqueda) ?> -->
-	<?= "Esto es una prueba para ver si llega el formulario";?>
+	<?= "Listado de recetas encontradas";?>
 	 <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
