@@ -20,7 +20,7 @@
             <?php foreach ($tiendaOfertas as $tiendaOferta){ ?>
             <?php if ($tiendaOferta->tienda->visible== true && $tiendaOferta->tienda->activa== true ) { ?>
             <tr>
-                <td><?= $tiendaOferta->has('tienda') ? $this->Html->link($tiendaOferta->tienda->nombre, ['controller' => 'Tiendas', 'action' => 'viewpubico', $tiendaOferta->tienda->id]) : '' ?></td>
+                <td><?= $tiendaOferta->has('tienda') ? $this->Html->link($tiendaOferta->tienda->nombre, ['controller' => 'Tiendas', 'action' => 'viewpublico', $tiendaOferta->tienda->id]) : '' ?></td>
                 <td><?= $tiendaOferta->has('ingrediente') ? $this->Html->link($tiendaOferta->ingrediente->nombre, ['controller' => 'Ingredientes', 'action' => 'view', $tiendaOferta->ingrediente->id]) : '' ?></td>
                 <td><?= $this->Number->format($tiendaOferta->cantidad) ?></td>
                 <td><?= h($tiendaOferta->medida) ?></td>

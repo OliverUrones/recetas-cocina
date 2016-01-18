@@ -104,7 +104,7 @@ class TiendaOfertasController extends AppController
                         {
                             return $this->redirect(['action' => 'index2']);
 			}
-        $this->set('tiendaOferta');
+        $this->set('tiendaOferta',$tiendaOferta);
         $this->set('_serialize', ['tiendaOferta']);
     }
 

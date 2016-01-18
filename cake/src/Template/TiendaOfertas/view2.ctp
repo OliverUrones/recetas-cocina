@@ -5,11 +5,11 @@
        </ul>
 </nav>
 <div class="tiendaOfertas view large-9 medium-8 columns content">
-    <h3><?= h($tiendaOferta->id) ?></h3>
+    <h3>Oferta de <?= h($tiendaOferta->ingrediente->nombre) ?> de <?= h($tiendaOferta->tienda->nombre) ?></h3>
     <table class="vertical-table">
         <tr>
             <th><?= __('Tienda') ?></th>
-            <td><?= $tiendaOferta->has('tienda') ? $this->Html->link($tiendaOferta->tienda->nombre, ['controller' => 'Tiendas', 'action' => 'view', $tiendaOferta->tienda->id]) : '' ?></td>
+            <td><?= $tiendaOferta->has('tienda') ? $this->Html->link($tiendaOferta->tienda->nombre, ['controller' => 'Tiendas', 'action' => 'viewpublico', $tiendaOferta->tienda->id]) : '' ?></td>
         </tr>
         <tr>
             <th><?= __('Ingrediente') ?></th>

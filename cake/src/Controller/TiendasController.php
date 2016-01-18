@@ -46,6 +46,9 @@ class TiendasController extends AppController
     
     public function indexpublico()
     {
+         $this->paginate = [
+            'contain' => ['Usuarios']
+        ];
 	$tiendas= $this->paginate($this->Tiendas);
         $this->set('tiendas',$tiendas);
         $this->set('_serialize', ['tiendas']);
@@ -212,7 +215,7 @@ class TiendasController extends AppController
                     $this->Flash->error(__('La tienda no se ha podido guardar. Por favor, intentelo de nuevo.'));
                 }
             }
-            $this->set('tienda');
+            $this->set('tienda',$tienda);
             $this->set('_serialize', ['tienda']);
 	}else{
             $usuarios = $this->paginate('Usuarios');
@@ -248,7 +251,9 @@ class TiendasController extends AppController
      */
     public function delete($id = null)
     {
-        $tienda = $this->Tiendas->get($id);
+        $tienda = $this->Tiendas->get($id, [
+            'contain' => ['TiendaOfertas']
+        ]);
 		$usuario= $this->request->session()->read('Auth.User');
 		if( $usuario['rol']!=='A'){
 			 if($tienda->usuario_id!==$usuario['id'])
@@ -260,6 +265,10 @@ class TiendasController extends AppController
         
         if ($this->Tiendas->delete($tienda)) {
             $this->Flash->success(__('La tienda ha sido borrada.'));
+            foreach($tienda->tienda_ofertas as $tiendaOferta){
+		if ($this->Tiendas->delete($tiendaOferta)) {
+                $this->Flash->success(__('La oferta ha sido borrada.'));}
+            }
         } else {
             $this->Flash->error(__('La tienda no ha podido ser borrada. Por favor, intentelo de nuevo.'));
         }

@@ -27,18 +27,6 @@
             <th><?= __('Usuario') ?></th>
             <td><?= $tienda->has('usuario') ? $this->Html->link($tienda->usuario->nombre, ['controller' => 'Usuarios', 'action' => 'view', $tienda->usuario->id]) : '' ?></td>
         </tr>
-        <tr>
-            <th><?= __('Id') ?></th>
-            <td><?= $this->Number->format($tienda->id) ?></td>
-        </tr>
-        <tr>
-            <th><?= __('Activa') ?></th>
-            <td><?= $tienda->activa ? __('Sí') : __('No'); ?></td>
-         </tr>
-        <tr>
-            <th><?= __('Visible') ?></th>
-            <td><?= $tienda->visible ? __('Sí') : __('No'); ?></td>
-         </tr>
     </table>
     <div class="related">
         <h4><?= __('Ofertas de la Tienda') ?></h4>

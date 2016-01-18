@@ -2,7 +2,7 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Menu') ?></li>
         <li><?= $this->Html->link(__('Editar Tienda'), ['action' => 'edit', $tienda->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Borrar Tienda'), ['action' => 'delete', $tienda->id], ['confirm' => __('¿Estas seguro que desea borrar # {0}?', $tienda->id)]) ?> </li>
+        <li><?= $this->Form->postLink(__('Borrar Tienda'), ['action' => 'delete', $tienda->id], ['confirm' => __('¿Estas seguro que desea borrar {0}?', $tienda->nombre)]) ?> </li>
         <li><?= $this->Html->link(__('Listar Tiendas'), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('Nueva Tienda'), ['action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('Listar Ofertas'), ['controller' => 'TiendaOfertas', 'action' => 'index']) ?> </li>
