@@ -224,58 +224,99 @@ class RecetasController extends AppController
 				/*Obtenemos los terminos de la busqueda*/
 				$busqueda->nombre1=$busqueda['nombre'];
 				//Comprobamos si es nulo. En caso de ser nulo significa que debemos buscar cualquier nombre
-				if (empty($busqueda->nombre1))
+			/*	if (empty($busqueda->nombre1))
 				{
 					//debemos buscar cualquier nombre
 					$busqueda->nombre1="'%%'";
 				}
-				
+			*/	
 				$busqueda->tipo_plato1=$busqueda['tipo_plato'];
 				//Comprobamos si es nulo. En caso de ser nulo significa que debemos buscar cualquier tipo de plato
-				if (empty($busqueda->tipo_plato1))
+			/*	if (empty($busqueda->tipo_plato1))
 				{
 					//debemos buscar cualquier tipo de plato
 					$busqueda->tipo_plato1="'%%'";
 				}
-				
+				*/
 				$busqueda->dificultad1=$busqueda['dificultad'];
 				//Comprobamos si es nulo. En caso de ser nulo significa que debemos buscar cualquier dificultad
-				if (empty($busqueda->dificultad1))
+			/*	if (empty($busqueda->dificultad1))
 				{
 					//debemos buscar cualquier dificultad
 					$busqueda->dificultad1="'%%'";
 				}
-				
+				*/
 				$busqueda->comensales1=$busqueda['comensales'];
 				//Comprobamos si es nulo. En caso de ser nulo significa que debemos buscar cualquier comensales
-				if (empty($busqueda->comensales1))
+			/*	if (empty($busqueda->comensales1))
 				{
 					//debemos buscar cualquier comensales
 					$busqueda->comensales1="'%%'";
 				}
-				
+				*/
 				$busqueda->tiempo_elaboracion1=$busqueda['tiempo_elaboracion'];
 				//Comprobamos si es nulo. En caso de ser nulo significa que debemos buscar cualquier tiempo_elaboracion
-				if (empty($busqueda->tiempo_elaboracion1))
+				/*if (empty($busqueda->tiempo_elaboracion1))
 				{
 					//debemos buscar cualquier tiempo_elaboracion
 					$busqueda->tiempo_elaboracion1="'%%'";
-				}
+				}*/
 				
 				$busqueda->valoracion1=$busqueda['valoracion'];
 				//Comprobamos si es nulo. En caso de ser nulo significa que debemos buscar cualquier valoracion
-				if (empty($busqueda->valoracion1))
+			/*	if (empty($busqueda->valoracion1))
 				{
 					//debemos buscar cualquier valoracion
 					$busqueda->valoracion1="'%%'";
 				}
-				
+				*/
 				
 					
 				
-				$query = $this->Recetas->find();
+				/*$query = $this->Recetas->find();
 				$query-> select(['id', 'nombre', 'tipo_plato', 'descripcion', 'dificultad', 'comensales', 'tiempo_elaboracion', 'valoracion']);			
-				$query->where(['nombre LIKE'=>$busqueda->nombre1, 'tipo_plato LIKE'=>$busqueda->tipo_plato1, 'dificultad LIKE'=>$busqueda->dificultad1, 'comensales LIKE'=>$busqueda->comensales1, 'tiempo_elaboracion LIKE'=>$busqueda->tiempo_elaboracion1, 'valoracion LIKE'=>$busqueda->valoracion1]);
+				$query->where(['nombre LIKE'=>$busqueda->nombre1, 'tipo_plato LIKE'=>$busqueda->tipo_plato1, 'dificultad LIKE'=>$busqueda->dificultad1, 'comensales LIKE'=>$busqueda->comensales1, 'tiempo_elaboracion LIKE'=>$busqueda->tiempo_elaboracion1, 'valoracion LIKE'=>$busqueda->valoracion1]);*/
+				
+				$query = $this->Recetas->find();
+				$query-> select(['id', 'nombre', 'tipo_plato', 'descripcion', 'dificultad', 'comensales', 'tiempo_elaboracion', 'valoracion']);
+				
+				//------------------Cambios para que el formulario de busqueda funcione correctamente
+				if (!empty($busqueda->nombre1))
+				{
+					$query->where(['nombre LIKE'=>$busqueda->nombre1]);
+				}
+				
+				if (!empty($busqueda->tipo_plato1))
+				{
+					$query->where(['tipo_plato LIKE'=>$busqueda->tipo_plato1]);
+				}
+				
+				if (!empty($busqueda->dificultad1))
+				{
+					$query->where(['dificultad LIKE'=>$busqueda->dificultad1]);
+				}
+				
+				
+				if (!empty($busqueda->comensales1))
+				{
+					$query->where(['comensales LIKE'=>$busqueda->comensales1]);
+				}
+				
+				
+				if (!empty($busqueda->tiempo_elaboracion1))
+				{
+					$query->where(['tiempo_elaboracion LIKE'=>$busqueda->tiempo_elaboracion1]);
+				}
+				
+				
+				if (!empty($busqueda->valoracion1))
+				{
+					$query->where(['valoracion LIKE'=>$busqueda->valoracion1]);
+				}
+				
+				//------------------------Fin cambios busqueda------------
+				
+				
 				
 				$total=$query->count();
 				
