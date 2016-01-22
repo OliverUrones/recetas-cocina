@@ -8,6 +8,7 @@
     <h3><?= __('Resultados Busqueda Avanzada') ?></h3>
     <!-- *****************<?//= $this->Form->create($busqueda) ?> -->
 	<?= "Listado de recetas encontradas";?>
+	
 	 <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
@@ -25,7 +26,16 @@
         </thead>
         <tbody>
 		
-            <?php foreach ($recetas as $receta): ?>
+            <?php 
+			//-----------Añadida esta parte de codigo para que muestre que no hay resultados si no se han encontrado recetas al buscar------------
+			if (count($recetas)==0)
+			{
+				echo "<td colspan='7'> NO SE HAN ENCONTRADO RESULTADOS</td>";
+			}
+			else
+			{
+			//-------------------------------------------------
+					foreach ($recetas as $receta): ?>
             <tr>
 
                 <td><?= h($receta->nombre) ?></td>
@@ -35,12 +45,13 @@
                 <td><?= h($receta->comensales) ?></td>
                 <td><?= $this->Number->format($receta->tiempo_elaboracion) ?></td>
                 <td><?= h($receta->valoracion) ?></td>
-                <!-- <td><?= $receta->has('usuario') ? $this->Html->link($receta->usuario->nombre, ['controller' => 'Usuarios', 'action' => 'view', $receta->usuario->id]) : '' ?></td> -->
+                <!-- <td><?//= $receta->has('usuario') ? $this->Html->link($receta->usuario->nombre, ['controller' => 'Usuarios', 'action' => 'view', $receta->usuario->id]) : '' ?></td> -->
                 <td class="actions">
                     <?= $this->Html->link(__('Ver'), ['controller'=>'Recetas','action' => 'fichadetallada', $receta->id]) ?>
                 </td>
             </tr>
-            <?php endforeach; ?>
+            <?php endforeach;
+			}//else			?>
         </tbody>
     </table>
      <div class="paginator">
