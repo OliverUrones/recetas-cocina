@@ -6,7 +6,7 @@ Información.
 
 El portal está hecho con el framework CakePHP.
 
-La parte de la aplicación realizada por mi es: 
-  - Acceso y registro de usuarios
-  - Mantenimiento de usuarios
-  - Creación y restauración de copias de seguridad de la base de datos
+La parte de la aplicación realizada por mi es:
+  - Mantenimiento de Usuarios, Perfiles y Relaciones entre ellos.
+  - Mantenimiento de la Configuración y Copias de Seguridad.
+  - Acceso y registro de usuarios.
